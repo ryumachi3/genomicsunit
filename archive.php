@@ -13,8 +13,8 @@
 					</h2>
 					<ul class="p-news-list l-news-list-archive">
 						<li class="p-news-list__item">
-              <a href="http://genomicsunit.local/1/" class="p-news-list__item__link">
-                <time class="p-news-list__item__time">2023年3月22日</time>
+              <a href="<?php echo get_home_url(); ?>/news/26/" class="p-news-list__item__link">
+                <time class="p-news-list__item__time">2023年4月10日</time>
                 <div class="c-news-tag p-news-list__item__main__tag">
                   <span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
                     研究者の方へ
