@@ -42,7 +42,7 @@
         <div class="p-kv__inner__description">
           <p class="p-kv__inner__description__txt">
             <span
-              class="p-kv__inner__description__txt__point">がんの原因は遺伝子の異常</span>であることが明らかになってきました。<br>原因となる遺伝子が見つかれば、より効果的な治療が期待できます。<br>これから先の治療に迷われている患者さんの一助になるよう、私たちが遺伝子検査をサポートいたします。
+              class="p-kv__inner__description__txt__point">がんの原因は遺伝子の変化</span>であることが明らかになってきました。<br>原因となる遺伝子が見つかれば、より効果的な治療が期待できます。<br>これから先の治療に迷われている患者さんの一助になるよう、私たちが遺伝子検査をサポートいたします。
           </p>
           <img src="<?php echo get_theme_file_uri() ?>/img/kv_illust.png" alt=""
             class="p-kv__inner__description__illust">
@@ -58,8 +58,8 @@
           </div>
           <ul class="p-news-list l-top-news-list">
             <li class="p-news-list__item">
-              <a href="http://genomicsunit.local/26/" class="p-news-list__item__link">
-                <time class="p-news-list__item__time">2023年3月22日</time>
+              <a href="<?php echo get_home_url(); ?>/news/26/" class="p-news-list__item__link">
+                <time class="p-news-list__item__time">2023年4月10日</time>
                 <div class="c-news-tag p-news-list__item__main__tag">
                   <span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
                     研究者の方へ

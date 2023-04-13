@@ -161,6 +161,30 @@
   padding-top: 1.07em;
   padding-bottom: 1.07em;
   text-align: center;
+  position: relative;
+  &.-is-active{
+    &::after{
+      content:'';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(90%,-50%);
+      width: 0;
+      height: 0;
+      border-left: 14px solid $color-iryo;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      @include mq(pc){
+        transform: translate(-90%,-50%);
+        right: 0;
+        left: 0;
+        border-left: none;
+        border-right: 14px solid $color-iryo;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;  
+      }   
+    }
+  }
 }
 
 .p-main{
@@ -311,10 +335,6 @@
   }
 }
 
-.p-kv__inner__description__txt__point{
-  color: $point;  
-}
-
 .p-news-list{
   list-style: none;
 }
@@ -329,6 +349,7 @@
 }
 
 .p-news-list__item__link{
+  color: $main-txt;
   display: grid;
   grid-template-columns: 9em auto;  
   padding: .9em 1.56em 1.25em 1.875em;
@@ -366,6 +387,7 @@
   margin-top: .4em;
   margin-bottom: .7em;
   @include mq(sp){
+    padding-left: .5em;
     grid-row: 1 / 2; /*アイテムの配置位置を「行方向：ライン番号１から３の間」に指定*/
     grid-column: 2 / 3; /*アイテムの配置位置を「列方向：ライン番号２から４の間」に指定*/  
   }
@@ -409,6 +431,11 @@
   background-color: $main-txt;
   color: $white;
   position: relative;
+}
+
+.p-footer__contents__tel__link{
+  text-decoration: none;
+  color: $white;  
 }
 
 .p-header-sp{
@@ -691,3 +718,4 @@
   margin-top: 25px;
   text-align: right;
 }
+

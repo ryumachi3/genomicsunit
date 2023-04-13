@@ -22,7 +22,7 @@
 						</div>
 						<ul class="p-news-list l-news-list">
 							<li class="p-news-list__item">
-								<a href="http://genomicsunit.local/26/" class="p-news-list__item__link">
+								<a href="<?php echo get_home_url(); ?>/news/26/" class="p-news-list__item__link">
 									<time class="p-news-list__item__time">2023年3月22日</time>
 									<div class="c-news-tag p-news-list__item__main__tag">
 										<span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">

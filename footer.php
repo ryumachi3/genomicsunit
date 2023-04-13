@@ -14,7 +14,7 @@
                 <p>
                   〒160-8582 東京都新宿区信濃町 35<br>
                   総合医科学研究棟 3-S5<br>
-                  03-3353-1211（代表）
+                  <a class="p-footer__contents__tel__link" href="tel:03-3353-1211">03-3353-1211</a>（代表）
                 </p>
               </address>
               <div class="l-footer__contents__map">

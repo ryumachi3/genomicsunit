@@ -50,18 +50,18 @@
           スタッフ紹介
         </a>
       </li> -->
-      <li class="p-nav__list__item <?php echo is_page( 'rinsyo' )?'-is-active':'' ?>">
+      <!-- <li class="p-nav__list__item <?php echo is_page( 'rinsyo' )?'-is-active':'' ?>">
         <a href="<?php echo home_url(); ?>/rinsyo" class="p-nav__list__item__link">
-          臨床研究ご協力のお願い
+          患者の皆さまへ(臨床研究)
         </a>
-      </li>
+      </li> -->
       <li class="p-nav__list__item <?php echo is_archive()?'-is-active':'' ?>">
         <a href="<?php echo home_url(); ?>/news" class="p-nav__list__item__link">
           お知らせ
         </a>
       </li>
       <li class="p-nav__list__item">
-        <a href="#footer" class="p-nav__list__item__link">
+        <a href="#footer" class="p-nav__list__item__link" @click="isMenu=!isMenu">
           アクセス・お問い合わせ
         </a>
       </li>
@@ -72,11 +72,11 @@
           医療機関の方へ
         </a>
       </li> -->
-      <li class="p-nav__sublist__item">
-        <a href="<?php echo home_url(); ?>/kenkyusya" class="p-nav__sublist__item__link">
+      <!-- <li class="p-nav__sublist__item">
+        <a href="<?php echo home_url(); ?>/kenkyusya" class="p-nav__sublist__item__link <?php echo is_page( 'kenkyusya' )?'-is-active':'' ?>">
           研究者の方へ
         </a>
-      </li>
+      </li> -->
     </ul>
   </nav>
 </header>

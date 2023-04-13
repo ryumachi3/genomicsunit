@@ -28,7 +28,6 @@
 					<section class="l-iryo-rinsyo">
 						<ul class="p-info-list l-info-list">
 
-
 							<li class="p-info-list__item">
 								<a class="p-info-list__item__link">
 									<h3 class="p-info-list__item__title">
