@@ -5,7 +5,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
-  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?ver=0.0.4" type="text/css">
+  <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?ver=0.0.6" type="text/css">
   <?php wp_head(); ?>
   <link rel="SHORTCUT ICON" href="https://genomics-unit.pro/wp/wp-content/themes/genomicsunit/img/favicon.ico" />
   <meta name="description" content="がんの原因は遺伝子の変化であることが明らかになってきました。原因となる遺伝子が見つかれば、より効果的な治療が期待できます。これから先の治療に迷われている患者さんの一助になるよう、私たちが遺伝子検査をサポートいたします。">
@@ -18,6 +18,7 @@
   <meta property="og:site_name" content="慶應義塾大学医学部 腫瘍センター・ゲノム医療ユニット">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://genomics-unit.pro/wp/wp-content/themes/genomicsunit/img/ogp.jpg">
+  <script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
   <script type="text/javascript">

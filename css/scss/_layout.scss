@@ -213,6 +213,13 @@
   }
 }
 
+.l-container3{
+  padding-left: 16px;
+  @include mq(sp){
+    padding-left: 0;
+  }
+}
+
 .l-top-title{
   text-align: center;
   margin-bottom: 50px;
@@ -229,8 +236,39 @@
   text-align: center;
 }
 
+.l-top-news{
+  margin-bottom: 166px;
+  @include mq(sp){
+    margin-bottom: 100px;
+  }
+}
+
 .l-top-news-list{
   margin-bottom: 40px;
+  @include mq(sp){
+    margin-bottom: 32px;
+  }
+}
+
+.l-top-about{
+  margin-bottom: 166px;
+  @include mq(sp){
+    margin-bottom: 100px;
+  }  
+}
+
+.l-top-about-list{
+  margin-bottom: 40px;
+  @include mq(sp){
+    margin-bottom: 24px;
+  }
+}
+
+.l-top-kensa{
+  margin-bottom: 68px;
+  @include mq(sp){
+    margin-bottom: 0;
+  }  
 }
 
 .l-header-sp{
@@ -334,19 +372,55 @@
   display: flex;
 }
 
-.l-iryo-head-title{
+.l-iryo-head-title,
+.l-hoken-head-title
+{
   margin-bottom: 57px;
   @include mq(tb){
     margin-bottom: 60px;
   }
 }
 
-.l-iryo-description{
-  line-height: 1.675;
+.l-iryo-description,
+.l-hoken-description
+{
+  position: relative;
   margin-bottom: 112px;
+}
+
+.l-jihi-description
+{
+  position: relative;
+  margin-bottom: 112px;
+  width: 556px;
+  @include mq(sp){
+    width: 100%;
+  }
+}
+
+.l-iryo-description
+{
   @include mq(tb){
     margin-bottom: 70px;
   }
+}
+
+.l-hoken-description
+{
+  @include mq(sp){
+    margin-bottom: 30px;
+  }
+}
+
+.l-hoken-sec__intro{
+  margin-bottom: 24px;
+}
+
+.l-hoken-sec__note{
+  margin-top: 30px;
+  @include mq(sp){
+    margin-top: 20px;
+  }  
 }
 
 .l-iryo-news{
@@ -372,10 +446,78 @@
 
 .l-rinsyo-description{
   line-height: 1.675;
-  margin-bottom: 60px;
-  max-width: 560px;
+  margin-bottom: 4px;
   @include mq(tb){
-    margin-bottom: 60px;
   }
 }
 
+.l-about-head-title{
+  margin-bottom: 122px;
+}
+
+.l-about-main{
+  padding-top: 64px;
+}
+
+.l-about-main__title,
+.l-hoken-sec__title
+{
+  margin-bottom: 28px;
+}
+
+.l-about-main__description{
+  max-width: 543px;
+  position: relative;
+  @include mq(sp){
+    max-width: inherit;
+  }
+}
+
+.l-about-main__description + .l-about-main__title{
+  margin-top: 96px;
+  @include mq(sp){
+    margin-top: 60px;
+  }
+}
+
+.l-about-main__description__note{
+  margin-top: 1.2em;
+}
+
+.l-about-main__description__img{
+
+}
+
+.l-about-main__photo{
+  position: relative;
+  width: 100%;
+  height: 328px;
+  margin-top: 100px;
+  margin-bottom: 135px;
+  @include mq(sp){
+    height: auto;
+    margin-top: 95px;
+    margin-bottom: 133px;  
+  }
+}
+
+.l-hoken-sec__description + .l-hoken-sec__description{
+  margin-top: 30px;
+}
+
+.l-hoken-sec__hiyo{
+  margin-top: 44px;
+}
+
+.l-hoken-sec{
+  margin-bottom: 100px;
+  &.-last{
+    @include mq(sp){
+      margin-bottom: 0;
+    }
+  }
+}
+
+.l-hoken-sec__note + .l-hoken-sec__description{
+  margin-top: 30px;
+}

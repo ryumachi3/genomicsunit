@@ -18,9 +18,9 @@
 }
 
 .u-sp_br{
-  display: inline;
-  @include mq(tb) {
-    display: none;
+  display: none;
+  @include mq(sp) {
+    display: inline;
   }  
 }
 
@@ -46,11 +46,13 @@
 }
 
 .u-under-line{
-  position: relative;
-  vertical-align: baseline;
-  background: linear-gradient(transparent 30%, $point 30%, $point 100%, transparent 100%);
+  text-decoration: underline;
 }
 
 .u-txt-point{
   color: $point;  
+}
+
+.u-txt-iryo{
+  color: $color-iryo;  
 }

@@ -12,54 +12,54 @@
           HOME
         </a>
       </li>
-      <!-- <li class="p-nav__list__item">
-        <a href="" class="p-nav__list__item__link">
+      <li class="p-nav__list__item <?php echo is_page( 'about' )?'-is-active':'' ?>">
+        <a href="<?php echo home_url() ?>/about" class="p-nav__list__item__link">
           がん遺伝子検査について
         </a>
       </li>
-      <li class="p-nav__list__item">
-        <a href="" class="p-nav__list__item__link">
+      <li class="p-nav__list__item <?php echo is_page( 'hoken' )?'-is-active':'' ?>">
+        <a href="<?php echo home_url() ?>/hoken" class="p-nav__list__item__link">
           <span class="p-nav__list__item__link__txt">
             保険診療
           </span>
-          <span class="p-nav__list__item__link__day">
+          <!-- <span class="p-nav__list__item__link__day">
             <span class="p-nav__list__item__link__day__week__wrap">
               <span class="p-nav__list__item__link__day__week -tue">火</span>
               <span class="p-nav__list__item__link__day__week -thu">木</span>
             </span>
             <span class="p-nav__list__item__link__day__time">13:30〜15:00</span>
-          </span>
+          </span> -->
         </a>
       </li>
-      <li class="p-nav__list__item">
-        <a href="" class="p-nav__list__item__link">
+      <li class="p-nav__list__item <?php echo is_page( 'jihi' )?'-is-active':'' ?>">
+        <a href="<?php echo home_url() ?>/jihi" class="p-nav__list__item__link -point">
           <span class="p-nav__list__item__link__txt">
             自費診療
           </span>
-          <span class="p-nav__list__item__link__day">
+          <!-- <span class="p-nav__list__item__link__day">
             <span class="p-nav__list__item__link__day__week__wrap">
               <span class="p-nav__list__item__link__day__week -wed">水</span>
               <span class="p-nav__list__item__link__day__week -thu">木</span>
             </span>
             <span class="p-nav__list__item__link__day__time">13:30〜15:00</span>
-          </span>
+          </span> -->
         </a>
       </li>
-      <li class="p-nav__list__item">
+      <!-- <li class="p-nav__list__item">
         <a href="" class="p-nav__list__item__link">
           スタッフ紹介
         </a>
       </li> -->
-      <!-- <li class="p-nav__list__item <?php echo is_page( 'rinsyo' )?'-is-active':'' ?>">
+      <li class="p-nav__list__item <?php echo is_page( 'rinsyo' )?'-is-active':'' ?>">
         <a href="<?php echo home_url(); ?>/rinsyo" class="p-nav__list__item__link">
           患者の皆さまへ(臨床研究)
         </a>
-      </li> -->
-      <li class="p-nav__list__item <?php echo is_archive()?'-is-active':'' ?>">
+      </li>
+      <!-- <li class="p-nav__list__item <?php echo is_archive()?'-is-active':'' ?>">
         <a href="<?php echo home_url(); ?>/news" class="p-nav__list__item__link">
           お知らせ
         </a>
-      </li>
+      </li> -->
       <li class="p-nav__list__item">
         <a href="#footer" class="p-nav__list__item__link" @click="isMenu=!isMenu">
           アクセス・お問い合わせ
@@ -67,16 +67,16 @@
       </li>
     </ul>
     <ul class="p-nav__sublist l-nav__sublist">
-      <!-- <li class="p-nav__sublist__item">
-        <a href="" class="p-nav__sublist__item__link">
+      <li class="p-nav__sublist__item">
+        <a href="<?php echo home_url(); ?>/iryo" class="p-nav__sublist__item__link <?php echo is_page( 'iryo' )?'-is-active':'' ?>">
           医療機関の方へ
         </a>
-      </li> -->
-      <!-- <li class="p-nav__sublist__item">
+      </li>
+      <li class="p-nav__sublist__item">
         <a href="<?php echo home_url(); ?>/kenkyusya" class="p-nav__sublist__item__link <?php echo is_page( 'kenkyusya' )?'-is-active':'' ?>">
           研究者の方へ
         </a>
-      </li> -->
+      </li>
     </ul>
   </nav>
 </header>
@@ -89,7 +89,7 @@
           class="p-header-sp__logo__img">
       </a>
     </div>
-    <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" 　@click="isMenu=!isMenu">
+    <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" @click="isMenu=!isMenu">
       <div class="c-toggle__bar p-toggle__bar -bar01"></div>
       <div class="c-toggle__bar p-toggle__bar -bar02"></div>
       <div class="c-toggle__bar p-toggle__bar -bar03"></div>

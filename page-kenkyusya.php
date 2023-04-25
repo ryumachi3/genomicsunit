@@ -7,8 +7,8 @@
 				<section class="l-common-sec">
 					<h1 class="c-head-title l-head-title l-iryo-head-title">
 						<span class="c-head-title__char -iryo">研</span>
-						<span class="c-head-title__char -iryo-frame">究</span>
-						<span class="c-head-title__char -iryo-frame">者</span>
+						<span class="c-head-title__char -iryo">究</span>
+						<span class="c-head-title__char -iryo">者</span>
 						<span class="c-head-title__char -iryo-frame">の</span>
 						<span class="c-head-title__char -iryo-frame">方</span>
 						<span class="c-head-title__char -iryo-frame">へ</span>
@@ -16,6 +16,7 @@
 					<section class="l-iryo-description">
 						<p class="l-iryo-description__txt">ゲノム医療ユニットから研究者の方に向けたお知らせや臨床研究の内容をご紹介します。</p>
 					</section>
+					<?php /*
 					<section class="l-iryo-news">
 						<div class="l-top-title">
 							<h2 class="c-top-title">お知らせ</h2>
@@ -42,6 +43,7 @@
 							</a>
 						</div>
 					</section>
+					*/ ?>
 					<section class="l-iryo-rinsyo">
 						<h2 class="c-title l-iryo-rinsyo__title">臨床研究のご紹介</h2>
 						<div class="l-container2 l-iryo-rinsyo__description">
