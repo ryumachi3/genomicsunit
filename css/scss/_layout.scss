@@ -203,6 +203,9 @@
   margin-right: auto;
   &.-footer{
   }
+  &.-staff{
+    max-width: 732px;
+  }
 }
 
 .l-container2{
@@ -373,7 +376,8 @@
 }
 
 .l-iryo-head-title,
-.l-hoken-head-title
+.l-hoken-head-title,
+.l-staff-head-title
 {
   margin-bottom: 57px;
   @include mq(tb){
@@ -386,6 +390,13 @@
 {
   position: relative;
   margin-bottom: 112px;
+}
+
+.l-staff-description{
+  margin-bottom: 50px;
+  @include mq(sp){
+    margin-bottom: 40px;
+  }
 }
 
 .l-jihi-description
@@ -520,4 +531,32 @@
 
 .l-hoken-sec__note + .l-hoken-sec__description{
   margin-top: 30px;
+}
+
+.l-doctor-sec__title{
+  margin-bottom: 36px;
+}
+
+.l-doctor-sec{
+  margin-bottom: 76px;
+}
+
+.l-staff-sec{
+  margin-bottom: 70px;
+  @include mq(sp){
+    margin-bottom: 0;
+  }
+}
+
+.l-staff-sec__title{
+  margin-bottom: 30px;
+}
+
+.l-doctor-sec__modal__description__title{
+  margin-bottom: 16px;
+}
+
+.l-doctor-sec__modal__description__txt{
+  margin-left: 8px;
+  margin-bottom: 40px;
 }

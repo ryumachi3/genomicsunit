@@ -60,3 +60,29 @@ span.page-numbers
     background-position: 55% center;
   }
 }
+
+.modal{
+  display: none;  
+  color: $main-txt;
+}
+
+.fancybox__content > .carousel__button.is-close{
+  top: 25px;
+  right: 23px;
+  color: $main-txt;
+  svg{
+    display: none;
+    filter: none;
+  }
+  &::before{
+    content: '';
+    width: 33px;
+    height: 38px;
+    display: block;
+    background-image: url(../img/close_modal.svg);
+    background-size: 100% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
