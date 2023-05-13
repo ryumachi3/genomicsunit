@@ -2,14 +2,18 @@
 <html lang="ja">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MDQSLD8');</script>
-  <!-- End Google Tag Manager -->  
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />  
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css?ver=0.0.6" type="text/css">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MDQSLD8');</script>
+  <!-- End Google Tag Manager -->
   <?php wp_head(); ?>
   <link rel="SHORTCUT ICON" href="https://genomics-unit.pro/wp/wp-content/themes/genomicsunit/img/favicon.ico" />
   <meta name="description" content="がんの原因は遺伝子の変化であることが明らかになってきました。原因となる遺伝子が見つかれば、より効果的な治療が期待できます。これから先の治療に迷われている患者さんの一助になるよう、私たちが遺伝子検査をサポートいたします。">
@@ -42,9 +46,10 @@
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDQSLD8"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDQSLD8"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div id="app">
     <!-- <transition name="loadin">
       <div v-if="isloading" class="c-loading p-loading">
