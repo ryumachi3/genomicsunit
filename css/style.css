@@ -182,15 +182,6 @@ img, svg {
   height: auto;
 }
 
-@-webkit-keyframes fadebody {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes fadebody {
   0% {
     opacity: 0;
@@ -630,8 +621,8 @@ select:focus {
 }
 @media screen and (max-width: 960px) {
   .l-iryo-head-title,
-.l-hoken-head-title,
-.l-staff-head-title {
+  .l-hoken-head-title,
+  .l-staff-head-title {
     margin-bottom: 60px;
   }
 }
@@ -2285,7 +2276,7 @@ select:focus {
 }
 @media screen and (max-width: 768px) {
   .p-jihi-sec__description__hiyo,
-.p-jihi-sec__description__kekka {
+  .p-jihi-sec__description__kekka {
     display: block;
   }
 }
@@ -2325,7 +2316,7 @@ select:focus {
 
 @media screen and (max-width: 768px) {
   .p-jihi-sec__description__hiyo__title,
-.p-jihi-sec__description__kekka__title {
+  .p-jihi-sec__description__kekka__title {
     margin-bottom: 0.3em;
   }
 }
@@ -2737,6 +2728,11 @@ select:focus {
   width: 100%;
   max-width: 800px;
 }
+@media screen and (max-width: 768px) {
+  .p-doctor-sec__modal {
+    padding: 80px 10px 40px;
+  }
+}
 
 .p-doctor-sec__modal__profile__img {
   width: 180px;
@@ -2745,7 +2741,7 @@ select:focus {
      object-fit: cover;
   aspect-ratio: 1/1;
   display: block;
-  margin-bottom: 12px;
+  margin: 0 auto 12px;
 }
 
 .p-doctor-sec__modal__profile__info__name__wrap {
@@ -2753,6 +2749,11 @@ select:focus {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 0.3em;
+}
+@media screen and (max-width: 768px) {
+  .p-doctor-sec__modal__profile__info__name__wrap {
+    justify-content: center;
+  }
 }
 
 .p-doctor-sec__modal__profile__info__name {
@@ -2773,6 +2774,11 @@ select:focus {
   font-size: 14px;
   color: #bbb;
   margin-bottom: 34px;
+}
+@media screen and (max-width: 768px) {
+  .p-doctor-sec__modal__profile__info__kana {
+    text-align: center;
+  }
 }
 
 .p-doctor-sec__modal__profile__info__field__title {
@@ -2808,13 +2814,30 @@ select:focus {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .p-doctor-sec__modal {
+    flex-direction: column;
+  }
+}
 
 .p-doctor-sec__modal__profile {
   width: 180px;
 }
+@media screen and (max-width: 768px) {
+  .p-doctor-sec__modal__profile {
+    width: 90%;
+    margin: 0 auto 40px;
+  }
+}
 
 .p-doctor-sec__modal__description {
   width: calc(100% - 220px);
+}
+@media screen and (max-width: 768px) {
+  .p-doctor-sec__modal__description {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .p-doctor-sec__modal__description__title {
@@ -2931,6 +2954,64 @@ span.page-numbers {
   color: #2C4680;
 }
 
+.fancybox__slide {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+@media screen and (max-width: 768px) {
+  .fancybox__slide {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.fancybox__thumb {
+  width: 80px;
+  height: 80px;
+}
+
+.fancybox__thumbs .carousel__slide {
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .fancybox__thumbs .carousel__slide {
+    display: none;
+  }
+}
+
+.carousel__button {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .carousel__button {
+    color: #000;
+  }
+}
+.carousel__button svg {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .carousel__button svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__button.is-next {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel__button.is-prev {
+    top: 40%;
+  }
+}
+
 .fancybox__content > .carousel__button.is-close {
   top: 25px;
   right: 23px;
@@ -2949,6 +3030,10 @@ span.page-numbers {
   background-size: 100% auto;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.fancybox__thumbs .carousel__slide .fancybox__thumb::after {
+  border-color: #F1C400;
 }
 
 .mt8 {

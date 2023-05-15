@@ -37,7 +37,7 @@ gulp.task('sass', function () {
 gulp.task('browser-sync', function () {
   browserSync.init({
     // vccwで設定したipアドレス
-    proxy: "http://genomicsunit.local/",
+    proxy: "http://genomics-unit.local/",
     open: true,
     watchOptions: {
       debounceDelay: 1000
