@@ -282,6 +282,8 @@
 }
 
 .p-kv__inner__title__char{
+  
+  overflow: hidden;
   width: 66px;
   height: 66px;
   display: block;
@@ -308,6 +310,9 @@
       background-color: rgba($color: #fff, $alpha: .5);
     }  
   }
+}
+
+.p-kv__inner__title__char__inner{
 }
 
 .p-kv__inner__title__char + .p-kv__inner__title__char{

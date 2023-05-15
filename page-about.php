@@ -7,21 +7,22 @@
 				<section class="l-common-sec">
 				<h1 class="c-head-title__wrap l-head-title l-iryo-head-title">
 						<div class="c-head-title">
-							<span class="c-head-title__char -navy">が</span>
-							<span class="c-head-title__char -navy">ん</span>
-							<span class="c-head-title__char -navy">遺</span>
-							<span class="c-head-title__char -navy">伝</span>
-							<span class="c-head-title__char -navy">子</span>
-							<span class="c-head-title__char -navy">検</span>
-							<span class="c-head-title__char -navy">査</span>
+							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">が</span></span>
+							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">ん</span></span>
+							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">遺</span></span>
+							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">伝</span></span>
+							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">子</span></span>
+							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">検</span></span>
+							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">査</span></span>
 						</div>
 						<div class="c-head-title">
-							<span class="c-head-title__char -navy-frame">に</span>
-							<span class="c-head-title__char -navy-frame">つ</span>
-							<span class="c-head-title__char -navy-frame">い</span>
-							<span class="c-head-title__char -navy-frame">て</span>
+							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">に</span></span>
+							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">つ</span></span>
+							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">い</span></span>
+							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">て</span></span>
 						</div>
 					</h1>
+					<div class="c-contents">
 					<section class="l-about-main">
 						<h2 class="c-title l-about-main__title">がんの原因は遺伝子の変化</h2>
 						<div class="l-container3 l-about-main__description p-about-main__description -desc01">
@@ -110,6 +111,7 @@
 							</li>
 						</ul>
 					</section>
+				</div>
 				</section>
 			</div>
 		</div>

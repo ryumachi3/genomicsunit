@@ -89,7 +89,8 @@
           class="p-header-sp__logo__img">
       </a>
     </div>
-    <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" @click="isMenu=!isMenu">
+    <!-- <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" @click="isMenu=!isMenu"> -->
+    <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" @click="clickMenu()">
       <div class="c-toggle__bar p-toggle__bar -bar01"></div>
       <div class="c-toggle__bar p-toggle__bar -bar02"></div>
       <div class="c-toggle__bar p-toggle__bar -bar03"></div>

@@ -42,6 +42,8 @@
   <script type="application/javascript">
     var template_url = '<?php bloginfo('template_url'); ?>';
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script type="application/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js?ver=0.0.1" defer></script>
 </head>
 

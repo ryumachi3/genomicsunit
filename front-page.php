@@ -20,28 +20,28 @@
           </div>
           <div class="p-kv__inner__title">
             <div class="p-kv__inner__title__line1">
-              <span class="p-kv__inner__title__char -navy">遺</span>
-              <span class="p-kv__inner__title__char -navy">伝</span>
-              <span class="p-kv__inner__title__char -navy">子</span>
-              <span class="p-kv__inner__title__char -navy">検</span>
-              <span class="p-kv__inner__title__char -navy">査</span>
-              <span class="p-kv__inner__title__char -white">で</span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">遺</span></span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">伝</span></span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">子</span></span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">検</span></span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">査</span></span>
+              <span class="p-kv__inner__title__char -white"><span class="p-kv__inner__title__char__inner">で</span></span>
             </div>
             <div class="p-kv__inner__title__line2">
-              <span class="p-kv__inner__title__char -navy">が</span>
-              <span class="p-kv__inner__title__char -navy">ん</span>
-              <span class="p-kv__inner__title__char -navy">治</span>
-              <span class="p-kv__inner__title__char -navy">療</span>
-              <span class="p-kv__inner__title__char -white">が</span>
-              <span class="p-kv__inner__title__char -white">変</span>
-              <span class="p-kv__inner__title__char -white">わ</span>
-              <span class="p-kv__inner__title__char -white">る</span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">が</span></span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">ん</span></span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">治</span></span>
+              <span class="p-kv__inner__title__char -navy"><span class="p-kv__inner__title__char__inner">療</span></span>
+              <span class="p-kv__inner__title__char -white"><span class="p-kv__inner__title__char__inner">が</span></span>
+              <span class="p-kv__inner__title__char -white"><span class="p-kv__inner__title__char__inner">変</span></span>
+              <span class="p-kv__inner__title__char -white"><span class="p-kv__inner__title__char__inner">わ</span></span>
+              <span class="p-kv__inner__title__char -white"><span class="p-kv__inner__title__char__inner">る</span></span>
             </div>
           </div>
         </div>
         <div class="p-kv__inner__description">
-          <p class="p-kv__inner__description__txt">
-            <span class="u-txt-point">がんの原因は遺伝子の変化</span>であることが明らかになってきました。<br>原因となる遺伝子が見つかれば、より効果的な治療が期待できます。<br>これから先の治療に迷われている患者さんの一助になるよう、私たちが遺伝子検査をサポートいたします。
+          <p class="p-kv__inner__description__txt ">
+            <span class="u-txt-point g-mv-txt-point">がんの原因は遺伝子の変化</span>であることが明らかになってきました。<br>原因となる遺伝子が見つかれば、より効果的な治療が期待できます。<br>これから先の治療に迷われている患者さんの一助になるよう、私たちが遺伝子検査をサポートいたします。
           </p>
           <img src="<?php echo get_theme_file_uri() ?>/img/kv_illust.png" alt=""
             class="p-kv__inner__description__illust">
