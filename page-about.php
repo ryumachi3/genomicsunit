@@ -60,7 +60,13 @@
 					</section>
 					<section class="l-top-kensa">
 						<div class="l-top-title">
-							<h2 class="c-top-title">検査の種類</h2>
+							<h2 class="c-top-title">
+								<span class="c-top-title-child"><span class="c-top-title-child-inner">検</span></span>
+								<span class="c-top-title-child"><span class="c-top-title-child-inner">査</span></span>
+								<span class="c-top-title-child"><span class="c-top-title-child-inner">の</span></span>
+								<span class="c-top-title-child"><span class="c-top-title-child-inner">種</span></span>
+								<span class="c-top-title-child"><span class="c-top-title-child-inner">類</span></span>
+							</h2>
 						</div>
 						<ul class="p-kensa-list l-top-kensa-list">
 							<li class="p-kensa-list__item">

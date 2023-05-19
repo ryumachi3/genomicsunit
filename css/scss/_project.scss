@@ -55,27 +55,45 @@
   background-color: $white;
   overflow: hidden;
 
+  &:hover {
+    transform: translate(10px, 0);
+    transition: all 0.5s;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 100%;
+      background-color: #2c4680;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+
+
   &.-is-active {
     transform: translate(10px, 0);
 
-    .p-nav__list__item__link {
-      padding-left: 1.25em;
+    //   .p-nav__list__item__link {
+    //     padding-left: 1.25em;
 
-      &::before {
-        content: '';
-        display: block;
-        width: 12px;
-        height: 100%;
-        background-color: #2c4680;
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-
-      &.-point::before {
-        background-color: $point;
-      }
+    &::before {
+      content: '';
+      display: block;
+      width: 12px;
+      height: 100%;
+      background-color: #2c4680;
+      position: absolute;
+      left: 0;
+      top: 0;
     }
+
+    //     &.-point::before {
+    //       background-color: $point;
+    //     }
+    //   }
   }
 }
 
@@ -176,6 +194,22 @@
   padding-bottom: 1.07em;
   text-align: center;
   position: relative;
+
+  &:hover {
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(90%, -50%);
+      width: 0;
+      height: 0;
+      border-left: 14px solid $color-iryo;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+    }
+  }
 
   &.-is-active {
     &::after {
