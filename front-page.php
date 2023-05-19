@@ -131,7 +131,18 @@
         */ ?>
         <section class="l-top-about">
           <div class="l-top-title">
-            <h2 class="c-top-title">がん遺伝子検査とは？</h2>
+            <h2 class="c-top-title">
+              <span class="c-top-title-child">が</span>
+              <span class="c-top-title-child">ん</span>
+              <span class="c-top-title-child">遺</span>
+              <span class="c-top-title-child">伝</span>
+              <span class="c-top-title-child">子</span>
+              <span class="c-top-title-child">検</span>
+              <span class="c-top-title-child">査</span>
+              <span class="c-top-title-child">と</span>
+              <span class="c-top-title-child">は</span>
+              <span class="c-top-title-child">？</span>
+            </h2>
           </div>
           <ul class="p-about-list l-top-about-list">
             <li class="p-about-list__item">
@@ -158,13 +169,19 @@
           <div class="l-btn">
             <a href="<?php echo get_home_url() ?>/about" class="c-btn">
             がん遺伝子検査について
-            </a>
+            </a> 
           </div>
         </section>
 
         <section class="l-top-kensa">
           <div class="l-top-title">
-            <h2 class="c-top-title">検査の種類</h2>
+            <h2 class="c-top-title">
+              <span class="c-top-title-child">検</span>
+              <span class="c-top-title-child">査</span>
+              <span class="c-top-title-child">の</span>
+              <span class="c-top-title-child">種</span>
+              <span class="c-top-title-child">類</span>
+            </h2>
           </div>
           <ul class="p-kensa-list l-top-kensa-list">
             <li class="p-kensa-list__item">
