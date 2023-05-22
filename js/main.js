@@ -18,6 +18,11 @@ new Vue({
     isPC: false,
     isloading: true,
     isloadingLogo: false,
+    cursorX: 0,
+    cursorY: 0,
+    cursorW: '40px',
+    cursorH: '40px',
+    cursorRadius: '50%',
   },
   mounted() {
 
@@ -27,6 +32,7 @@ new Vue({
 
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
+    window.addEventListener('mousemove', this.handleMousemove);
 
     if (window.innerWidth >= PC) {
       this.isPC = true;
@@ -44,13 +50,14 @@ new Vue({
       this.isTopPage = true;
       this.isloadingLogo = false;
 
-      gsap
-        .timeline({ repeat: 0, repeatDelay: 0.5 })
+
+      const mvtl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
+
+      mvtl
         .from(".p-kv__inner__title__line1", {
           x: 20,
           autoAlpha: 0,
           duration: .5,
-          delay: 2
         })
         .from(".p-kv__inner__title__line2", {
           x: -20,
@@ -58,7 +65,7 @@ new Vue({
           duration: .5,
         }, "<")
         .from(".p-kv__inner__title__char__inner", {
-          y: 100,
+          y: 60,
           duration: .8,
           ease: "power4.out",
           stagger: 0.1, // 0.02秒ごとに出現
@@ -79,7 +86,7 @@ new Vue({
           autoAlpha: 0,
           ease: "power2.out",
         }, "<")
-        .from(".p-kv__inner__description__illust", {
+        .from(".p-kv__inner__description__illust__wrap", {
           duration: 1,
           autoAlpha: 0,
           ease: "power2.out",
@@ -124,13 +131,18 @@ new Vue({
       }
       console.log('rootPath', rootPath);
 
+      gsap.to(".l-common-sec", {
+        opacity: 1,
+        duration: .01,
+      })
+
+
       gsap
         .timeline({ repeat: 0, repeatDelay: 0.5 })
         .from(".c-head-title", {
-          y: 20,
-          autoAlpha: 0,
+          y: 10,
+          opacity: 0,
           duration: .5,
-          delay: 2
         })
         .from(".c-head-title__char__inner", {
           y: 100,
@@ -138,17 +150,17 @@ new Vue({
           ease: "power4.out",
           stagger: 0.03, // 0.02秒ごとに出現
         })
-        .from(".p-header__logo,.p-nav", {
-          autoAlpha: 0,
-          duration: .7,
-          ease: "power2.out",
-        })
+        // .from(".p-header__logo,.p-nav", {
+        //   autoAlpha: 0,
+        //   duration: .7,
+        //   ease: "power2.out",
+        // })
         .from(".c-contents", {
           autoAlpha: 0,
           duration: .7,
           y: 20,
           ease: "power2.out",
-        }, "<")
+        })
     }
 
 
@@ -163,15 +175,98 @@ new Vue({
     //   ease: "power4.out",
     // })
 
-    gsap
-      .timeline({ repeat: 0, repeatDelay: 0.5 })
-      .from(".c-top-title-child", {
-        scrollTrigger: ".c-top-title", // .boxがビューポート内に入った時にアニメーションが開始。
-        y: 100,
-        duration: .8,
+
+    
+    const staggerPoint = gsap.utils.toArray(".u-txt-point");
+
+    staggerPoint.forEach((point) => {
+      gsap.from(point, {
+        color: '#2C4680',
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: point,
+          start: 'top 88%'
+        },
+      });
+    });
+
+
+    const staggerTopTitle = gsap.utils.toArray(".c-top-title");
+    staggerTopTitle.forEach((title) => {
+      gsap.from(title.querySelectorAll(".c-top-title-child"), {
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: title,
+          start: 'top 90%'
+        },
+      });
+    });
+
+
+    const staggerSquareTitle = gsap.utils.toArray(".c-square-title");
+    staggerSquareTitle.forEach((title) => {
+      gsap.from(title.querySelectorAll(".c-square-title__char__inner"), {
+        y: 40,
+        stagger: 0.1,
+        duration: 0.5,
         ease: "power4.out",
-        stagger: 0.1, // 0.02秒ごとに出現
+        scrollTrigger: {
+          trigger: title,
+          start: 'top 95%'
+        },
+      });
+    });
+
+    const staggerTitle = gsap.utils.toArray(".c-title");
+    staggerTitle.forEach((title) => {
+      gsap.timeline({ 
+        repeat: 0,
+        scrollTrigger: {
+          trigger: title,
+          start: 'top 88%'
+        },
       })
+      .from(title.querySelector(".c-title__line-tate"), {
+        height: 0,
+        duration: 1,
+        ease: "power4.out",
+      })
+      .from(title.querySelector(".c-title__line-yoko"), {
+        width: 0,
+        duration: 1.3,
+        ease: "power4.out",
+      }, "<");
+    });
+
+    gsap.to('.g-nav-access-horn', {
+      x: 0,
+      duration: 0.25,
+      ease: "power4.out",
+      scrollTrigger: {
+        trigger: '.g-access',
+        start: 'top 95%',
+        end: 'bottom top', // アニメーションを元に戻す位置を指定
+        toggleActions: "play reverse play reverse" // アニメーションの再生と逆再生を指定 
+      },
+    });
+
+    // gsap.to('.g-nav-access', {
+    //   x: 10,
+    //   duration: 0.15,
+    //   ease: "power4.out",
+    //   scrollTrigger: {
+    //     trigger: '.g-access',
+    //     start: 'top 95%',
+    //     end: 'bottom top', // アニメーションを元に戻す位置を指定
+
+    //     toggleActions: "play reverse play reverse" // アニメーションの再生と逆再生を指定 
+    //   },
+    // });
+
 
 
   },
@@ -194,6 +289,16 @@ new Vue({
       (window.scrollY > 30) ? this.isDown = true : this.isDown = false;
     },
     handleResize() {
+
+      const title_tate = document.querySelectorAll(".c-title__line-tate");
+      title_tate.forEach((element) => {
+        element.style = "";
+      });      
+      const title_yoko = document.querySelectorAll(".c-title__line-yoko");
+      title_yoko.forEach((element) => {
+        element.style = "";
+      });      
+
       if (window.innerWidth >= PC) {
         this.isPC = true;
         this.isTb = false;
@@ -205,5 +310,43 @@ new Vue({
         this.isTb = false;
       }
     },
+    handleMousemove(event) {
+      // this.cursorX = event.clientX;
+      // this.cursorY = event.clientY;
+    //   const pointer = this.$refs.cursor;
+
+    //   // マウス下の要素一覧を取得
+    //   const elements = document.elementsFromPoint(event.clientX, event.clientY);
+    //   // `sticky` クラスが付いている要素を探す
+    //   const target = elements.find((el) => el.classList.contains("sticky"));
+
+    //   if (target) {
+    //     // sticky要素があった時はポインターを要素と同じ場所・大きさに変形させる
+    //     // const rect = target.getBoundingClientRect();
+    //     // const top = rect.top + rect.height / 2;
+    //     // const left = rect.left + rect.width / 2;
+    //     // const { width, height } = rect;
+    //     // const borderRadius = Math.min(rect.height, rect.width) * 0.1;
+    
+    //     // this.cursorX = event.clientX;
+    //     // this.cursorY = event.clientY;
+    //     // this.cursorW = width;
+    //     // this.cursorH = height;
+    //     // this.cursorRadius = borderRadius;
+    //     pointer.style.opacity = 0; // カーソル要素を透明にする
+    //     pointer.style.animation = "none"; // カーソル要素のアニメーションを無効化する
+    //   } else {
+    //     // sticky要素がない場合は元の形状に戻す
+    //     // this.cursorW = "40px";
+    //     // this.cursorH = "40px";
+    //     // this.cursorRadius = "50%";
+    
+    //     pointer.style.opacity = .78; // カーソル要素を表示する
+
+    //     // マウス座標に移動させる
+    //     this.cursorX = event.clientX;
+    //     this.cursorY = event.clientY;
+    //   }      
+    }
   }
 })

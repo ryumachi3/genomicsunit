@@ -17,7 +17,7 @@
 							<img class="p-hoken-sec__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_sinryo01.png" alt="">
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
-							<h2 class="c-title l-hoken-sec__title">保険診療検査の種類と費用</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>保険診療検査の種類と費用</h2>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">OncoGuide™️ NCCオンコパネル システム</h3>
@@ -59,7 +59,7 @@
 							</div>
 						</section>
 						<section class="l-hoken-sec -sec02">
-							<h2 class="c-title l-hoken-sec__title">保険診療検査の対象となる方</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>保険診療検査の対象となる方</h2>
 							<div class="l-container2">
 								<ul class="p-hoken-sec__taisyo__list">
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">病理組織学的検査によって悪性腫瘍（がん）と診断された方</li>
@@ -77,7 +77,7 @@
 							</div>
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec03">
-							<h2 class="c-title l-hoken-sec__title">受診の流れ</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>受診の流れ</h2>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
@@ -119,7 +119,7 @@
 
 
 						<section class="l-hoken-sec -sec04 -last">
-							<h2 class="c-title l-hoken-sec__title">検査後の治療について</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>検査後の治療について</h2>
 							<div class="l-container2">
 								<ul class="p-hoken-sec__taisyo__list">
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">現在、保険診療で認められている標準治療が行われている患者さんは、その標準治療が優先され、遺伝子検査の結果に基づく治療は全ての標準治療が終了した後の選択肢として考慮されます。</li>

@@ -45,7 +45,7 @@
 							</div>
 						</section> -->
 						<section class="l-hoken-sec p-hoken-sec -sec01">
-							<h2 class="c-title l-hoken-sec__title">検査のご予約方法</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>検査のご予約方法</h2>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">保険診療の場合</h3>
@@ -65,7 +65,7 @@
 							</div>
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec02">		
-							<h2 class="c-title l-hoken-sec__title">病理検体の準備について</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の準備について</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
 								<p class="p-hoken-sec__intro__txt">1回目の受診後に、病理検体をご準備いただきますので、<span class="u-txt-point">ご予約前に病理検体の有無をご確認ください</span>。核酸抽出検査を行うための手術・生検時のホルマリン固定パラフィン包埋（FFPE）から作成された未染色標本が必要となります。</p>
 							</div>

@@ -77,6 +77,8 @@ span.page-numbers {
   @include mq(sp) {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -103,6 +105,8 @@ span.page-numbers {
   }
 
   svg {
+    filter: none;
+
     width: 100px;
     height: 100px;
 
@@ -115,13 +119,13 @@ span.page-numbers {
 
 .carousel__button.is-next {
   @include mq(sp) {
-    top: 40%;
+    top: 200px;
   }
 }
 
 .carousel__button.is-prev {
   @include mq(sp) {
-    top: 40%;
+    top: 200px;
   }
 }
 
@@ -145,6 +149,10 @@ span.page-numbers {
     background-position: center center;
     background-repeat: no-repeat;
   }
+}
+
+.fancybox__thumbs{
+  padding-top: 6px;
 }
 
 .fancybox__thumbs .carousel__slide .fancybox__thumb::after {

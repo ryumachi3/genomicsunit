@@ -46,7 +46,7 @@
 						</section>
 						*/ ?>
 						<section class="l-iryo-rinsyo">
-							<h2 class="c-title l-iryo-rinsyo__title">臨床研究のご紹介</h2>
+							<h2 class="c-title l-iryo-rinsyo__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>臨床研究のご紹介</h2>
 							<div class="l-container2 l-iryo-rinsyo__description">
 								<p class="l-iryo__description__txt">ゲノム医療ユニットで実施中の臨床研究については<a href="<?php echo get_theme_file_uri() ?>/rinsyo" class="">臨床研究ご協力のお願い</a>をご覧ください。</p>
 							</div>
