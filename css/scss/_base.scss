@@ -21,7 +21,7 @@ $bg-base: #fff;
 $bg: #EFF5F7;
 $bg_point: #F2E9E8;
 $bg-gray: #fafafa;
-$main-txt: #2C4680;
+$main-txt: #001E62;
 $light-txt: #666666;
 $white: #fff;
 $color-iryo: #55B5C1;
@@ -152,7 +152,7 @@ img,svg {
 
 // 文字選択時の色
 ::selection {
-//  background: 
+  background: rgba($color: #FFF593, $alpha: .5)
 }
 //Firefox
 ::-moz-selection {

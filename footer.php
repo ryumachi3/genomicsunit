@@ -4,7 +4,7 @@
       <div class="l-footer">
         <div class="l-footer__inner">
           <div class="l-container -footer">
-            <h2 class="c-title -white l-footer__title">アクセス・お問い合わせ</h2>
+            <h2 class="c-title -white l-footer__title g-access"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>アクセス・お問い合わせ</h2>
             <div class="l-footer__contents">
               <address class="l-footer__contents__main">
                 <p>

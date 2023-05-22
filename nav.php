@@ -1,23 +1,23 @@
 <header class="l-header p-header" :class="[ isMenu ? '-ismenu' : '' ]">
   <div class="l-header__logo p-header__logo">
     <a href="<?php echo home_url(); ?>" class="p-header__logo__link">
-      <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="慶應義塾大学病院腫瘍センター ゲノム医療ユニット"
+      <img width="262" height="69"  src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="慶應義塾大学病院腫瘍センター ゲノム医療ユニット"
         class="p-header__logo__img">
     </a>
   </div>
   <nav class="p-nav" :class="isMenu?'-open':''">
     <ul class="p-nav__list l-nav__list">
-      <li class="p-nav__list__item <?php echo is_home() || is_front_page()?'-is-active':'' ?>">
+      <li class="p-nav__list__item -line <?php echo is_home() || is_front_page()?'-is-active':'' ?>">
         <a href="<?php echo home_url() ?>" class="p-nav__list__item__link ">
           HOME
         </a>
       </li>
-      <li class="p-nav__list__item <?php echo is_page( 'about' )?'-is-active':'' ?>">
+      <li class="p-nav__list__item -line <?php echo is_page( 'about' )?'-is-active':'' ?>">
         <a href="<?php echo home_url() ?>/about" class="p-nav__list__item__link">
           がん遺伝子検査について
         </a>
       </li>
-      <li class="p-nav__list__item <?php echo is_page( 'hoken' )?'-is-active':'' ?>">
+      <li class="p-nav__list__item -line <?php echo is_page( 'hoken' )?'-is-active':'' ?>">
         <a href="<?php echo home_url() ?>/hoken" class="p-nav__list__item__link">
           <span class="p-nav__list__item__link__txt">
             保険診療
@@ -31,7 +31,7 @@
           </span> -->
         </a>
       </li>
-      <li class="p-nav__list__item <?php echo is_page( 'jihi' )?'-is-active':'' ?>">
+      <li class="p-nav__list__item -line -point <?php echo is_page( 'jihi' )?'-is-active':'' ?>">
         <a href="<?php echo home_url() ?>/jihi" class="p-nav__list__item__link -point">
           <span class="p-nav__list__item__link__txt">
             自費診療
@@ -45,22 +45,23 @@
           </span> -->
         </a>
       </li>
-      <!-- <li class="p-nav__list__item">
-        <a href="" class="p-nav__list__item__link">
+      <li class="p-nav__list__item -line <?php echo is_page( 'staff' )?'-is-active':'' ?>">
+        <a href="<?php echo home_url(); ?>/staff" class="p-nav__list__item__link">
           スタッフ紹介
         </a>
-      </li> -->
-      <li class="p-nav__list__item <?php echo is_page( 'rinsyo' )?'-is-active':'' ?>">
+      </li>
+      <li class="p-nav__list__item -line <?php echo is_page( 'rinsyo' )?'-is-active':'' ?>">
         <a href="<?php echo home_url(); ?>/rinsyo" class="p-nav__list__item__link">
           患者の皆さまへ(臨床研究)
         </a>
       </li>
-      <!-- <li class="p-nav__list__item <?php echo is_archive()?'-is-active':'' ?>">
+      <li class="p-nav__list__item -line <?php echo is_archive()?'-is-active':'' ?>">
         <a href="<?php echo home_url(); ?>/news" class="p-nav__list__item__link">
           お知らせ
         </a>
-      </li> -->
-      <li class="p-nav__list__item">
+      </li>
+      <li class="p-nav__list__item -balloon g-nav-access">
+        <span class="p-nav__list__item__horn g-nav-access-horn"></span>
         <a href="#footer" class="p-nav__list__item__link" @click="isMenu=!isMenu">
           アクセス・お問い合わせ
         </a>

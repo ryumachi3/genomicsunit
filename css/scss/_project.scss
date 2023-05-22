@@ -53,47 +53,79 @@
   border-radius: 10px;
   font-size: rem(16);
   background-color: $white;
-  overflow: hidden;
-
+  transition: transform 0.25s;
+  position: relative;
+  &.-line {
+    overflow: hidden;
+  }
+  &.-line::before {
+    transition: transform 0.15s;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 100%;
+    background-color: #2C4680;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-20px,0);
+  }
+  &.-line.-point::before {
+    background-color: $point;
+  }  
   &:hover {
-    transform: translate(10px, 0);
-    transition: all 0.5s;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 12px;
-      height: 100%;
-      background-color: #2c4680;
-      position: absolute;
-      left: 0;
-      top: 0;
+    transform: translateX(10px);
+    &.-balloon {
+      @include mq(pc) {
+        transform: translateX(-10px);
+      }
+    }
+    &.-line::before {
+      transform: translate(0,0);
     }
   }
 
 
 
+  .p-nav__list__item__horn {
+    transition: transform .12s ease-out;
+    position: absolute;
+    right: -12px;
+    top: calc(50% - 6px);
+    transform: translateX(-100%);
+    transform-origin: 0 50%;
+    width: 0;
+    height: 0;
+    border-left: 14px solid $white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    @include mq(pc) {
+      transform: translateX(0);
+      right: initial;
+      left: 0;
+      border-left: none;
+      border-right: 14px solid $white;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;  
+    }
+  }
+  &:hover {
+    .p-nav__list__item__horn {
+      transform: translateX(0);
+      @include mq(pc) {
+        transform: translateX(-90%);
+      }  
+    }
+  }
+
   &.-is-active {
     transform: translate(10px, 0);
-
-    //   .p-nav__list__item__link {
-    //     padding-left: 1.25em;
-
-    &::before {
-      content: '';
-      display: block;
-      width: 12px;
-      height: 100%;
-      background-color: #2c4680;
-      position: absolute;
-      left: 0;
-      top: 0;
+    &.-line::before {
+      transform: translate(0,0);
     }
-
-    //     &.-point::before {
-    //       background-color: $point;
-    //     }
-    //   }
+    &.-line.-point::before {
+      background-color: $point;
+    }
   }
 }
 
@@ -173,8 +205,6 @@
 
 .p-nav__sublist__item {
   width: 200px;
-  border-radius: 999px;
-  background-color: $color-iryo;
   margin-left: auto;
   margin-right: auto;
 }
@@ -184,6 +214,8 @@
 }
 
 .p-nav__sublist__item__link {
+  border-radius: 999px;
+  background-color: $color-iryo;
   color: $white;
   text-decoration: none;
   display: block;
@@ -194,47 +226,63 @@
   padding-bottom: 1.07em;
   text-align: center;
   position: relative;
-
-  &:hover {
-
-    &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translate(90%, -50%);
-      width: 0;
-      height: 0;
-      border-left: 14px solid $color-iryo;
+  transition: transform .25s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+  &::after {
+    transition: transform .12s ease-out,background-color .25s ease-out,border-color .25s ease-out;
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: calc(50% - 6px);
+    transform: translateX(-100%);
+    transform-origin: 0 50%;
+    width: 0;
+    height: 0;
+    border-left: 14px solid $color-iryo;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    @include mq(pc) {
+      transform: translateX(0);
+      right: initial;
+      left: 0;
+      border-left: none;
+      border-right: 14px solid $color-iryo;
       border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
+      border-bottom: 8px solid transparent;  
     }
+  }
+  &:hover {
+    transform: translateX(10px);
+    background-color: #60C6D3;
+    border-color: #60C6D3;    
+    &::after {
+      border-left: 14px solid #60C6D3;  
+      transform: translateX(0);
+    }
+  }
+  @include mq(pc) {
+    &:hover {
+      transform: translateX(-10px);
+      &::after {
+        transform: translateX(-87%);
+      }
+    }  
   }
 
   &.-is-active {
+    transform: translateX(10px);
     &::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translate(90%, -50%);
-      width: 0;
-      height: 0;
-      border-left: 14px solid $color-iryo;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
-
-      @include mq(pc) {
-        transform: translate(-90%, -50%);
-        right: 0;
-        left: 0;
-        border-left: none;
-        border-right: 14px solid $color-iryo;
-        border-top: 8px solid transparent;
-        border-bottom: 8px solid transparent;
-      }
+      transform: translateX(0);
     }
   }
+  @include mq(pc) {
+    &.-is-active {
+      transform: translateX(10px);
+      &::after {
+        transform: translateX(-87%);
+      }
+    }  
+  }
+
 }
 
 .p-main {
@@ -404,6 +452,63 @@
     margin-top: 32px;
     padding-right: .5em;
   }
+}
+
+.p-kv__inner__description__illust__wrap{
+  position: relative;
+}
+
+.p-kv__inner__description__illust__light{
+  mix-blend-mode: multiply;  
+  position: absolute;
+  display: block;
+  left: 130px;
+  top: 123px;
+  transform: translate(-50%,-50%) scale(1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: .55;
+  background: radial-gradient( #F4F1AD,transparent );
+  animation-name: light-anime;
+  animation-duration: 3.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes light-anime {
+  0% {
+    opacity: .55;
+    transform: translate(-50%,-50%) scale(1);
+  }
+  50% {
+    opacity: .78;
+    transform: translate(-50%,-50%) scale(1.65);
+  }
+  100% {
+    opacity: .55;
+    transform: translate(-50%,-50%) scale(1);
+  }
+}
+
+.p-cursor{
+  mix-blend-mode: multiply;  
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: .55;
+  background: radial-gradient( #FFF593,transparent );
+  animation-name: light-anime;
+  animation-duration: 3.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  pointer-events: none;
 }
 
 .p-news-list {
@@ -1617,7 +1722,9 @@
   margin-bottom: .3em;
 
   @include mq(sp) {
-    justify-content: center;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1641,7 +1748,9 @@
   margin-bottom: 34px;
 
   @include mq(sp) {
-    text-align: center;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

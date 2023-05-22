@@ -26,7 +26,8 @@
   <meta property="og:site_name" content="慶應義塾大学医学部 腫瘍センター・ゲノム医療ユニット">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://genomics-unit.pro/wp/wp-content/themes/genomicsunit/img/ogp.jpg">
-  <script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>  
+  <!-- □TODO：本番ではコメント解除 -->
+  <!-- <script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>   -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>  
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
@@ -62,3 +63,4 @@
       </div>
     </transition> -->
     <div class="v-home" :class="[ isloading ? '-isloading' : '-noloading' ]">
+    <div ref="cursor" class="p-cursor"   :style="{ top: cursorY + 'px', left: cursorX + 'px' }"></div>

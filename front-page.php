@@ -43,8 +43,11 @@
           <p class="p-kv__inner__description__txt ">
             <span class="u-txt-point g-mv-txt-point">がんの原因は遺伝子の変化</span>であることが明らかになってきました。<br>原因となる遺伝子が見つかれば、より効果的な治療が期待できます。<br>これから先の治療に迷われている患者さんの一助になるよう、私たちが遺伝子検査をサポートいたします。
           </p>
-          <img src="<?php echo get_theme_file_uri() ?>/img/kv_illust.png" alt=""
-            class="p-kv__inner__description__illust">
+          <div class="p-kv__inner__description__illust__wrap">
+            <span class="p-kv__inner__description__illust__light"></span>
+            <img src="<?php echo get_theme_file_uri() ?>/img/kv_illust_no-light.png" alt=""
+              class="p-kv__inner__description__illust">
+          </div>
         </div>
       </div>
     </article>
@@ -167,7 +170,7 @@
             </li>
           </ul>
           <div class="l-btn">
-            <a href="<?php echo get_home_url() ?>/about" class="c-btn">
+            <a href="<?php echo get_home_url() ?>/about" class="c-btn sticky">
             がん遺伝子検査について
             </a> 
           </div>
@@ -186,11 +189,11 @@
           <ul class="p-kensa-list l-top-kensa-list">
             <li class="p-kensa-list__item">
               <h3 class="p-kensa-list__item__title">
-                <div class="c-head-title -center">
-                  <span class="c-head-title__char -middle -navy">保</span>
-                  <span class="c-head-title__char -middle -navy">険</span>
-                  <span class="c-head-title__char -middle -navy-frame">診</span>
-                  <span class="c-head-title__char -middle -navy-frame">療</span>
+                <div class="c-square-title -center">
+                  <span class="c-square-title__char -navy"><span class="c-square-title__char__inner">保</span></span>
+                  <span class="c-square-title__char -navy"><span class="c-square-title__char__inner">険</span></span>
+                  <span class="c-square-title__char -navy-frame"><span class="c-square-title__char__inner">診</span></span>
+                  <span class="c-square-title__char -navy-frame"><span class="c-square-title__char__inner">療</span></span>
                 </div>
               </h3>
               <div class="p-kensa-list__item__illust">
@@ -209,11 +212,11 @@
             </li>
             <li class="p-kensa-list__item">
               <h3 class="p-kensa-list__item__title">
-                <div class="c-head-title -center">
-                  <span class="c-head-title__char -middle -point">自</span>
-                  <span class="c-head-title__char -middle -point">費</span>
-                  <span class="c-head-title__char -middle -point-frame">診</span>
-                  <span class="c-head-title__char -middle -point-frame">療</span>
+                <div class="c-square-title -center">
+                  <span class="c-square-title__char -point"><span class="c-square-title__char__inner">自</span></span>
+                  <span class="c-square-title__char -point"><span class="c-square-title__char__inner">費</span></span>
+                  <span class="c-square-title__char -point-frame"><span class="c-square-title__char__inner">診</span></span>
+                  <span class="c-square-title__char -point-frame"><span class="c-square-title__char__inner">療</span></span>
                 </div>
               </h3>
               <div class="p-kensa-list__item__illust">
