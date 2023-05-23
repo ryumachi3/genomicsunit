@@ -116,3 +116,5 @@ function add_article_post_rewrite_rules( $post_rewrite ) {
 	return $return_rule;
 }
 add_filter( 'post_rewrite_rules', 'add_article_post_rewrite_rules' );
+
+//コメント
