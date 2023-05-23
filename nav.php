@@ -10,7 +10,7 @@
     </a>
   <?php if(is_front_page()): ?>    
   </h1>
-  <? else: ?>
+  <?php else: ?>
   </div>
   <?php endif; ?>
   <nav class="p-nav" :class="isMenu?'-open':''">
