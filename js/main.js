@@ -308,6 +308,8 @@ new Vue({
 
       if (this.isMenu) {
         hamburgerButton.focus();
+        jQuery('a:not(.p-header a ,.p-header button)').attr('tabindex', '-1');
+        jQuery('iframe').attr('tabindex', '-1');  
       }
     },
     handleKeyDown(event) {
