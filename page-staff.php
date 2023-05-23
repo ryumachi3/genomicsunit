@@ -4,7 +4,7 @@
 	<div class="l-main p-main">
 		<div id="contents" class="l-contents">
       <div class="l-container -staff">
-				<section class="l-common-sec">
+			<section class="l-common-sec">
 					<h1 class="c-head-title l-head-title l-staff-head-title">
 						<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">ス</span></span>
 						<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">タ</span></span>
@@ -21,7 +21,7 @@
 							<h2 class="c-title l-doctor-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>医師</h2>
 							<ul class="p-doctor-sec__list">
 								<li class="p-doctor-sec__list__item">
-									<div data-fancybox="gallery"  data-src="#modal_doctor_001" class="p-doctor-sec__list__item__link">
+									<a tabindex="200" data-fancybox="gallery"  data-src="#modal_doctor_001" class="p-doctor-sec__list__item__link js-light-out js-fancybox" @keydown.enter="clickOnEnter">
 										<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_nishihara.jpg" alt="" class="p-doctor-sec__list__item__img">
 										<div class="p-doctor-sec__list__item__info">
 											<p class="p-doctor-sec__list__item__info__position">教授</p>
@@ -32,7 +32,7 @@
 												<li class="p-doctor-sec__list__item__info__field__item">分子病理学</li>
 											</ul>
 										</div>
-									</div>
+									</a>
 									<div class="modal p-doctor-sec__modal" id="modal_doctor_001">
 										<div class="p-doctor-sec__modal__profile">
 											<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_nishihara.jpg" alt="" class="p-doctor-sec__modal__profile__img">
@@ -72,22 +72,23 @@
 									</div>
 								</li>
 								<li class="p-doctor-sec__list__item">
-									<div data-fancybox="gallery"  data-src="#modal_doctor_002" class="p-doctor-sec__list__item__link">
-										<div class="p-doctor-sec__list__item__img__wrap">
-											<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_hayashi.jpg" alt="" class="p-doctor-sec__list__item__img">
-										</div>
-										<div class="p-doctor-sec__list__item__info">
-											<p class="p-doctor-sec__list__item__info__position">統括マネージャー・特任講師</p>
-											<h3 class="p-doctor-sec__list__item__info__name">林 秀幸</h3>
-											<p class="p-doctor-sec__list__item__info__kana">Hideyuki Hayashi</p>
-											<ul class="p-doctor-sec__list__item__info__field">
-												<li class="p-doctor-sec__list__item__info__field__item">臨床腫瘍学</li>
-												<li class="p-doctor-sec__list__item__info__field__item">ゲノム生物学</li>
-												<li class="p-doctor-sec__list__item__info__field__item">腫瘍内科学</li>
-												<li class="p-doctor-sec__list__item__info__field__item">消化器内科学</li>
-												<li class="p-doctor-sec__list__item__info__field__item">内科学全般</li>
-											</ul>
-										</div>
+										<a tabindex="200" data-fancybox="gallery"  data-src="#modal_doctor_002" class="p-doctor-sec__list__item__link js-light-out" @keydown.enter="clickOnEnter">
+											<div class="p-doctor-sec__list__item__img__wrap">
+												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_hayashi.jpg" alt="" class="p-doctor-sec__list__item__img">
+											</div>
+											<div class="p-doctor-sec__list__item__info">
+												<p class="p-doctor-sec__list__item__info__position">統括マネージャー・特任講師</p>
+												<h3 class="p-doctor-sec__list__item__info__name">林 秀幸</h3>
+												<p class="p-doctor-sec__list__item__info__kana">Hideyuki Hayashi</p>
+												<ul class="p-doctor-sec__list__item__info__field">
+													<li class="p-doctor-sec__list__item__info__field__item">臨床腫瘍学</li>
+													<li class="p-doctor-sec__list__item__info__field__item">ゲノム生物学</li>
+													<li class="p-doctor-sec__list__item__info__field__item">腫瘍内科学</li>
+													<li class="p-doctor-sec__list__item__info__field__item">消化器内科学</li>
+													<li class="p-doctor-sec__list__item__info__field__item">内科学全般</li>
+												</ul>
+											</div>
+										</a>
 										<div class="modal p-doctor-sec__modal" id="modal_doctor_002">
 											<div class="p-doctor-sec__modal__profile">
 												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_hayashi.jpg" alt="" class="p-doctor-sec__modal__profile__img">
@@ -125,22 +126,22 @@
 												</div>										
 											</div>
 										</div>
-									</div>
 								</li>
 
 								<li class="p-doctor-sec__list__item">
-									<div data-fancybox="gallery"  data-src="#modal_doctor_003" class="p-doctor-sec__list__item__link">
-										<div class="p-doctor-sec__list__item__img__wrap">
-											<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_female.png" alt="" class="p-doctor-sec__list__item__img">
-										</div>
-										<div class="p-doctor-sec__list__item__info">
-											<p class="p-doctor-sec__list__item__info__position">特任助教</p>
-											<h3 class="p-doctor-sec__list__item__info__name">石川 麻倫</h3>
-											<p class="p-doctor-sec__list__item__info__kana">Marin Ishikawa</p>
-											<ul class="p-doctor-sec__list__item__info__field">
-												<li class="p-doctor-sec__list__item__info__field__item">消化器内科</li>
-											</ul>
-										</div>
+										<a tabindex="200" data-fancybox="gallery"  data-src="#modal_doctor_003" class="p-doctor-sec__list__item__link js-light-out" @keydown.enter="clickOnEnter">
+											<div class="p-doctor-sec__list__item__img__wrap">
+												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_female.png" alt="" class="p-doctor-sec__list__item__img">
+											</div>
+											<div class="p-doctor-sec__list__item__info">
+												<p class="p-doctor-sec__list__item__info__position">特任助教</p>
+												<h3 class="p-doctor-sec__list__item__info__name">石川 麻倫</h3>
+												<p class="p-doctor-sec__list__item__info__kana">Marin Ishikawa</p>
+												<ul class="p-doctor-sec__list__item__info__field">
+													<li class="p-doctor-sec__list__item__info__field__item">消化器内科</li>
+												</ul>
+											</div>
+										</a>
 										<div class="modal p-doctor-sec__modal" id="modal_doctor_003">
 											<div class="p-doctor-sec__modal__profile">
 												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_female.png" alt="" class="p-doctor-sec__modal__profile__img">
@@ -177,23 +178,23 @@
 												</div>										
 											</div>
 										</div>
-									</div>
 								</li>
 
 								<li class="p-doctor-sec__list__item">
-									<div data-fancybox="gallery"  data-src="#modal_doctor_004" class="p-doctor-sec__list__item__link">
-										<div class="p-doctor-sec__list__item__img__wrap">
-											<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_male.png" alt="" class="p-doctor-sec__list__item__img">
-										</div>
-										<div class="p-doctor-sec__list__item__info">
-											<p class="p-doctor-sec__list__item__info__position">XXXX</p>
-											<h3 class="p-doctor-sec__list__item__info__name">○○ ○○</h3>
-											<p class="p-doctor-sec__list__item__info__kana">Namae Myouji</p>
-											<ul class="p-doctor-sec__list__item__info__field">
-												<li class="p-doctor-sec__list__item__info__field__item">専門</li>
-												<li class="p-doctor-sec__list__item__info__field__item">担当分野</li>
-											</ul>
-										</div>
+										<a tabindex="200" data-fancybox="gallery"  data-src="#modal_doctor_004" class="p-doctor-sec__list__item__link js-light-out" @keydown.enter="clickOnEnter">
+											<div class="p-doctor-sec__list__item__img__wrap">
+												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_male.png" alt="" class="p-doctor-sec__list__item__img">
+											</div>
+											<div class="p-doctor-sec__list__item__info">
+												<p class="p-doctor-sec__list__item__info__position">XXXX</p>
+												<h3 class="p-doctor-sec__list__item__info__name">○○ ○○</h3>
+												<p class="p-doctor-sec__list__item__info__kana">Namae Myouji</p>
+												<ul class="p-doctor-sec__list__item__info__field">
+													<li class="p-doctor-sec__list__item__info__field__item">専門</li>
+													<li class="p-doctor-sec__list__item__info__field__item">担当分野</li>
+												</ul>
+											</div>
+										</a>
 										<div class="modal p-doctor-sec__modal" id="modal_doctor_004">
 											<div class="p-doctor-sec__modal__profile">
 												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_male.png" alt="" class="p-doctor-sec__modal__profile__img">
@@ -233,7 +234,6 @@
 												</div>										
 											</div>
 										</div>
-									</div>
 								</li>
 
 

@@ -17,7 +17,6 @@
 						<section class="l-iryo-description">
 							<p class="l-iryo-description__txt">ゲノム医療ユニットから研究者の方に向けたお知らせや臨床研究の内容をご紹介します。</p>
 						</section>
-						<?php /*
 						<section class="l-iryo-news">
 							<div class="l-top-title">
 								<h2 class="c-top-title">お知らせ</h2>
@@ -44,7 +43,6 @@
 								</a>
 							</div>
 						</section>
-						*/ ?>
 						<section class="l-iryo-rinsyo">
 							<h2 class="c-title l-iryo-rinsyo__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>臨床研究のご紹介</h2>
 							<div class="l-container2 l-iryo-rinsyo__description">
