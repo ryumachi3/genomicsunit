@@ -15,6 +15,16 @@
     color: $main-txt;
     background-color: $point_alt;
   }
+
+}
+
+a.page-numbers{
+  transition: .1s transform, .1s background-color, .1s border-color;
+  &:hover{
+    background-color: #032f8e;
+    border-color: #032f8e;
+    transform: scale(1.06);
+  }  
 }
 
 a.page-numbers,
@@ -130,9 +140,14 @@ span.page-numbers {
 }
 
 .fancybox__content>.carousel__button.is-close {
+  transition: .15s transform;
   top: 25px;
   right: 23px;
   color: $main-txt;
+
+  &:hover{
+    transform: scale(1.08);
+  }
 
   svg {
     display: none;

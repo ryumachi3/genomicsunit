@@ -3,6 +3,7 @@ const PC = 960;
 
 const wp_dir = "/wp/";
 
+
 new Vue({
   el: '#app',
   data: {
@@ -24,6 +25,10 @@ new Vue({
     cursorH: '40px',
     cursorRadius: '50%',
   },
+  created() {
+    // 初回読み込み時のみ実行する処理を記述
+
+  },
   mounted() {
 
     setTimeout(() => {
@@ -33,6 +38,7 @@ new Vue({
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
     window.addEventListener('mousemove', this.handleMousemove);
+    window.addEventListener("keydown", this.handleKeyDown);    
 
     if (window.innerWidth >= PC) {
       this.isPC = true;
@@ -54,14 +60,19 @@ new Vue({
       const mvtl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
       mvtl
+        .from(".l-header-sp__inner,.p-header__logo,.p-nav", {
+          opacity: 0,
+          duration: .7,
+          ease: "power4.out",
+        },)
         .from(".p-kv__inner__title__line1", {
           x: 20,
-          autoAlpha: 0,
+          opacity: 0,
           duration: .5,
         })
         .from(".p-kv__inner__title__line2", {
           x: -20,
-          autoAlpha: 0,
+          opacity: 0,
           duration: .5,
         }, "<")
         .from(".p-kv__inner__title__char__inner", {
@@ -73,27 +84,28 @@ new Vue({
         .from(".p-kv__inner__photo__main", {
           delay: .6,
           duration: 1,
-          autoAlpha: 0,
+          opacity: 0,
           ease: "power2.out",
         })
         .from(".p-kv__inner__photo__sub", {
           duration: 1,
-          autoAlpha: 0,
+          opacity: 0,
           ease: "power2.out",
         }, "<")
         .from(".p-kv__inner__description__txt", {
           duration: 1,
-          autoAlpha: 0,
+          opacity: 0,
           ease: "power2.out",
         }, "<")
         .from(".p-kv__inner__description__illust__wrap", {
           duration: 1,
-          autoAlpha: 0,
+          opacity: 0,
           ease: "power2.out",
         }, "<")
-        .from(".l-header-sp__inner,.p-header__logo,.p-nav,#contents", {
-          autoAlpha: 0,
+        .from("#contents", {
+          opacity: 0,
           duration: .7,
+          y: 20,          
           ease: "power2.out",
         }, "-=.5")
         .from(".g-mv-txt-point", {
@@ -156,7 +168,7 @@ new Vue({
         //   ease: "power2.out",
         // })
         .from(".c-contents", {
-          autoAlpha: 0,
+          opacity: 0,
           duration: .7,
           y: 20,
           ease: "power2.out",
@@ -242,8 +254,9 @@ new Vue({
       }, "<");
     });
 
+    const mediaQuery = window.matchMedia('(max-width: 1280px)');
     gsap.to('.g-nav-access-horn', {
-      x: 0,
+      x: mediaQuery.matches ? -13 : 0,
       duration: 0.25,
       ease: "power4.out",
       scrollTrigger: {
@@ -275,10 +288,36 @@ new Vue({
 
   beforeDestroy() {
     window.removeEventListener('resize', this.handleResize);
+    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("keydown", this.handleKeyDown);    
+    window.removeEventListener('mousemove', this.handleMousemove);
   },
   methods: {
+    clickOnEnter(event) {
+      console.log('clickOnEnter!');
+      // イベントが発生した要素を取得する
+      const targetElement = event.target;
+      // 要素をクリックする
+      targetElement.click();      
+    },
     clickMenu() {
       this.isMenu = !this.isMenu;
+
+      const hamburgerButton = this.$refs.hamburger;
+      hamburgerButton.setAttribute("aria-expanded", this.isOpen ? "true" : "false");
+
+      if (this.isMenu) {
+        hamburgerButton.focus();
+      }
+    },
+    handleKeyDown(event) {
+      // Escキー押下時にメニューを閉じる
+      if (event.key === "Escape") {
+        this.isMenu = false;
+        const hamburgerButton = this.$refs.hamburger;
+        hamburgerButton.focus();
+        hamburgerButton.setAttribute("aria-expanded", "false");
+      }
     },
     changeImg_button(p_url, p_no) {
     },
@@ -311,16 +350,20 @@ new Vue({
       }
     },
     handleMousemove(event) {
-      // this.cursorX = event.clientX;
-      // this.cursorY = event.clientY;
-    //   const pointer = this.$refs.cursor;
+      this.cursorX = event.clientX;
+      this.cursorY = event.clientY;
+      const pointer = this.$refs.cursor;
 
-    //   // マウス下の要素一覧を取得
-    //   const elements = document.elementsFromPoint(event.clientX, event.clientY);
-    //   // `sticky` クラスが付いている要素を探す
-    //   const target = elements.find((el) => el.classList.contains("sticky"));
+      // マウス下の要素一覧を取得
+      const elements = document.elementsFromPoint(event.clientX, event.clientY);
+      // // `sticky` クラスが付いている要素を探す
+      // const target = elements.find((el) => el.classList.contains("sticky"));
 
-    //   if (target) {
+      const target = elements.find((el) => el.classList.contains("js-light-out") || el.classList.contains("c-btn") || el.classList.contains("p-news-list"));
+
+
+      if (target) {
+
     //     // sticky要素があった時はポインターを要素と同じ場所・大きさに変形させる
     //     // const rect = target.getBoundingClientRect();
     //     // const top = rect.top + rect.height / 2;
@@ -333,20 +376,35 @@ new Vue({
     //     // this.cursorW = width;
     //     // this.cursorH = height;
     //     // this.cursorRadius = borderRadius;
-    //     pointer.style.opacity = 0; // カーソル要素を透明にする
-    //     pointer.style.animation = "none"; // カーソル要素のアニメーションを無効化する
-    //   } else {
-    //     // sticky要素がない場合は元の形状に戻す
-    //     // this.cursorW = "40px";
-    //     // this.cursorH = "40px";
-    //     // this.cursorRadius = "50%";
-    
-    //     pointer.style.opacity = .78; // カーソル要素を表示する
+        // pointer.style.opacity = 0; // カーソル要素を透明にする
+        // pointer.style.animation = "none"; // カーソル要素のアニメーションを無効化する
 
-    //     // マウス座標に移動させる
-    //     this.cursorX = event.clientX;
-    //     this.cursorY = event.clientY;
-    //   }      
+        pointer.style.animationName = 'light-out';
+        pointer.style.animationDuration = '.5s';
+        pointer.style.animationTimingFunction = 'ease-out';
+        pointer.style.animationIterationCount = '1';
+        pointer.style.animationFillMode = 'forwards';
+
+      } else {
+
+        pointer.style.animationName = 'light-anime';
+        pointer.style.animationDuration = '3.5s';
+        pointer.style.animationTimingFunction = 'ease';
+        pointer.style.animationIterationCount = 'infinite';
+
+        // sticky要素がない場合は元の形状に戻す
+        // this.cursorW = "40px";
+        // this.cursorH = "40px";
+        // this.cursorRadius = "50%";
+    
+        // pointer.style.opacity = .78; // カーソル要素を表示する
+
+        // マウス座標に移動させる
+        // this.cursorX = event.clientX;
+        // this.cursorY = event.clientY;
+        
+      }      
     }
   }
 })
+

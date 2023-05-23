@@ -355,6 +355,7 @@
 }
 
 .c-news-tag__item {
+  transition: background-color .1s ease-out,border-color .1s ease-out,transform 0.1s ease-out;
   display: inline-block;
   text-align: center;
   border-radius: 999px;

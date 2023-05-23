@@ -5,12 +5,12 @@
 		<div id="contents" class="l-contents">
       <div class="l-container">
 				<section class="l-common-sec">
-					<h2 class="c-head-title l-head-title l-news-head-title">
+					<h1 class="c-head-title l-head-title l-news-head-title">
 						<span class="c-head-title__char -navy">お</span>
 						<span class="c-head-title__char -navy-frame">知</span>
 						<span class="c-head-title__char -navy-frame">ら</span>
 						<span class="c-head-title__char -navy-frame">せ</span>
-					</h2>
+					</h1>
 					<ul class="p-news-list l-news-list-archive">
 						<li class="p-news-list__item">
               <a href="<?php echo get_home_url(); ?>/news/26/" class="p-news-list__item__link">
@@ -25,7 +25,7 @@
                 </h3>
               </a>
             </li>
-						<!-- <li class="p-news-list__item">
+						<li class="p-news-list__item">
 							<a class="p-news-list__item__link">
 								<time class="p-news-list__item__time">
 									2023年5月9日
@@ -74,9 +74,9 @@
 									がんゲノム医療キックオフミーティングの開催
 								</h3>
 							</a>
-						</li> -->
+						</li>
 					</ul>
-					<!-- <div class="l-news-pagination">
+					<div class="l-news-pagination">
 						<ul class="page-numbers">
 							<li><a href="" class="first page-numbers"><i class="c-pagination-icon -first"></i></a></li>
 							<li><a href="" class="prev page-numbers"><i class="c-pagination-icon -prev"></i></a></li>
@@ -87,7 +87,7 @@
 							<li><a href="" class="next page-numbers"><i class="c-pagination-icon -next"></i></a></li>
 							<li><a href="" class="last page-numbers"><i class="c-pagination-icon -last"></i></a></li>
 						</ul>
-					</div> -->
+					</div>
 
 				</section>
 			</div>

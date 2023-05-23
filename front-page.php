@@ -55,7 +55,6 @@
     <div id="contents" class="l-contents">
       <div class="l-container">
 
-      <?php /*
         <section class="l-top-news">
           <div class="l-top-title">
             <h2 class="c-top-title">お知らせ</h2>
@@ -74,7 +73,7 @@
                 </h3>
               </a>
             </li>
-            <!-- <li class="p-news-list__item">
+            <li class="p-news-list__item">
               <a class="p-news-list__item__link">
                 <time class="p-news-list__item__time">
                   2023年5月9日
@@ -123,7 +122,7 @@
                   がんゲノム医療キックオフミーティングの開催
                 </h3>
               </a>
-            </li> -->
+            </li>
           </ul>
           <div class="l-btn">
             <a href="<?php echo get_home_url() ?>/news" class="c-btn">
@@ -131,7 +130,6 @@
             </a>
           </div>
         </section>
-        */ ?>
         <section class="l-top-about">
           <div class="l-top-title">
             <h2 class="c-top-title">
@@ -170,7 +168,7 @@
             </li>
           </ul>
           <div class="l-btn">
-            <a href="<?php echo get_home_url() ?>/about" class="c-btn sticky">
+            <a href="<?php echo get_home_url() ?>/about" class="c-btn">
             がん遺伝子検査について
             </a> 
           </div>

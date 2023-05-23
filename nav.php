@@ -1,24 +1,32 @@
 <header class="l-header p-header" :class="[ isMenu ? '-ismenu' : '' ]">
+  <?php if(is_front_page()): ?>
+  <h1 class="l-header__logo p-header__logo">
+  <? else: ?>
   <div class="l-header__logo p-header__logo">
-    <a href="<?php echo home_url(); ?>" class="p-header__logo__link">
+  <?php endif; ?>
+    <a tabindex="1" href="<?php echo home_url(); ?>" class="p-header__logo__link">
       <img width="262" height="69"  src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="慶應義塾大学病院腫瘍センター ゲノム医療ユニット"
         class="p-header__logo__img">
     </a>
+  <?php if(is_front_page()): ?>    
+  </h1>
+  <? else: ?>
   </div>
+  <?php endif; ?>
   <nav class="p-nav" :class="isMenu?'-open':''">
-    <ul class="p-nav__list l-nav__list">
+    <ul class="p-nav__list l-nav__list js-light-out">
       <li class="p-nav__list__item -line <?php echo is_home() || is_front_page()?'-is-active':'' ?>">
-        <a href="<?php echo home_url() ?>" class="p-nav__list__item__link ">
+        <a tabindex="100" href="<?php echo home_url() ?>" class="p-nav__list__item__link ">
           HOME
         </a>
       </li>
       <li class="p-nav__list__item -line <?php echo is_page( 'about' )?'-is-active':'' ?>">
-        <a href="<?php echo home_url() ?>/about" class="p-nav__list__item__link">
+        <a tabindex="100" href="<?php echo home_url() ?>/about" class="p-nav__list__item__link">
           がん遺伝子検査について
         </a>
       </li>
       <li class="p-nav__list__item -line <?php echo is_page( 'hoken' )?'-is-active':'' ?>">
-        <a href="<?php echo home_url() ?>/hoken" class="p-nav__list__item__link">
+        <a tabindex="100" href="<?php echo home_url() ?>/hoken" class="p-nav__list__item__link">
           <span class="p-nav__list__item__link__txt">
             保険診療
           </span>
@@ -32,7 +40,7 @@
         </a>
       </li>
       <li class="p-nav__list__item -line -point <?php echo is_page( 'jihi' )?'-is-active':'' ?>">
-        <a href="<?php echo home_url() ?>/jihi" class="p-nav__list__item__link -point">
+        <a tabindex="100" href="<?php echo home_url() ?>/jihi" class="p-nav__list__item__link -point">
           <span class="p-nav__list__item__link__txt">
             自費診療
           </span>
@@ -46,35 +54,35 @@
         </a>
       </li>
       <li class="p-nav__list__item -line <?php echo is_page( 'staff' )?'-is-active':'' ?>">
-        <a href="<?php echo home_url(); ?>/staff" class="p-nav__list__item__link">
+        <a tabindex="100" href="<?php echo home_url(); ?>/staff" class="p-nav__list__item__link">
           スタッフ紹介
         </a>
       </li>
       <li class="p-nav__list__item -line <?php echo is_page( 'rinsyo' )?'-is-active':'' ?>">
-        <a href="<?php echo home_url(); ?>/rinsyo" class="p-nav__list__item__link">
+        <a tabindex="100" href="<?php echo home_url(); ?>/rinsyo" class="p-nav__list__item__link">
           患者の皆さまへ(臨床研究)
         </a>
       </li>
       <li class="p-nav__list__item -line <?php echo is_archive()?'-is-active':'' ?>">
-        <a href="<?php echo home_url(); ?>/news" class="p-nav__list__item__link">
+        <a tabindex="100" href="<?php echo home_url(); ?>/news" class="p-nav__list__item__link">
           お知らせ
         </a>
       </li>
       <li class="p-nav__list__item -balloon g-nav-access">
         <span class="p-nav__list__item__horn g-nav-access-horn"></span>
-        <a href="#footer" class="p-nav__list__item__link" @click="isMenu=!isMenu">
+        <a tabindex="100" href="#footer" class="p-nav__list__item__link -horn" @click="isMenu=!isMenu">
           アクセス・お問い合わせ
         </a>
       </li>
     </ul>
-    <ul class="p-nav__sublist l-nav__sublist">
+    <ul class="p-nav__sublist l-nav__sublist js-light-out">
       <li class="p-nav__sublist__item">
-        <a href="<?php echo home_url(); ?>/iryo" class="p-nav__sublist__item__link <?php echo is_page( 'iryo' )?'-is-active':'' ?>">
+        <a tabindex="100" href="<?php echo home_url(); ?>/iryo" class="p-nav__sublist__item__link <?php echo is_page( 'iryo' )?'-is-active':'' ?>">
           医療機関の方へ
         </a>
       </li>
       <li class="p-nav__sublist__item">
-        <a href="<?php echo home_url(); ?>/kenkyusya" class="p-nav__sublist__item__link <?php echo is_page( 'kenkyusya' )?'-is-active':'' ?>">
+        <a tabindex="100" href="<?php echo home_url(); ?>/kenkyusya" class="p-nav__sublist__item__link <?php echo is_page( 'kenkyusya' )?'-is-active':'' ?>">
           研究者の方へ
         </a>
       </li>
@@ -91,7 +99,7 @@
       </a>
     </div>
     <!-- <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" @click="isMenu=!isMenu"> -->
-    <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" @click="clickMenu()">
+    <button class="c-toggle p-header-sp__btn -toggle js-light-out" :class="isMenu?'-ismenu':''" @click="clickMenu()" ref="hamburger" >
       <div class="c-toggle__bar p-toggle__bar -bar01"></div>
       <div class="c-toggle__bar p-toggle__bar -bar02"></div>
       <div class="c-toggle__bar p-toggle__bar -bar03"></div>

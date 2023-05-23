@@ -15,10 +15,10 @@
 										<span class="c-head-title__char -small -navy-frame">せ</span>
 									</p>
 									<div class="p-news-dt__tag c-news-tag">
-										<!-- <span class="p-news-dt__tag__item c-news-tag__item -yellow">
+										<span class="p-news-dt__tag__item c-news-tag__item -yellow">
 											<i class="c-icon-pin"></i>
 											固定されたお知らせ
-										</span> -->
+										</span>
 										<span class="p-news-dt__tag__item c-news-tag__item -iryo">
 												研究者の方へ
 										</span>

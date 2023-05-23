@@ -1,5 +1,5 @@
     <footer id="footer" class="p-footer">
-      <a href="#" class="c-btn-pagetop l-btn-pagetop">
+      <a href="#" class="c-btn-pagetop l-btn-pagetop js-light-out">
       </a>
       <div class="l-footer">
         <div class="l-footer__inner">
