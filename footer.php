@@ -36,4 +36,4 @@
     </footer>
     </div> <!-- .v-home -->
     </div> <!-- #app -->
-    </div>
+    <!-- </div> -->
