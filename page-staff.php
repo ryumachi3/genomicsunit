@@ -34,6 +34,10 @@
 										</div>
 									</a>
 									<div class="modal p-doctor-sec__modal" id="modal_doctor_001">
+										<nav class="p-doctor-sec__modal__carousel__nav">
+											<button @click="clickCarouselPrev()" title="Previous" class="p-doctor-sec__modal__carousel__nav__button -prev" tabindex="0"></button>
+											<button @click="clickCarouselNext()" title="Next" class="p-doctor-sec__modal__carousel__nav__button -next" tabindex="0"></button>
+										</nav>
 										<div class="p-doctor-sec__modal__profile">
 											<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_nishihara.jpg" alt="" class="p-doctor-sec__modal__profile__img">
 											<div class="p-doctor-sec__modal__profile__info">
@@ -90,6 +94,10 @@
 											</div>
 										</a>
 										<div class="modal p-doctor-sec__modal" id="modal_doctor_002">
+											<nav class="p-doctor-sec__modal__carousel__nav">
+												<button @click="clickCarouselPrev()" title="Previous" class="p-doctor-sec__modal__carousel__nav__button -prev" tabindex="0"></button>
+												<button @click="clickCarouselNext()" title="Next" class="p-doctor-sec__modal__carousel__nav__button -next" tabindex="0"></button>
+											</nav>
 											<div class="p-doctor-sec__modal__profile">
 												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_hayashi.jpg" alt="" class="p-doctor-sec__modal__profile__img">
 												<div class="p-doctor-sec__modal__profile__info">
@@ -143,6 +151,10 @@
 											</div>
 										</a>
 										<div class="modal p-doctor-sec__modal" id="modal_doctor_003">
+											<nav class="p-doctor-sec__modal__carousel__nav">
+												<button @click="clickCarouselPrev()" title="Previous" class="p-doctor-sec__modal__carousel__nav__button -prev" tabindex="0"></button>
+												<button @click="clickCarouselNext()" title="Next" class="p-doctor-sec__modal__carousel__nav__button -next" tabindex="0"></button>
+											</nav>
 											<div class="p-doctor-sec__modal__profile">
 												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_female.png" alt="" class="p-doctor-sec__modal__profile__img">
 												<div class="p-doctor-sec__modal__profile__info">
@@ -196,6 +208,10 @@
 											</div>
 										</a>
 										<div class="modal p-doctor-sec__modal" id="modal_doctor_004">
+											<nav class="p-doctor-sec__modal__carousel__nav">
+												<button @click="clickCarouselPrev()" title="Previous" class="p-doctor-sec__modal__carousel__nav__button -prev" tabindex="0"></button>
+												<button @click="clickCarouselNext()" title="Next" class="p-doctor-sec__modal__carousel__nav__button -next" tabindex="0"></button>
+											</nav>
 											<div class="p-doctor-sec__modal__profile">
 												<img src="<?php echo get_theme_file_uri() ?>/img/photo_doctor_male.png" alt="" class="p-doctor-sec__modal__profile__img">
 												<div class="p-doctor-sec__modal__profile__info">

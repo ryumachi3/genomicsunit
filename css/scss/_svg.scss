@@ -7,6 +7,9 @@
 @mixin svg-icon-pagenext($color) {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.687 24.545" preserveAspectRatio="none"><path fill="%23#{$color}" d="M1467.629,2062.733l-1.414-1.414,10.858-10.858-10.858-10.858,1.414-1.414,12.272,12.272Z" transform="translate(-1466.215 -2038.188)" /></svg>');
 }
+@mixin svg-icon-carouselnext($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.121 23.414" preserveAspectRatio="none"><path fill="%23#{$color}" d="M1467.629,2061.6l-1.414-1.414,10.293-10.293-10.293-10.293,1.414-1.414,11.707,11.707Z" transform="translate(-1466.214 -2038.188)" /></svg>');
+}
 @mixin svg-icon-pagelast($color) {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.273 24.544" preserveAspectRatio="none"><path fill="%23#{$color}" d="M3898-1410.869l10.858-10.858L3898-1432.586l1.415-1.414,10.858,10.858v-10.087h2v23h-2v-10.087l-10.858,10.858Z" transform="translate(-3898 1434)" /></svg>');
 }

@@ -90,6 +90,7 @@
   </nav>
 </header>
 <!-- スマホ用ヘッダー -->
+<div class="p-nav__bg" :class="isMenu?'-open':''"></div>
 <header class="l-header-sp p-header-sp">
   <div class="l-header-sp__inner">
     <div class="l-header-sp__logo p-header-sp__logo">

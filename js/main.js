@@ -3,6 +3,19 @@ const PC = 960;
 
 const wp_dir = "/wp/";
 
+// 交差を監視する対象の要素
+const elm_nav = document.querySelector(".p-nav__list");
+const elm_footer = document.getElementById("footer");
+
+const options = {
+  root: document.querySelector('.v-home'), 
+  rootMargin: "-50% 0px",
+  threshold: 0,
+};
+const observer = new IntersectionObserver(callback, options);
+// それぞれのboxを監視する
+observer.observe(elm_nav);
+
 
 new Vue({
   el: '#app',
@@ -293,6 +306,24 @@ new Vue({
     window.removeEventListener('mousemove', this.handleMousemove);
   },
   methods: {
+    clickCarouselNext(){
+      // 要素の取得
+      var element = document.querySelector(".carousel__button.is-next");
+
+      // クリックイベントのトリガー
+      if (element) {
+        element.click();
+      }
+    },
+    clickCarouselPrev(){
+      // 要素の取得
+      var element = document.querySelector(".carousel__button.is-prev");
+
+      // クリックイベントのトリガー
+      if (element) {
+        element.click();
+      }
+    },
     clickOnEnter(event) {
       console.log('clickOnEnter!');
       // イベントが発生した要素を取得する

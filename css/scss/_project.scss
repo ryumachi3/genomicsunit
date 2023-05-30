@@ -35,6 +35,22 @@
   }
 }
 
+.p-nav__bg{
+  transition: opacity 0.4s;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  &.-open{
+    opacity: .8;    
+  }
+}
+
+
+
 .p-header__logo{
   padding: 1px; // outlineの左側が見切れるのでその対策
 }
@@ -105,13 +121,7 @@
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     @include mq(pc) {
-      transform: translateX(0);
-      right: initial;
-      left: 0;
-      border-left: none;
-      border-right: 14px solid $white;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;  
+      opacity: 0;
     }
   }
   &.-is-active {
@@ -539,6 +549,9 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   pointer-events: none;
+  @include mq(tb) {
+    display: none;
+  }
 }
 
 .p-news-list {
@@ -1772,12 +1785,43 @@
   border-radius: 10px;
   width: 100%;
   max-width: 800px;
+  position: relative;
+  box-sizing: border-box;
 
   @include mq(sp) {
     padding: 80px 10px 40px;
   }
 }
 
+.p-doctor-sec__modal__carousel__nav{
+  box-sizing: border-box;  
+  position: absolute;
+  height: 22px;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%,0);
+  top: 165px;
+  justify-content: space-between;
+  display: none;
+  @include mq(sp){
+    display: flex;
+  }
+}
+
+.p-doctor-sec__modal__carousel__nav__button{
+  width: 11px;
+  height: 22px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  @include svg-icon-carouselnext("001E62");
+  background-position: center center;
+  cursor: pointer;
+  &.-next {
+  }
+  &.-prev {
+    transform: rotate(-180deg);
+  }
+}
 
 .p-doctor-sec__modal__profile__img {
   width: 180px;
@@ -1867,7 +1911,7 @@
 
 .p-doctor-sec__modal__profile {
   width: 180px;
-
+  position: relative;
   @include mq(sp) {
     width: 90%;
     margin: 0 auto 40px;
