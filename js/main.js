@@ -61,7 +61,7 @@ new Vue({
       // タイトルアニメが終わった後
       setTimeout(() => {		
         MYBGAPP.start();
-      }, 2100);
+      }, 1300);
 
       const mvtl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
@@ -225,7 +225,6 @@ new Vue({
     //   ease: "power4.out",
     // })
 
-
     
     const staggerPoint = gsap.utils.toArray(".u-txt-point");
 
@@ -320,8 +319,11 @@ new Vue({
     //     toggleActions: "play reverse play reverse" // アニメーションの再生と逆再生を指定 
     //   },
     // });
-
-
+    
+    // リロード時も最上部を表示するために、ページの上部にスクロールする処理
+    $(function() {
+      $('html,body').animate({ scrollTop: 0 }, '1');
+    });
 
   },
 
