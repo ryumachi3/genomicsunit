@@ -26,6 +26,11 @@
   <meta property="og:site_name" content="慶應義塾大学医学部 腫瘍センター・ゲノム医療ユニット">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://genomics-unit.pro/wp/wp-content/themes/genomicsunit/img/ogp.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+  
   <!-- □TODO：本番ではコメント解除 -->
   <!-- <script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>   -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -45,6 +50,8 @@
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script type="application/javascript" src="<?php bloginfo('template_url'); ?>/js/pixi.min.js" defer></script>
+  <script type="application/javascript" src="<?php bloginfo('template_url'); ?>/js/bganimation.js" defer></script>
   <script type="application/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js?ver=0.0.1" defer></script>
 </head>
 
@@ -53,6 +60,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDQSLD8"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  <div id="bg"></div>
   <div id="app">
     <!-- <transition name="loadin">
       <div v-if="isloading" class="c-loading p-loading">

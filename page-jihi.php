@@ -5,7 +5,7 @@
 		<div id="contents" class="l-contents">
       <div class="l-container">
 				<section class="l-common-sec">
-					<h1 class="c-head-title l-head-title l-hoken-head-title">
+					<h1 class="c-head-title -anime l-head-title l-hoken-head-title">
 						<span class="c-head-title__char -point"><span class="c-head-title__char__inner">自</span></span>
 						<span class="c-head-title__char -point"><span class="c-head-title__char__inner">費</span></span>
 						<span class="c-head-title__char -point-frame"><span class="c-head-title__char__inner">診</span></span>

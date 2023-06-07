@@ -6,7 +6,7 @@
       <div class="l-container">
 				<section class="l-common-sec">
 				<h1 class="c-head-title__wrap l-head-title l-iryo-head-title">
-						<div class="c-head-title">
+						<div class="c-head-title -anime">
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">が</span></span>
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">ん</span></span>
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">遺</span></span>
@@ -15,7 +15,7 @@
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">検</span></span>
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">査</span></span>
 						</div>
-						<div class="c-head-title">
+						<div class="c-head-title -anime">
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">に</span></span>
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">つ</span></span>
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">い</span></span>

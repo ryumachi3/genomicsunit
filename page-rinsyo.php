@@ -6,7 +6,7 @@
       <div class="l-container">
 				<section class="l-common-sec">
 					<h1 class="c-head-title__wrap l-head-title l-iryo-head-title">
-						<div class="c-head-title">
+						<div class="c-head-title -anime">
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">臨</span></span>
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">床</span></span>
 							<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">研</span></span>
@@ -14,7 +14,7 @@
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">へ</span></span>
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">の</span></span>
 						</div>
-						<div class="c-head-title">
+						<div class="c-head-title -anime">
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">ご</span></span>
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">協</span></span>
 							<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">力</span></span>

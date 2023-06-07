@@ -33,11 +33,19 @@
 }
 
 .l-footer{
-  padding-left: $header-width-pc;
-  max-width: 1246px;
+  overflow: hidden;
+  padding-left: 338px;
+  max-width: 1306px;
   margin-left: auto;
   margin-right: auto;
+  @include mq(maxwidth){
+    padding-left: calc(300px + 1vw);
+    max-width: calc(1246px + 4.392vw);
+    margin-right: 0;
+  }
   @include mq(pc){
+    max-width: 1246px;
+    margin-right: auto;
     padding-left: 0;
   }
   @include mq(sp){
@@ -62,7 +70,6 @@
 
 .l-footer__copyright{
   padding-left: $header-width-pc;
-  max-width: $master-width-pc;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
@@ -70,8 +77,13 @@
   font-size: rem(12);
   padding-top: 2.5em;
   padding-bottom: 2.5em;
-  padding-right: pxvwPC(25px);
+  padding-right: 0;
+  max-width: 1306px;
+  @include mq(maxwidth){
+    padding-right: pxvwPC(25px);    
+  }
   @include mq(pc){
+    max-width: $master-width-pc;
     padding-left: 0;
   }
   @include mq(sp){
@@ -102,6 +114,8 @@
 }
 
 .l-main{
+  // アニメーションのちらつき防止
+  opacity: 0;
   /* グローバルメニューの幅を考慮して右側に配置 */
   grid-column-start: 2;
   grid-column-end: 3;
@@ -170,8 +184,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: pxvwPC(571px);
-    max-width: 571px;
+    width: pxvwPC(600px);
+    max-width: 600px;
     height: 296px;
     @include mq(pc){
       width: 55vw;

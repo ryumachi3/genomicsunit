@@ -5,7 +5,7 @@
 		<div id="contents" class="l-contents">
       <div class="l-container -staff">
 			<section class="l-common-sec">
-					<h1 class="c-head-title l-head-title l-staff-head-title">
+					<h1 class="c-head-title -anime l-head-title l-staff-head-title">
 						<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">ス</span></span>
 						<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">タ</span></span>
 						<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">ッ</span></span>

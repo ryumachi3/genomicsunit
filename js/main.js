@@ -3,19 +3,6 @@ const PC = 960;
 
 const wp_dir = "/wp/";
 
-// 交差を監視する対象の要素
-const elm_nav = document.querySelector(".p-nav__list");
-const elm_footer = document.getElementById("footer");
-
-const options = {
-  root: document.querySelector('.v-home'), 
-  rootMargin: "-50% 0px",
-  threshold: 0,
-};
-const observer = new IntersectionObserver(callback, options);
-// それぞれのboxを監視する
-observer.observe(elm_nav);
-
 
 new Vue({
   el: '#app',
@@ -53,6 +40,7 @@ new Vue({
     window.addEventListener('mousemove', this.handleMousemove);
     window.addEventListener("keydown", this.handleKeyDown);    
 
+
     if (window.innerWidth >= PC) {
       this.isPC = true;
       this.isTb = false;
@@ -69,10 +57,20 @@ new Vue({
       this.isTopPage = true;
       this.isloadingLogo = false;
 
+      // 背景アニメーションスタート
+      // タイトルアニメが終わった後
+      setTimeout(() => {		
+        MYBGAPP.start();
+      }, 2100);
 
       const mvtl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
       mvtl
+        .to(".l-main", {
+          opacity: 1,
+          duration: .05,
+          ease: "power4.out",
+        },)
         .from(".l-header-sp__inner,.p-header__logo,.p-nav", {
           opacity: 0,
           duration: .7,
@@ -142,6 +140,13 @@ new Vue({
 
 
     } else {
+
+      // 背景アニメーションスタート
+      // タイトルアニメが終わった後
+      setTimeout(() => {
+        MYBGAPP.start();
+      }, 500);
+
       setTimeout(() => {
         this.isloading = false;
       }, 1000);
@@ -164,7 +169,12 @@ new Vue({
 
       gsap
         .timeline({ repeat: 0, repeatDelay: 0.5 })
-        .from(".c-head-title", {
+        .to(".l-main", {
+          opacity: 1,
+          duration: .05,
+          ease: "power4.out",
+        },)
+        .from(".c-head-title.-anime", {
           y: 10,
           opacity: 0,
           duration: .5,
@@ -268,15 +278,18 @@ new Vue({
     });
 
     const mediaQuery = window.matchMedia('(max-width: 1280px)');
+    const pNav = document.querySelector('.p-nav__list');
+    const footer = document.getElementById('footer');    
+    const pNavHeight = pNav.offsetHeight; // .p-navの高さを取得
+    const pNavTop = pNav.offsetTop; // .p-navのページ上部からの位置を取得
     gsap.to('.g-nav-access-horn', {
       x: mediaQuery.matches ? -13 : 0,
       duration: 0.25,
-      ease: "power4.out",
+      ease: 'power4.out',
       scrollTrigger: {
-        trigger: '.g-access',
-        start: 'top 95%',
-        end: 'bottom top', // アニメーションを元に戻す位置を指定
-        toggleActions: "play reverse play reverse" // アニメーションの再生と逆再生を指定 
+        trigger: footer, // トリガーをfooterに設定
+        start: `top ${pNavTop + pNavHeight}px`, // .p-nav__listの下端がfooterの上端に達してからアニメーションが発火する
+        toggleActions: 'play reverse play reverse',
       },
     });
 
@@ -306,6 +319,10 @@ new Vue({
     window.removeEventListener('mousemove', this.handleMousemove);
   },
   methods: {
+    scrollToSection() {
+      // Menuを閉じる
+      this.isMenu = false;
+    },
     clickCarouselNext(){
       // 要素の取得
       var element = document.querySelector(".carousel__button.is-next");
@@ -361,6 +378,7 @@ new Vue({
       (window.scrollY > 30) ? this.isDown = true : this.isDown = false;
     },
     handleResize() {
+      this.isMenu = false;
 
       const title_tate = document.querySelectorAll(".c-title__line-tate");
       title_tate.forEach((element) => {
@@ -383,59 +401,36 @@ new Vue({
       }
     },
     handleMousemove(event) {
+      const SURPLUS = 30; // カーソルがこれより外に出たら消す
       this.cursorX = event.clientX;
       this.cursorY = event.clientY;
       const pointer = this.$refs.cursor;
-
+    
       // マウス下の要素一覧を取得
       const elements = document.elementsFromPoint(event.clientX, event.clientY);
-      // // `sticky` クラスが付いている要素を探す
-      // const target = elements.find((el) => el.classList.contains("sticky"));
-
-      const target = elements.find((el) => el.classList.contains("js-light-out") || el.classList.contains("c-btn") || el.classList.contains("p-news-list"));
-
-
-      if (target) {
-
-    //     // sticky要素があった時はポインターを要素と同じ場所・大きさに変形させる
-    //     // const rect = target.getBoundingClientRect();
-    //     // const top = rect.top + rect.height / 2;
-    //     // const left = rect.left + rect.width / 2;
-    //     // const { width, height } = rect;
-    //     // const borderRadius = Math.min(rect.height, rect.width) * 0.1;
     
-    //     // this.cursorX = event.clientX;
-    //     // this.cursorY = event.clientY;
-    //     // this.cursorW = width;
-    //     // this.cursorH = height;
-    //     // this.cursorRadius = borderRadius;
-        // pointer.style.opacity = 0; // カーソル要素を透明にする
-        // pointer.style.animation = "none"; // カーソル要素のアニメーションを無効化する
-
+      const target = elements.find((el) => el.classList.contains("js-light-out") || el.classList.contains("c-btn") || el.classList.contains("p-news-list"));
+    
+      if (event.clientX < SURPLUS || event.clientY < SURPLUS || event.clientX >= window.innerWidth - SURPLUS || event.clientY >= window.innerHeight - SURPLUS) {
+        // マウスカーソルがブラウザ画面外に出た場合
         pointer.style.animationName = 'light-out';
         pointer.style.animationDuration = '.5s';
         pointer.style.animationTimingFunction = 'ease-out';
         pointer.style.animationIterationCount = '1';
         pointer.style.animationFillMode = 'forwards';
-
+      } else if (target) {
+        // マウスカーソルが特定の要素上にある場合
+        pointer.style.animationName = 'light-out';
+        pointer.style.animationDuration = '.5s';
+        pointer.style.animationTimingFunction = 'ease-out';
+        pointer.style.animationIterationCount = '1';
+        pointer.style.animationFillMode = 'forwards';
       } else {
-
+        // 上記の条件に当てはまらない場合
         pointer.style.animationName = 'light-anime';
         pointer.style.animationDuration = '3.5s';
         pointer.style.animationTimingFunction = 'ease';
         pointer.style.animationIterationCount = 'infinite';
-
-        // sticky要素がない場合は元の形状に戻す
-        // this.cursorW = "40px";
-        // this.cursorH = "40px";
-        // this.cursorRadius = "50%";
-    
-        // pointer.style.opacity = .78; // カーソル要素を表示する
-
-        // マウス座標に移動させる
-        // this.cursorX = event.clientX;
-        // this.cursorY = event.clientY;
-        
       }      
     }
   }

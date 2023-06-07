@@ -104,7 +104,7 @@
     }
     &.-line::before {
       transform: translate(0,0);
-      background-color: #03349d;
+      //background-color: #03349d;
     }
   }
 
@@ -433,7 +433,7 @@
 
   &.-white {
     color: $main-txt;
-    background-color: transparent;
+    background-color: $bg;
     border: solid 1px $main-txt;
 
     @include mq(tb) {
@@ -542,7 +542,7 @@
   height: 70px;
   border-radius: 50%;
   opacity: .55;
-  background: radial-gradient( #FFF593,transparent 60%);
+  background: radial-gradient( #FFF593,rgba(255,255,255,0) 60%);
   animation-name: light-out;
   animation-duration: .5s;
   animation-timing-function: ease-out;
@@ -687,7 +687,6 @@
   background-color: $main-txt;
   color: $white;
   position: relative;
-  overflow: hidden;
 }
 
 .p-footer__contents__tel__link {

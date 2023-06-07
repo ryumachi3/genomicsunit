@@ -106,7 +106,9 @@ html {
 }
 
 body {
-  background: $bg;
+  background-color: $bg;
+  background-image: radial-gradient($bg 0%, $bg 50%);
+  background-attachment: fixed;  
   color: $main-txt;
   font-size: rem(16);
   font-family: $jp-font;
@@ -165,4 +167,13 @@ input[type="text"]:focus,
 select:focus
 {
   outline: solid 2px $point;
+}
+
+// 背景
+#bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
 }

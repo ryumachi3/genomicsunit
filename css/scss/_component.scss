@@ -218,16 +218,22 @@
   background-color: $main-txt;
   border-radius: 50%;
   position: absolute;
-  right: 24px;
+  right: 50%;
+  transform: translate(650px,0);
   top: -44px - 24px;
   transition: background-color .1s ease-out,border-color .1s ease-out,transform 0.1s ease-out;
   &:hover {
     background-color: #032f8e;
     border-color: #032f8e;
-    transform: scale(1.06);
+    transform: translate(650px,0) scale(1.06);
+    @include mq(maxwidth) {
+      transform: translate(0,0) scale(1.06);
+    }
   }
-
-  
+  @include mq(maxwidth) {
+    right: 24px;
+    transform: translate(0,0)
+  }
   @include mq(sp) {
     right: 20px;
   }
@@ -333,22 +339,37 @@
 
   &.-navy-frame {
     color: $main-txt;
-    background-color: transparent;
+    background-color: $bg;
     border: solid 1px $main-txt;
   }
 
   &.-point-frame {
     color: $point;
-    background-color: transparent;
+    background-color: $bg;
     border: solid 1px $point;
   }
 
   &.-iryo-frame {
     color: $color-iryo;
-    background-color: transparent;
+    background-color: $bg;
     border: solid 1px $color-iryo;
   }
 }
+
+.c-square-title__char{
+  &.-navy-frame {
+    background-color: transparent;
+  }
+
+  &.-point-frame {
+    background-color: transparent;
+  }
+
+  &.-iryo-frame {
+    background-color: transparent;
+  }
+}
+
 
 .c-news-tag {
   font-size: rem(12);

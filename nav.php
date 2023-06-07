@@ -70,7 +70,7 @@
       </li>
       <li class="p-nav__list__item -balloon g-nav-access">
         <span class="p-nav__list__item__horn g-nav-access-horn"></span>
-        <a tabindex="100" href="#footer" class="p-nav__list__item__link -horn" @click="isMenu=!isMenu">
+        <a tabindex="100" href="#footer" @click="scrollToSection" class="p-nav__list__item__link -horn">
           アクセス・お問い合わせ
         </a>
       </li>

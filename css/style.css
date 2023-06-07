@@ -151,7 +151,9 @@ html {
 }
 
 body {
-  background: #EFF5F7;
+  background-color: #EFF5F7;
+  background-image: radial-gradient(#EFF5F7 0%, #EFF5F7 50%);
+  background-attachment: fixed;
   color: #001E62;
   font-size: 1rem;
   font-family: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -213,6 +215,14 @@ select:focus {
   outline: solid 2px #D05210;
 }
 
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
 /*---------------------------------------------------
 テンプレートパーツ
 ---------------------------------------------------*/
@@ -251,14 +261,24 @@ select:focus {
 }
 
 .l-footer {
-  padding-left: 300px;
-  max-width: 1246px;
+  overflow: hidden;
+  padding-left: 338px;
+  max-width: 1306px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media screen and (max-width: 1366px) {
+  .l-footer {
+    padding-left: calc(300px + 1vw);
+    max-width: calc(1246px + 4.392vw);
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 1280px) {
   .l-footer {
+    max-width: 1246px;
+    margin-right: auto;
     padding-left: 0;
   }
 }
@@ -284,7 +304,6 @@ select:focus {
 }
 .l-footer__copyright {
   padding-left: 300px;
-  max-width: 1366px;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
@@ -292,11 +311,18 @@ select:focus {
   font-size: 0.75rem;
   padding-top: 2.5em;
   padding-bottom: 2.5em;
-  padding-right: 1.8301610542vw;
+  padding-right: 0;
+  max-width: 1306px;
 }
 
+@media screen and (max-width: 1366px) {
+  .l-footer__copyright {
+    padding-right: 1.8301610542vw;
+  }
+}
 @media screen and (max-width: 1280px) {
   .l-footer__copyright {
+    max-width: 1366px;
     padding-left: 0;
   }
 }
@@ -330,6 +356,7 @@ select:focus {
 }
 
 .l-main {
+  opacity: 0;
   /* グローバルメニューの幅を考慮して右側に配置 */
   grid-column-start: 2;
   grid-column-end: 3;
@@ -413,8 +440,8 @@ select:focus {
   position: absolute;
   left: 0;
   top: 0;
-  width: 41.8008784773vw;
-  max-width: 571px;
+  width: 43.9238653001vw;
+  max-width: 600px;
   height: 296px;
 }
 
@@ -1047,7 +1074,8 @@ select:focus {
   background-color: #001E62;
   border-radius: 50%;
   position: absolute;
-  right: 24px;
+  right: 50%;
+  transform: translate(650px, 0);
   top: -68px;
   transition: background-color 0.1s ease-out, border-color 0.1s ease-out, transform 0.1s ease-out;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.545 13.687" preserveAspectRatio="none"><path fill="%23fff" d="M1467.629,2062.733l-1.414-1.414,10.858-10.858-10.858-10.858,1.414-1.414,12.272,12.272Z" transform="translate(-2038.188 1479.901) rotate(-90)" /></svg>');
@@ -1059,9 +1087,20 @@ select:focus {
 .c-btn-pagetop:hover {
   background-color: #032f8e;
   border-color: #032f8e;
-  transform: scale(1.06);
+  transform: translate(650px, 0) scale(1.06);
 }
 
+@media screen and (max-width: 1366px) {
+  .c-btn-pagetop:hover {
+    transform: translate(0, 0) scale(1.06);
+  }
+}
+@media screen and (max-width: 1366px) {
+  .c-btn-pagetop {
+    right: 24px;
+    transform: translate(0, 0);
+  }
+}
 @media screen and (max-width: 768px) {
   .c-btn-pagetop {
     right: 20px;
@@ -1168,22 +1207,34 @@ select:focus {
 .c-head-title__char.-navy-frame,
 .c-square-title__char.-navy-frame {
   color: #001E62;
-  background-color: transparent;
+  background-color: #EFF5F7;
   border: solid 1px #001E62;
 }
 
 .c-head-title__char.-point-frame,
 .c-square-title__char.-point-frame {
   color: #D05210;
-  background-color: transparent;
+  background-color: #EFF5F7;
   border: solid 1px #D05210;
 }
 
 .c-head-title__char.-iryo-frame,
 .c-square-title__char.-iryo-frame {
   color: #55B5C1;
-  background-color: transparent;
+  background-color: #EFF5F7;
   border: solid 1px #55B5C1;
+}
+
+.c-square-title__char.-navy-frame {
+  background-color: transparent;
+}
+
+.c-square-title__char.-point-frame {
+  background-color: transparent;
+}
+
+.c-square-title__char.-iryo-frame {
+  background-color: transparent;
 }
 
 .c-news-tag {
@@ -1383,7 +1434,6 @@ select:focus {
 }
 .p-nav__list__item:hover.-line::before {
   transform: translate(0, 0);
-  background-color: #03349d;
 }
 
 .p-nav__list__item .p-nav__list__item__horn {
@@ -1733,7 +1783,7 @@ select:focus {
 
 .p-kv__inner__title__char.-white {
   color: #001E62;
-  background-color: transparent;
+  background-color: #EFF5F7;
   border: solid 1px #001E62;
 }
 
@@ -1874,7 +1924,7 @@ select:focus {
   height: 70px;
   border-radius: 50%;
   opacity: 0.55;
-  background: radial-gradient(#FFF593, transparent 60%);
+  background: radial-gradient(#FFF593, rgba(255, 255, 255, 0) 60%);
   -webkit-animation-name: light-out;
           animation-name: light-out;
   -webkit-animation-duration: 0.5s;
@@ -2025,7 +2075,6 @@ select:focus {
   background-color: #001E62;
   color: #fff;
   position: relative;
-  overflow: hidden;
 }
 
 .p-footer__contents__tel__link {

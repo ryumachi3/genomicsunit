@@ -5,7 +5,7 @@
 		<div id="contents" class="l-contents">
       <div class="l-container">
 				<section class="l-common-sec">
-					<h1 class="c-head-title l-head-title l-iryo-head-title">
+					<h1 class="c-head-title -anime l-head-title l-iryo-head-title">
 						<span class="c-head-title__char -iryo"><span class="c-head-title__char__inner">研</span></span>
 						<span class="c-head-title__char -iryo"><span class="c-head-title__char__inner">究</span></span>
 						<span class="c-head-title__char -iryo"><span class="c-head-title__char__inner">者</span></span>

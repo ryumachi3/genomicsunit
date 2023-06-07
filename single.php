@@ -6,6 +6,7 @@
 	      <div class="l-container">
 					<section class="l-common-sec">
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+						<div class="c-contents">
 							<header class="l-news-dt__head">
 								<div class="l-news-dt__head-title__wrap">
 									<p class="c-head-title l-head-title l-news-dt__head-title">
@@ -73,6 +74,7 @@
 								お知らせ一覧
 							</a>
 						</div>
+					<div class="c-contents">
 					</section>
 				</div>
 				<!-- l-container -->
