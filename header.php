@@ -32,7 +32,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
   
   <!-- □TODO：本番ではコメント解除 -->
-  <!-- <script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>   -->
+  <script type="text/javascript" src="//webfonts.sakura.ne.jp/js/sakurav3.js"></script>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>  
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>

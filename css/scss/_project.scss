@@ -3,6 +3,8 @@
 // -----------------------------------------------------------------
 
 .p-header {
+  opacity: 0;
+  transform: translate(-20px,0);
   @include mq(pc) {
     padding-top: 120px;
     transition: transform 0.6s cubic-bezier(0.32, 0.1, 0, 1), opacity .4s;
@@ -375,7 +377,6 @@
 }
 
 .p-kv__inner__title {
-  font-family: $now-font;
   width: 224px;
   padding-left: 50px;
   padding-right: 40px;
@@ -408,7 +409,7 @@
 }
 
 .p-kv__inner__title__char {
-
+  font-family: $now-font;
   overflow: hidden;
   width: 66px;
   height: 66px;

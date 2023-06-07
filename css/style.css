@@ -1118,8 +1118,6 @@ select:focus {
 }
 .c-head-title,
 .c-square-title {
-  font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-weight: 500;
   display: flex;
   justify-content: flex-start;
 }
@@ -1147,6 +1145,8 @@ select:focus {
 }
 .c-head-title__char,
 .c-square-title__char {
+  font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 500;
   overflow: hidden;
   width: 50px;
   height: 50px;
@@ -1326,6 +1326,11 @@ select:focus {
   height: 0.625em;
   border-radius: 50%;
   background-color: #001E62;
+}
+
+.p-header {
+  opacity: 0;
+  transform: translate(-20px, 0);
 }
 
 @media screen and (max-width: 1280px) {
@@ -1721,7 +1726,6 @@ select:focus {
   }
 }
 .p-kv__inner__title {
-  font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   width: 224px;
   padding-left: 50px;
   padding-right: 40px;
@@ -1757,6 +1761,7 @@ select:focus {
   }
 }
 .p-kv__inner__title__char {
+  font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   overflow: hidden;
   width: 66px;
   height: 66px;

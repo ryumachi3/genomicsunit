@@ -53,7 +53,7 @@ new Vue({
     }
     this.isLoad = true;
 
-    if (location.pathname == '/wp/' || location.pathname == '/') {
+    if (location.pathname == '/stg/' || location.pathname == '/wp/' || location.pathname == '/') {
       this.isTopPage = true;
       this.isloadingLogo = false;
 
@@ -66,21 +66,29 @@ new Vue({
       const mvtl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
       mvtl
-        .to(".l-main", {
+      .to(".p-header", {
+        opacity: 1,
+        delay: .5,
+        duration: .5,
+        x: 0,
+        ease: "power4.out",
+      },)
+      .to(".l-main", {
           opacity: 1,
           duration: .05,
           ease: "power4.out",
-        },)
-        .from(".l-header-sp__inner,.p-header__logo,.p-nav", {
-          opacity: 0,
-          duration: .7,
-          ease: "power4.out",
-        },)
+        }, "<")
+        // .from(".l-header-sp__inner,.p-header__logo,.p-nav", {
+        // .from(".l-header-sp__inner,.p-header__logo", {
+        //     opacity: 0,
+        //   duration: .7,
+        //   ease: "power4.out",
+        // },"<")
         .from(".p-kv__inner__title__line1", {
           x: 20,
           opacity: 0,
           duration: .5,
-        })
+        }, "<")
         .from(".p-kv__inner__title__line2", {
           x: -20,
           opacity: 0,
@@ -169,16 +177,23 @@ new Vue({
 
       gsap
         .timeline({ repeat: 0, repeatDelay: 0.5 })
+        .to(".p-header", {
+          opacity: 1,
+          delay: .5,
+          duration: .5,
+          x: 0,
+          ease: "power4.out",
+        },)  
         .to(".l-main", {
           opacity: 1,
           duration: .05,
           ease: "power4.out",
-        },)
+        },"<")
         .from(".c-head-title.-anime", {
           y: 10,
           opacity: 0,
           duration: .5,
-        })
+        },"<")
         .from(".c-head-title__char__inner", {
           y: 100,
           duration: .8,
