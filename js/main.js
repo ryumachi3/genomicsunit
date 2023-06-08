@@ -324,10 +324,7 @@ new Vue({
     $(function() {
       $('html,body').animate({ scrollTop: 0 }, '1');
     });
-
   },
-
-
 
   beforeDestroy() {
     window.removeEventListener('resize', this.handleResize);

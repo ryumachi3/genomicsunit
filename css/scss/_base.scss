@@ -107,7 +107,7 @@ html {
 
 body {
   background-color: $bg;
-  background-image: radial-gradient($bg 0%, $bg 50%);
+  background-image: radial-gradient(#F9F9F9 0%, $bg 50%);
   background-attachment: fixed;  
   color: $main-txt;
   font-size: rem(16);

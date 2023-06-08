@@ -152,7 +152,7 @@ html {
 
 body {
   background-color: #EFF5F7;
-  background-image: radial-gradient(#EFF5F7 0%, #EFF5F7 50%);
+  background-image: radial-gradient(#F9F9F9 0%, #EFF5F7 50%);
   background-attachment: fixed;
   color: #001E62;
   font-size: 1rem;
