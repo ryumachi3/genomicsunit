@@ -11,8 +11,7 @@
             <div class="l-kv__inner__photo__inner">
               <picture>
                 <source media="(max-width: 960px)" srcset="<?php echo get_theme_file_uri() ?>/img/kv_photo_main_tb.jpg">
-                <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_main.jpg" alt=""
-                  class="p-kv__inner__photo__main">
+                <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_main.jpg" alt="" class="p-kv__inner__photo__main">
                 </source>
               </picture>
               <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_sub.jpg" alt="" class="p-kv__inner__photo__sub">
@@ -45,8 +44,7 @@
           </p>
           <div class="p-kv__inner__description__illust__wrap">
             <span class="p-kv__inner__description__illust__light"></span>
-            <img src="<?php echo get_theme_file_uri() ?>/img/kv_illust_no-light.png" alt=""
-              class="p-kv__inner__description__illust">
+            <img src="<?php echo get_theme_file_uri() ?>/img/kv_illust_no-light.png" alt="" class="p-kv__inner__description__illust">
           </div>
         </div>
       </div>
@@ -54,82 +52,41 @@
     <!-- contents -->
     <div id="contents" class="l-contents">
       <div class="l-container">
-
-        <section class="l-top-news">
-          <div class="l-top-title">
-            <h2 class="c-top-title">お知らせ</h2>
-          </div>
-          <ul class="p-news-list l-top-news-list">
-            <li class="p-news-list__item">
-              <a href="<?php echo get_home_url(); ?>/news/26/" class="p-news-list__item__link">
-                <time class="p-news-list__item__time">2023年4月10日</time>
-                <div class="c-news-tag p-news-list__item__main__tag">
-                  <span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
-                    研究者の方へ
-                  </span>
-                </div>
-                <h3 class="p-news-list__item__main__title">
-                  臨床研究支援員募集
-                </h3>
+        <?php if (have_posts()) : ?>
+          <section class="l-top-news">
+            <div class="l-top-title">
+              <h2 class="c-top-title">お知らせ</h2>
+            </div>
+            <ul class="p-news-list l-top-news-list">
+              <?php
+              $sticky = get_option('sticky_posts');
+              $sticky_arg = array(
+                'include' => $sticky,
+              );
+              if (!empty($sticky)) {
+                $sticky_posts = get_posts($sticky_arg);
+                foreach ($sticky_posts as $post) {
+                  setup_postdata($post);
+                  echo '<li class="p-news-list__item">';
+                  get_template_part('parts/card_news');
+                  echo '</li>';
+                }
+                wp_reset_postdata();
+              }
+              ?>
+              <?php while (have_posts()) : the_post(); ?>
+                <li class="p-news-list__item">
+                  <?php get_template_part('parts/card_news'); ?>
+                </li>
+              <?php endwhile; ?>
+            </ul>
+            <div class="l-btn">
+              <a href="<?php echo get_home_url() ?>/news/" class="c-btn">
+                お知らせ一覧
               </a>
-            </li>
-            <li class="p-news-list__item">
-              <a class="p-news-list__item__link">
-                <time class="p-news-list__item__time">
-                  2023年5月9日
-                </time>
-                <div class="c-news-tag p-news-list__item__main__tag">
-                  <span class="c-news-tag__item p-news-list__item__main__tag__item -yellow">
-                    <i class="c-icon-pin"></i>
-                    固定されたお知らせ
-                  </span>
-                </div>
-                <h3 class="p-news-list__item__main__title">
-                  タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
-                </h3>
-              </a>
-            </li>
-            <li class="p-news-list__item">
-              <a class="p-news-list__item__link">
-                <time class="p-news-list__item__time">2023年12月10日</time>
-                <h3 class="p-news-list__item__main__title">
-                  がんゲノム医療キックオフミーティングの開催
-                </h3>
-              </a>
-            </li>
-            <li class="p-news-list__item">
-              <a href="http://genomicsunit.local/1/" class="p-news-list__item__link">
-                <time class="p-news-list__item__time">2023年1月12日</time>
-                <div class="c-news-tag p-news-list__item__main__tag">
-                  <span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
-                    研究者の方へ
-                  </span>
-                </div>
-                <h3 class="p-news-list__item__main__title">
-                  「がん」の遺伝子を調べる臨床研究「次世代統合的病理・遺伝子診断法の開発」の開始
-                </h3>
-              </a>
-            </li>
-            <li class="p-news-list__item">
-              <a class="p-news-list__item__link">
-                <time class="p-news-list__item__time">2023年12月10日</time>
-                <div class="c-news-tag p-news-list__item__main__tag">
-                  <span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
-                    医療機関の方へ
-                  </span>
-                </div>
-                <h3 class="p-news-list__item__main__title">
-                  がんゲノム医療キックオフミーティングの開催
-                </h3>
-              </a>
-            </li>
-          </ul>
-          <div class="l-btn">
-            <a href="<?php echo get_home_url() ?>/news" class="c-btn">
-              お知らせ一覧
-            </a>
-          </div>
-        </section>
+            </div>
+          </section>
+        <?php endif; ?>
         <section class="l-top-about">
           <div class="l-top-title">
             <h2 class="c-top-title">
@@ -162,15 +119,15 @@
               </div>
               <div class="p-about-list__item__info">
                 <p class="p-about-list__item__info__txt">
-                次世代シークエンサーという解析装置を使った「<span class="u-txt-point">パネル検査</span>」の登場により、がん遺伝子検査は大きく進化しました。どの遺伝子に異常があるのかが分かれば、<span class="u-txt-point">効率的で効果的な診断と治療が期待できる</span>のです。
+                  次世代シークエンサーという解析装置を使った「<span class="u-txt-point">パネル検査</span>」の登場により、がん遺伝子検査は大きく進化しました。どの遺伝子に異常があるのかが分かれば、<span class="u-txt-point">効率的で効果的な診断と治療が期待できる</span>のです。
                 </p>
               </div>
             </li>
           </ul>
           <div class="l-btn">
             <a href="<?php echo get_home_url() ?>/about" class="c-btn">
-            がん遺伝子検査について
-            </a> 
+              がん遺伝子検査について
+            </a>
           </div>
         </section>
 
@@ -199,12 +156,12 @@
               </div>
               <div class="p-kensa-list__item__info">
                 <p class="p-kensa-list__item__info__txt">
-                2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。
+                  2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。
                 </p>
               </div>
               <div class="p-kensa-list__item__btn l-btn">
                 <a href="<?php echo get_home_url() ?>/hoken" class="c-btn">
-                詳しく見る
+                  詳しく見る
                 </a>
               </div>
             </li>
@@ -222,12 +179,12 @@
               </div>
               <div class="p-kensa-list__item__info">
                 <p class="p-kensa-list__item__info__txt">
-                保険診療を受けられない、より詳しい検査をしたい、という方には自費診療でのがん遺伝子パネル検査をお勧めします。
+                  保険診療を受けられない、より詳しい検査をしたい、という方には自費診療でのがん遺伝子パネル検査をお勧めします。
                 </p>
               </div>
               <div class="p-kensa-list__item__btn l-btn">
                 <a href="<?php echo get_home_url() ?>/jihi" class="c-btn -point">
-                詳しく見る
+                  詳しく見る
                 </a>
               </div>
             </li>

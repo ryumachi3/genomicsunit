@@ -3,7 +3,7 @@
 	<?php get_template_part('nav'); ?>
 	<div class="l-main p-main">
 		<div id="contents" class="l-contents">
-      <div class="l-container">
+			<div class="l-container">
 				<section class="l-common-sec">
 					<h1 class="c-head-title -anime l-head-title l-iryo-head-title">
 						<span class="c-head-title__char -iryo"><span class="c-head-title__char__inner">医</span></span>
@@ -18,32 +18,58 @@
 						<section class="l-iryo-description">
 							<p class="l-iryo-description__txt">患者さんが「がん遺伝子検査」を受けるための<span class="u-txt-point">ご予約方法</span>と<span class="u-txt-point">検体や書類の準備</span>について、医療機関の方へのお願い事をまとめました。ご確認のうえ、ご対応をお願いいたします。</p>
 						</section>
-						<!-- <section class="l-iryo-news">
-							<div class="l-top-title">
-								<h2 class="c-top-title">お知らせ</h2>
-							</div>
-							<ul class="p-news-list l-news-list">
-								<li class="p-news-list__item">
-									<a href="<?php echo get_home_url(); ?>/news/26/" class="p-news-list__item__link">
-										<time class="p-news-list__item__time">2023年3月22日</time>
-										<div class="c-news-tag p-news-list__item__main__tag">
-											<span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
-												研究者の方へ
-											</span>
-										</div>
-										<h3 class="p-news-list__item__main__title">
-											臨床研究支援員募集
-										</h3>
+						<?php
+						$cat_id = get_cat_ID('医療機関の方へ');
+						$cat_link = get_category_link($cat_id);
+						$sticky = get_option('sticky_posts');
+						$cat_posts_args = array(
+							'category' => $cat_id,
+							'orderby' => 'date',
+							'order' => 'DESC',
+							'exclude' => $sticky,
+							'posts_per_page' => 3
+						);
+						$cat_posts = get_posts($cat_posts_args);
+						?>
+
+						<?php if (!empty($sticky) || !empty($cat_posts)) : ?>
+							<section class="l-iryo-news">
+								<div class="l-top-title">
+									<h2 class="c-top-title">お知らせ</h2>
+								</div>
+								<ul class="p-news-list l-news-list">
+									<?php if (!empty($sticky)) {
+										$sticky_args = array(
+											'category' => $cat_id,
+											'include' => $sticky,
+										);
+										$cat_posts_sticky = get_posts($sticky_args);
+										foreach ($cat_posts_sticky as $post) {
+											setup_postdata($post);
+											echo '<li class="p-news-list__item">';
+											get_template_part('parts/card_news');
+											echo '</li>';
+										}
+										wp_reset_postdata();
+									} ?>
+									<?php if (!empty($cat_posts)) {
+										foreach ($cat_posts as $post) {
+											setup_postdata($post);
+											echo '<li class="p-news-list__item">';
+											get_template_part('parts/card_news');
+											echo '</li>';
+										}
+										wp_reset_postdata();
+									}; ?>
+
+								</ul>
+								<div class="l-btn">
+									<a href="<?php echo esc_url($cat_link); ?>" class="c-btn p-iryo-news__btn -iryo">
+										もっと見る
 									</a>
-								</li>							
-							</ul>
-							<div class="l-btn"> -->
-								<!-- □TODO:↓リンクを「医療機関の方へ」カテゴリページに遷移させる -->
-								<!-- <a href="<?php echo get_home_url() ?>/news" class="c-btn p-iryo-news__btn -iryo">
-									もっと見る
-								</a>
-							</div>
-						</section> -->
+								</div>
+							</section>
+						<?php endif; ?>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>検査のご予約方法</h2>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
@@ -64,7 +90,7 @@
 								<p class="p-hoken-sec__note c-description__note -kome"><span class="u-txt-point">既往病理診断報告書</span>についても、検査用検体の選定において重要な情報となりますので、可能な範囲でご提供をお願いいたします。検査所見、CT、MRI 等の画像データの提出については必須ではありませんが、結果の解釈や推奨治療法の選定において参考になる場合がありますので、可能であればご提供をお願いいたします。</p>
 							</div>
 						</section>
-						<section class="l-hoken-sec p-hoken-sec -sec02">		
+						<section class="l-hoken-sec p-hoken-sec -sec02">
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の準備について</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
 								<p class="p-hoken-sec__intro__txt">1回目の受診後に、病理検体をご準備いただきますので、<span class="u-txt-point">ご予約前に病理検体の有無をご確認ください</span>。核酸抽出検査を行うための手術・生検時のホルマリン固定パラフィン包埋（FFPE）から作成された未染色標本が必要となります。</p>
@@ -92,7 +118,8 @@
 								<p class="p-hoken-sec__note c-description__note -kome"><span class="u-txt-point">病理検体がない場合は先に検査の可否についてゲノム医療ユニットまでご相談ください</span>。尚、予約確定後、使用する病理検体の選定についてのご案内を、こちらの担当者よりご連絡させて頂きますので、診療情報提供書内に連絡先を明記願います。</p>
 							</div>
 						</section>
-						<!-- <section class="l-hoken-sec p-hoken-sec -sec03 -last">		
+						<?php /*
+						<section class="l-hoken-sec p-hoken-sec -sec03 -last">
 							<h2 class="c-title l-hoken-sec__title">病理検体の提出先</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
 								<p class="p-hoken-sec__intro__txt">下記の「検体送付・受領書」をダウンロードして必要事項をご記入いただき、<span class="u-txt-point">病理検体、病理診断書コピー、該当するブロックが記載されている切り出し図コピー</span>を同封のうえ、郵便または宅急便(ワレモノ・室温)にて郵送をお願い致します。</p>
@@ -115,14 +142,15 @@
 									</p>
 								</div>
 							</div>
-						</section> -->
-						</div>
-					</section>
+						</section>
+						*/ ?>
+					</div>
+				</section>
 			</div>
 		</div>
-    <!-- contents -->
-  </div>
-  <!-- l-main -->
+		<!-- contents -->
+	</div>
+	<!-- l-main -->
 </div>
 <!-- l-main-grid -->
 <?php get_footer(); ?>
