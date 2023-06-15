@@ -17,7 +17,7 @@
 							<img class="p-jihi-sec__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_jihi01.png" alt="">
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
-							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>保険診療検査の種類と費用</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>自費診療検査の種類と費用</h2>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">PleSSision-panel検査<br class="u-sp_br">(プレシジョン パネル検査)</h3>
