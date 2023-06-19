@@ -1,4 +1,33 @@
 <?php
+
+//project
+function project()
+{
+	return 'genomicsunit'; //プロジェクト名を入力（英数字）
+}
+
+//version
+function lastupdate()
+{
+	return '20230525'; //キャッシュ対策に更新日を入れる
+}
+
+function theme_setup()
+{
+	/* titleタグ出力 */
+	add_theme_support('title-tag');
+}
+
+add_action('after_setup_theme', 'theme_setup');
+
+//タイトルのセパレーター変更
+function change_title_separator($separator)
+{
+	$separator = '|';
+	return $separator;
+}
+add_filter('document_title_separator', 'change_title_separator');
+
 add_shortcode('tp', 'shortcode_tp');
 function shortcode_tp($atts, $content = '')
 {
@@ -23,6 +52,36 @@ function loopNumber()
 	global $wp_query;
 	return $wp_query->current_post + 1;
 }
+
+//head成形//
+//METAタグのgeneratorを消す
+remove_action('wp_head', 'wp_generator');
+// wp-jsonを出力させない
+remove_action('wp_head', 'rest_output_link_wp_head');
+// ブログ編集ツールのタグを出力させない
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wlwmanifest_link');
+// ショートリンクを出力させない
+remove_action('wp_head', 'wp_shortlink_wp_head');
+// Embed埋め込み用のタグを出力させない
+remove_action('wp_head', 'rest_output_link_wp_head');
+remove_action('wp_head', 'wp_oembed_add_discovery_links');
+remove_action('wp_head', 'wp_oembed_add_host_js');
+//RSSを削除
+remove_action('wp_head', 'feed_links_extra', 3);
+
+//絵文字無効
+function disable_emojis()
+{
+	remove_action('wp_head', 'print_emoji_detection_script', 7);
+	remove_action('admin_print_scripts', 'print_emoji_detection_script');
+	remove_action('wp_print_styles', 'print_emoji_styles');
+	remove_action('admin_print_styles', 'print_emoji_styles');
+	remove_filter('the_content_feed', 'wp_staticize_emoji');
+	remove_filter('comment_text_rss', 'wp_staticize_emoji');
+	remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+}
+add_action('init', 'disable_emojis');
 
 // アイキャッチ画像を利用
 add_theme_support('post-thumbnails');
@@ -52,6 +111,83 @@ function change_graphic_lib($array)
 add_filter('wp_calculate_image_srcset_meta', '__return_null');
 
 
+// 固定ページで「抜粋」を有効化
+add_post_type_support('page', 'excerpt');
+
+// WordPressのjQueryをフロントでは無効
+function deregister_script()
+{
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+	}
+}
+add_action('wp_print_scripts', 'deregister_script', 100);
+
+/* CSS・JSファイルを読み込み */
+function genome_js_css()
+{
+	//CSS読み込み
+	wp_enqueue_style(project() . '-googlefonts', 'https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+	wp_enqueue_style(project() . '-fancybox', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css', array(project() . '-googlefonts'));
+	wp_enqueue_style(project() . '-genomics', get_template_directory_uri() . '/css/style.css' . '?date=' . lastupdate(), array(project() . '-fancybox'));
+
+
+	//JS読み込み
+	wp_enqueue_script(project() . '-sakuraFont', '//webfonts.sakura.ne.jp/js/sakurav3.js');
+	wp_enqueue_script(project() . '-jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js');
+	wp_enqueue_script(project() . '-fancybox', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js', array(project() . '-jquery'));
+	wp_enqueue_script(project() . '-smoothscroll', 'https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js', array(project() . '-fancybox'));
+
+	wp_enqueue_script(project() . '-vue', 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js', array(project() . '-smoothscroll'));
+	wp_enqueue_script(project() . '-scrollreveal', 'https://unpkg.com/scrollreveal', array(project() . '-vue'));
+	wp_enqueue_script(project() . '-gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js', array(project() . '-scrollreveal'));
+
+	wp_enqueue_script(project() . '-ScrollTrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js', array(project() . '-gsap'));
+
+	wp_enqueue_script(project() . '-pixi', get_template_directory_uri() . '/js/pixi.min.js' . '?date=' . lastupdate(), array(project() . '-ScrollTrigger'));
+	wp_enqueue_script(project() . '-bganimation', get_template_directory_uri() . '/js/bganimation.js' . '?date=' . lastupdate(), array(project() . '-pixi'));
+	wp_enqueue_script(project() . '-main', get_template_directory_uri() . '/js/main.js' . '?date=' . lastupdate(), array(project() . '-bganimation'));
+}
+add_action('wp_enqueue_scripts', 'genome_js_css');
+
+/* jsファイルを読み込みタイミング制御 */
+function add_defer($tag, $handle)
+{
+	if ($handle == project() . '-vue' || $handle == project() . '-pixi' || $handle == project() . '-bganimation' || $handle == project() . '-main') {
+		return str_replace(' src=', ' defer src=', $tag);
+	}
+	return $tag;
+}
+add_filter('script_loader_tag', 'add_defer', 10, 2);
+
+//タイトルの変更
+function change_title_parts($title)
+{
+	if (is_front_page()) {
+		unset($title['tagline']);
+	}
+	if (is_page('hoken') || is_page('jihi')) {
+		$title['title'] .= ' | がん遺伝子パネル検査';
+	}
+	if (is_post_type_archive('staff')) {
+		$title['title'] = 'スタッフ紹介';
+	}
+	if (is_category()) {
+		$title['title'] = 'おしらせ（' . single_cat_title('', false) . '）';
+	}
+	if (is_404()) {
+		// 404ページ
+		$title['title'] = 'お探しのページは見つかりませんでした';
+	}
+	// 以下のパラメータを使用できます。
+	// $title['page']  = ''; // ページ送りがあるページのページ番号（オプション）
+	// $title['tagline'] = 'キャッチフレーズ'; // トップページの時のキャッチフレーズ（オプション）
+	// $title['site'] = 'サイト名'; // トップページ以外の時のサイトタイトル（オプション）
+	return $title;
+}
+add_filter('document_title_parts', 'change_title_parts', 10, 1);
+
+
 ////////////////////
 //クエリ変更
 ////////////////////
@@ -63,15 +199,20 @@ function change_query($query)
 	if (is_front_page() || is_post_type_archive('post')) {
 		$query->set('post__not_in', get_option('sticky_posts'));
 		$query->set('orderby', 'date');
-		$query->set('oder', 'DESC');
+		$query->set('order', 'DESC');
 		if (is_front_page()) {
 			$query->set('posts_per_page', 5);
 		}
 	}
+	if (is_post_type_archive('staff')) {
+		$query->set('orderby', 'ID');
+		$query->set('order', 'ASC');
+		$query->set('posts_per_page', -1);
+	}
 	if (is_category()) {
 		$query->set('post__not_in', get_option('sticky_posts'));
 		$query->set('orderby', 'date');
-		$query->set('oder', 'DESC');
+		$query->set('order', 'DESC');
 	}
 }
 add_action('pre_get_posts', 'change_query');
@@ -186,3 +327,52 @@ function pagination($pages = '', $range = 2)
 		echo "</ul>\n";
 	}
 }
+
+
+//wordpressのデフォルトのサイトマップをカスタマイズ（ユーザ一覧を除外）
+add_filter(
+	'wp_sitemaps_add_provider',
+	function ($provider, $name) {
+		return ($name == 'users') ? false : $provider;
+	},
+	10,
+	2
+);
+
+
+//acfのリッチエディタを追加
+function my_acf_toolbars($toolbars)
+{
+	// ツールバーの種類に「Simple」という項目を追加
+	$toolbars['Simple'] = array();
+	$toolbars['Simple'][1] = array('link', 'unlink'); // 「Simple」の中に表示したいボタンを選択
+
+	return $toolbars;
+}
+add_filter('acf/fields/wysiwyg/toolbars', 'my_acf_toolbars');
+
+
+//スラッグの日本語禁止
+function auto_post_slug($slug, $post_ID, $post_status, $post_type)
+{
+	if (preg_match('/(%[0-9a-f]{2})+/', $slug)) {
+		$slug = utf8_uri_encode($post_type) . $post_ID;
+	}
+	return $slug;
+}
+add_filter('wp_unique_post_slug', 'auto_post_slug', 10, 4);
+
+
+//オプションページ追加
+if (function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'post_id'       => 'staff_sec2',
+		'page_title'    => 'スタッフ・共同研究員',
+		'menu_title'    => 'スタッフ・共同研究員',
+		'menu_slug'     => 'staff_sec2',
+		'capability'    => 'edit_posts',
+		'parent_slug'   => 'edit.php?post_type=staff',
+		'position'  => 50,
+		'redirect'  => false,
+	));
+};

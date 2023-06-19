@@ -18,7 +18,7 @@
 							<p class="l-iryo-description__txt">ゲノム医療ユニットから研究者の方に向けたお知らせや臨床研究の内容をご紹介します。</p>
 						</section>
 						<?php
-						$cat_id = get_cat_ID('医療機関の方へ');
+						$cat_id = get_cat_ID('研究者の方へ');
 						$cat_link = get_category_link($cat_id);
 						$sticky = get_option('sticky_posts');
 						$cat_posts_args = array(
