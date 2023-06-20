@@ -415,37 +415,37 @@ new Vue({
       }
     },
     handleMousemove(event) {
-      const SURPLUS = 30; // カーソルがこれより外に出たら消す
-      this.cursorX = event.clientX;
-      this.cursorY = event.clientY;
-      const pointer = this.$refs.cursor;
+      // const SURPLUS = 30; // カーソルがこれより外に出たら消す
+      // this.cursorX = event.clientX;
+      // this.cursorY = event.clientY;
+      // const pointer = this.$refs.cursor;
     
-      // マウス下の要素一覧を取得
-      const elements = document.elementsFromPoint(event.clientX, event.clientY);
+      // // マウス下の要素一覧を取得
+      // const elements = document.elementsFromPoint(event.clientX, event.clientY);
     
-      const target = elements.find((el) => el.classList.contains("js-light-out") || el.classList.contains("c-btn") || el.classList.contains("p-news-list"));
+      // const target = elements.find((el) => el.classList.contains("js-light-out") || el.classList.contains("c-btn") || el.classList.contains("p-news-list"));
     
-      if (event.clientX < SURPLUS || event.clientY < SURPLUS || event.clientX >= window.innerWidth - SURPLUS || event.clientY >= window.innerHeight - SURPLUS) {
-        // マウスカーソルがブラウザ画面外に出た場合
-        pointer.style.animationName = 'light-out';
-        pointer.style.animationDuration = '.5s';
-        pointer.style.animationTimingFunction = 'ease-out';
-        pointer.style.animationIterationCount = '1';
-        pointer.style.animationFillMode = 'forwards';
-      } else if (target) {
-        // マウスカーソルが特定の要素上にある場合
-        pointer.style.animationName = 'light-out';
-        pointer.style.animationDuration = '.5s';
-        pointer.style.animationTimingFunction = 'ease-out';
-        pointer.style.animationIterationCount = '1';
-        pointer.style.animationFillMode = 'forwards';
-      } else {
-        // 上記の条件に当てはまらない場合
-        pointer.style.animationName = 'light-anime';
-        pointer.style.animationDuration = '3.5s';
-        pointer.style.animationTimingFunction = 'ease';
-        pointer.style.animationIterationCount = 'infinite';
-      }      
+      // if (event.clientX < SURPLUS || event.clientY < SURPLUS || event.clientX >= window.innerWidth - SURPLUS || event.clientY >= window.innerHeight - SURPLUS) {
+      //   // マウスカーソルがブラウザ画面外に出た場合
+      //   pointer.style.animationName = 'light-out';
+      //   pointer.style.animationDuration = '.5s';
+      //   pointer.style.animationTimingFunction = 'ease-out';
+      //   pointer.style.animationIterationCount = '1';
+      //   pointer.style.animationFillMode = 'forwards';
+      // } else if (target) {
+      //   // マウスカーソルが特定の要素上にある場合
+      //   pointer.style.animationName = 'light-out';
+      //   pointer.style.animationDuration = '.5s';
+      //   pointer.style.animationTimingFunction = 'ease-out';
+      //   pointer.style.animationIterationCount = '1';
+      //   pointer.style.animationFillMode = 'forwards';
+      // } else {
+      //   // 上記の条件に当てはまらない場合
+      //   pointer.style.animationName = 'light-anime';
+      //   pointer.style.animationDuration = '3.5s';
+      //   pointer.style.animationTimingFunction = 'ease';
+      //   pointer.style.animationIterationCount = 'infinite';
+      // }      
     }
   }
 })

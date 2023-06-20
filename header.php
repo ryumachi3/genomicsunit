@@ -54,4 +54,5 @@
       </div>
     </transition> -->
     <div class="v-home" :class="[ isloading ? '-isloading' : '-noloading' ]">
-      <div ref="cursor" class="p-cursor" :style="{ top: cursorY + 'px', left: cursorX + 'px' }"></div>
+      <!-- マウスストーカーは削除 -->
+      <!-- <div ref="cursor" class="p-cursor" :style="{ top: cursorY + 'px', left: cursorX + 'px' }"></div> -->
