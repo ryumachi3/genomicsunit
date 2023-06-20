@@ -173,7 +173,7 @@ function change_title_parts($title)
 		$title['title'] = 'スタッフ紹介';
 	}
 	if (is_category()) {
-		$title['title'] = 'おしらせ（' . single_cat_title('', false) . '）';
+		$title['title'] = 'お知らせ（' . single_cat_title('', false) . '）';
 	}
 	if (is_404()) {
 		// 404ページ
@@ -372,6 +372,16 @@ if (function_exists('acf_add_options_page')) {
 		'menu_slug'     => 'staff_sec2',
 		'capability'    => 'edit_posts',
 		'parent_slug'   => 'edit.php?post_type=staff',
+		'position'  => 50,
+		'redirect'  => false,
+	));
+	acf_add_options_page(array(
+		'post_id'       => 'rinsyo_pdf',
+		'page_title'    => '臨床研究PDF',
+		'menu_title'    => '臨床研究PDF',
+		'menu_slug'     => 'rinsyo_pdf',
+		'capability'    => 'edit_posts',
+		'parent_slug'   => 'edit.php?post_type=page',
 		'position'  => 50,
 		'redirect'  => false,
 	));
