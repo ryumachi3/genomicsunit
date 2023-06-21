@@ -20,8 +20,8 @@ switch ($face) {
             $photo_elm = '<img src="' . $photo . '" alt="" class="p-doctor-sec__list__item__img" alt="' . esc_attr(get_the_title()) . '">';
             $modal_elm = '<img src="' . $photo . '" alt="" class="p-doctor-sec__modal__profile__img" alt="' . esc_attr(get_the_title()) . '">';
         } else {
-            $normal_size = wp_get_attachment_url($photo, 'thumbnail');
-            $medium_size = wp_get_attachment_url($photo, 'medium');
+            $normal_size = wp_get_attachment_image_url($photo, 'thumbnail');
+            $medium_size = wp_get_attachment_image_url($photo, 'medium');
             $photo_elm = '<img srcset="' . $medium_size . ' 2x" src="' . $normal_size . '" alt="" class="p-doctor-sec__list__item__img" alt="' . esc_attr(get_the_title()) . '">';
             $modal_elm = '<img srcset="' . $medium_size . ' 2x" src="' . $normal_size . '" alt="" class="p-doctor-sec__modal__profile__img" alt="' . esc_attr(get_the_title()) . '">';
         }
