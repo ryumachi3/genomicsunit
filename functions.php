@@ -335,17 +335,6 @@ function pagination($pages = '', $range = 2)
 }
 
 
-//wordpressのデフォルトのサイトマップをカスタマイズ（ユーザ一覧を除外）
-add_filter(
-	'wp_sitemaps_add_provider',
-	function ($provider, $name) {
-		return ($name == 'users') ? false : $provider;
-	},
-	10,
-	2
-);
-
-
 //acfのリッチエディタを追加
 function my_acf_toolbars($toolbars)
 {
@@ -409,3 +398,22 @@ function show_sticky()
 	}
 	return $show_sticky_posts_ID;
 }
+
+//wordpressのデフォルトのサイトマップをカスタマイズ
+///ユーザ一覧を除外
+function exclude_sitemap_user($provider, $name)
+{
+	if ('users' === $name) {
+		return false;
+	}
+	return $provider;
+}
+add_filter('wp_sitemaps_add_provider', 'exclude_sitemap_user',  10, 2);
+
+////投稿タイプを除外
+function exclude_sitemap_posttype($post_types)
+{
+	unset($post_types['staff']);
+	return $post_types;
+}
+add_filter('wp_sitemaps_post_types', 'exclude_sitemap_posttype',  10, 2);
