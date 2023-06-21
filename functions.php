@@ -121,7 +121,7 @@ function deregister_script()
 		wp_deregister_script('jquery');
 	}
 }
-add_action('wp_print_scripts', 'deregister_script', 100);
+add_action('wp_enqueue_scripts', 'deregister_script', 100);
 
 /* CSS・JSファイルを読み込み */
 function genome_js_css()
@@ -196,12 +196,12 @@ function change_query($query)
 	if (is_admin() || !$query->is_main_query()) {
 		return;
 	}
-	if (is_front_page() || is_post_type_archive('post')) {
+	if (is_front_page()) {
 		$query->set('post__not_in', get_option('sticky_posts'));
 		$query->set('orderby', 'date');
 		$query->set('order', 'DESC');
 		if (is_front_page()) {
-			$query->set('posts_per_page', 5);
+			$query->set('posts_per_page', 3);
 		}
 	}
 	if (is_post_type_archive('staff')) {
@@ -209,6 +209,12 @@ function change_query($query)
 		$query->set('order', 'ASC');
 		$query->set('posts_per_page', -1);
 	}
+	if (is_post_type_archive('post')) {
+		$query->set('post__not_in', get_option('sticky_posts'));
+		$query->set('orderby', 'date');
+		$query->set('order', 'DESC');
+	}
+
 	if (is_category()) {
 		$query->set('post__not_in', get_option('sticky_posts'));
 		$query->set('orderby', 'date');
@@ -351,6 +357,9 @@ function my_acf_toolbars($toolbars)
 }
 add_filter('acf/fields/wysiwyg/toolbars', 'my_acf_toolbars');
 
+//ブロックの制御
+require_once dirname(__FILE__) . '/parts/blockeditor.php';
+
 
 //スラッグの日本語禁止
 function auto_post_slug($slug, $post_ID, $post_status, $post_type)
@@ -386,3 +395,17 @@ if (function_exists('acf_add_options_page')) {
 		'redirect'  => false,
 	));
 };
+
+
+//先頭固定表示で公開されている記事のIDを返す
+function show_sticky()
+{
+	$sticky_posts_ID = get_option('sticky_posts');
+	$show_sticky_posts_ID = [];
+	foreach ($sticky_posts_ID as $show_sticky_post_ID) {
+		if (get_post_status($show_sticky_post_ID) == 'publish') {
+			$show_sticky_posts_ID[]  = $show_sticky_post_ID;
+		}
+	}
+	return $show_sticky_posts_ID;
+}

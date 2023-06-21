@@ -21,7 +21,7 @@
 						<?php
 						$cat_id = get_cat_ID('医療機関の方へ');
 						$cat_link = get_category_link($cat_id);
-						$sticky = get_option('sticky_posts');
+						$sticky = show_sticky();
 						$cat_posts_args = array(
 							'category' => $cat_id,
 							'orderby' => 'date',
@@ -42,6 +42,7 @@
 										$sticky_args = array(
 											'category' => $cat_id,
 											'include' => $sticky,
+											'post_status' => 'publish',
 										);
 										$cat_posts_sticky = get_posts($sticky_args);
 										foreach ($cat_posts_sticky as $post) {

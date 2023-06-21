@@ -52,14 +52,15 @@
     <!-- contents -->
     <div id="contents" class="l-contents">
       <div class="l-container">
-        <?php if (have_posts()) : ?>
+        <?php
+        $sticky = show_sticky();
+        if (have_posts() || !empty($sticky)) : ?>
           <section class="l-top-news">
             <div class="l-top-title">
               <h2 class="c-top-title">お知らせ</h2>
             </div>
             <ul class="p-news-list l-top-news-list">
               <?php
-              $sticky = get_option('sticky_posts');
               $sticky_arg = array(
                 'include' => $sticky,
               );

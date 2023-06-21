@@ -16,7 +16,7 @@
 							<ul class="p-news-list l-news-list-archive">
 								<?php
 								$cat_id = get_query_var('cat');
-								$sticky = get_option('sticky_posts');
+								$sticky = show_sticky();
 								$sticky_arg = array(
 									'post__in' => $sticky,
 									'category' => $cat_id,
