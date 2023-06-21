@@ -16,13 +16,23 @@
 											<span class="c-head-title__char -small -navy-frame">せ</span>
 										</p>
 										<div class="p-news-dt__tag c-news-tag">
-											<span class="p-news-dt__tag__item c-news-tag__item -yellow">
-												<i class="c-icon-pin"></i>
-												固定されたお知らせ
-											</span>
-											<span class="p-news-dt__tag__item c-news-tag__item -iryo">
-												研究者の方へ
-											</span>
+											<?php if (is_sticky()) : ?>
+												<span class="p-news-dt__tag__item c-news-tag__item -yellow">
+													<i class="c-icon-pin"></i>
+													固定されたお知らせ
+												</span>
+											<?php endif; ?>
+											<?php
+											$categories = get_the_category();
+											if ($categories) {
+												foreach ($categories as $category) {
+													$cat_name = $category->cat_name;
+													if ($cat_name !== '未分類') {
+														echo '<span class="p-news-dt__tag__item c-news-tag__item -iryo">' . esc_html($cat_name) . '</span>';
+													}
+												}
+											};
+											?>
 										</div>
 									</div>
 									<h1 class="l-news-dt__main-title p-news-dt__main-title">
