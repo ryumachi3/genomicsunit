@@ -205,8 +205,6 @@ function change_query($query)
 		}
 	}
 	if (is_post_type_archive('staff')) {
-		$query->set('orderby', 'ID');
-		$query->set('order', 'ASC');
 		$query->set('posts_per_page', -1);
 	}
 	if (is_post_type_archive('post')) {
