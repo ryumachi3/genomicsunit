@@ -417,3 +417,11 @@ function exclude_sitemap_posttype($post_types)
 	return $post_types;
 }
 add_filter('wp_sitemaps_post_types', 'exclude_sitemap_posttype',  10, 2);
+
+
+//ログイン画面カスタマイズ
+function login_logo()
+{
+	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/css/login-style.css" />';
+}
+add_action('login_head', 'login_logo');
