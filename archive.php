@@ -12,7 +12,8 @@
 						<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">せ</span></span>
 					</h1>
 					<div class="c-contents">
-						<?php if (have_posts()) : ?>
+						<?php $sticky = show_sticky();
+						if (have_posts() || !empty($sticky)) : ?>
 							<ul class="p-news-list l-news-list-archive">
 								<?php
 								$cat_id = get_query_var('cat');

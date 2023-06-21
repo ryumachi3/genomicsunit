@@ -385,15 +385,20 @@ if (function_exists('acf_add_options_page')) {
 
 
 //先頭固定表示で公開されている記事のIDを返す
-function show_sticky()
+////show_sticky(array('category1', 'category2', 'category3'))
+function show_sticky($categories = array())
 {
 	$sticky_posts_ID = get_option('sticky_posts');
 	$show_sticky_posts_ID = [];
+
 	foreach ($sticky_posts_ID as $show_sticky_post_ID) {
-		if (get_post_status($show_sticky_post_ID) == 'publish') {
-			$show_sticky_posts_ID[]  = $show_sticky_post_ID;
+		$post_categories = wp_get_post_categories($show_sticky_post_ID);
+
+		if (get_post_status($show_sticky_post_ID) == 'publish' && (empty($categories) || array_intersect($categories, $post_categories))) {
+			$show_sticky_posts_ID[] = $show_sticky_post_ID;
 		}
 	}
+
 	return $show_sticky_posts_ID;
 }
 

@@ -21,7 +21,7 @@
 						<?php
 						$cat_id = get_cat_ID('医療機関の方へ');
 						$cat_link = get_category_link($cat_id);
-						$sticky = show_sticky();
+						$sticky = show_sticky(array($cat_id));
 						$cat_posts_args = array(
 							'category' => $cat_id,
 							'orderby' => 'date',
@@ -40,7 +40,6 @@
 								<ul class="p-news-list l-news-list">
 									<?php if (!empty($sticky)) {
 										$sticky_args = array(
-											'category' => $cat_id,
 											'include' => $sticky,
 											'post_status' => 'publish',
 										);
