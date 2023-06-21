@@ -22,7 +22,7 @@
                                     'post__in' => $sticky,
                                     'category' => $cat_id,
                                 );
-                                if (!empty($sticky)) {
+                                if (!empty($sticky) && !is_paged()) {
                                     $sticky_posts = get_posts($sticky_arg);
                                     foreach ($sticky_posts as $post) {
                                         setup_postdata($post);
