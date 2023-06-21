@@ -2,7 +2,6 @@
 
 add_filter('allowed_block_types_all', function ($allowed_block_types, $block_editor_context) {
     global $post_type;
-    echo $post_type;
     if ($post_type == 'post' || $post_type == 'page') {
         $allowed_block_types = [
             'core/paragraph', // 段落
