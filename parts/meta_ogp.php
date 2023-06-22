@@ -39,7 +39,7 @@ function my_meta_ogp()
             }
         }
         if (is_archive()) {
-            if (is_post_type_archive('news')) {
+            if (is_post_type_archive('post')) {
                 $ogp_title = 'お知らせ | 慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット';
                 $ogp_descr = 'ゲノム医療に関するお知らせをお届けします。';
             } elseif (is_post_type_archive('staff')) {
