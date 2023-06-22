@@ -16,7 +16,7 @@ function my_meta_ogp()
         $bloginfo_des = get_bloginfo('description');
 
         if (is_front_page()) {
-            $ogp_title = get_bloginfo('name') . '｜' . get_bloginfo('description');
+            $ogp_title = get_bloginfo('name');
             $bloginfo_des = get_bloginfo('description');
         }
         if (is_singular()) {
