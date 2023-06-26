@@ -13,7 +13,7 @@ const MYBGAPP = {
 	maxBlur:10,//ブラーの最大値
 
 	groups:[],//文字グループオブジェクトのリスト
-	groupSpeed:5,//グループの速度(スクロールによって変わる。時間とともに減衰)
+	groupSpeed:1,//グループの速度(スクロールによって変わる。時間とともに減衰)
 	groupSpeedRate:.95,//速度の減衰率
 	groupSpeedMin:1,//最小速度
 	groupCharasMin:10,//グループ内の最少文字数
@@ -87,17 +87,16 @@ MYBGAPP.init = () => {
 	MYBGAPP.charCntW = Math.ceil(MYBGAPP.ww / MYBGAPP.charW);
 	MYBGAPP.charCntH = Math.ceil(MYBGAPP.wh / MYBGAPP.charH);
 
-	//任意のタイミングでスタート
-	// setTimeout(() => {
-		
-	// 	MYBGAPP.start();
-
-	// }, 500);
+	if (location.pathname == '/stg/' || location.pathname == '/wp/' || location.pathname == '/') {
+		MYBGAPP.start(6000);
+	} else {
+		MYBGAPP.start(4000);
+	}
 
 }
 
 
-MYBGAPP.start = () => {
+MYBGAPP.start = (duration) => {
 
 	//画像がロードされたら
 	MYBGAPP.loader.load((loader, resources) => {
@@ -117,10 +116,16 @@ MYBGAPP.start = () => {
 		MYBGAPP.createGroups();
 
 		//ページ表示直後はしばらくステージを透明にしないための設定
-		let allowAlpha = false;
+		// let allowAlpha = false;
 		setTimeout(() => {
-			allowAlpha = true;
-		},3000);
+			// allowAlpha = true;
+			//背景自体をフェードアウト
+			gsap.to("#bg",{
+	      opacity:0,
+	      display:'none',
+	      duration:2
+	    });
+		},duration);
 
 		//ループ
 		MYBGAPP.pixi.ticker.add((delta) => {
@@ -133,15 +138,15 @@ MYBGAPP.start = () => {
 			MYBGAPP.groupSpeed *= MYBGAPP.groupSpeedRate;
 			if(MYBGAPP.groupSpeed <= MYBGAPP.groupSpeedMin) MYBGAPP.groupSpeed = MYBGAPP.groupSpeedMin;
 
-			//時間と共にステージをぼかす
-			if(allowAlpha){
-				if(MYBGAPP.groupSpeed <= MYBGAPP.groupSpeedMin) MYBGAPP.blurFilter.blur += .1;
-				if(MYBGAPP.blurFilter.blur >= MYBGAPP.maxBlur) MYBGAPP.blurFilter.blur = MYBGAPP.maxBlur;
-			}
+			// //時間と共にステージをぼかす
+			// if(allowAlpha){
+			// 	if(MYBGAPP.groupSpeed <= MYBGAPP.groupSpeedMin) MYBGAPP.blurFilter.blur += .1;
+			// 	if(MYBGAPP.blurFilter.blur >= MYBGAPP.maxBlur) MYBGAPP.blurFilter.blur = MYBGAPP.maxBlur;
+			// }
 
-			// 一定のスピードでスクロールするとステージをくっきり
-			if(MYBGAPP.groupSpeed > MYBGAPP.groupSpeedMin) MYBGAPP.blurFilter.blur -= .3;
-			if(MYBGAPP.blurFilter.blur <= 0) MYBGAPP.blurFilter.blur = 0;
+			// // 一定のスピードでスクロールするとステージをくっきり
+			// if(MYBGAPP.groupSpeed > MYBGAPP.groupSpeedMin) MYBGAPP.blurFilter.blur -= .3;
+			// if(MYBGAPP.blurFilter.blur <= 0) MYBGAPP.blurFilter.blur = 0;
 		});
 
 	});

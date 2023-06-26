@@ -57,12 +57,6 @@ new Vue({
       this.isTopPage = true;
       this.isloadingLogo = false;
 
-      // 背景アニメーションスタート
-      // タイトルアニメが終わった後
-      setTimeout(() => {		
-        MYBGAPP.start();
-      }, 1300);
-
       const mvtl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
       mvtl
@@ -77,7 +71,7 @@ new Vue({
           opacity: 1,
           duration: .05,
           ease: "power4.out",
-        }, "<")
+        }, "+=.8")
         // .from(".l-header-sp__inner,.p-header__logo,.p-nav", {
         // .from(".l-header-sp__inner,.p-header__logo", {
         //     opacity: 0,
@@ -149,12 +143,6 @@ new Vue({
 
     } else {
 
-      // 背景アニメーションスタート
-      // タイトルアニメが終わった後
-      setTimeout(() => {
-        MYBGAPP.start();
-      }, 500);
-
       setTimeout(() => {
         this.isloading = false;
       }, 1000);
@@ -188,7 +176,7 @@ new Vue({
           opacity: 1,
           duration: .05,
           ease: "power4.out",
-        },"<")
+        },"+=.55")
         .from(".c-head-title.-anime", {
           y: 10,
           opacity: 0,

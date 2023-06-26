@@ -110,7 +110,7 @@
               </div>
               <div class="p-about-list__item__info">
                 <p class="p-about-list__item__info__txt">
-                  <span class="u-txt-point">がんは遺伝子の変化によって発症する</span>ことが分かってきました。がんの発症に強く関連する遺伝子はこれまでに数百種類見つかっています。それらの遺伝子に異常がないかどうかを調べるのが「がん遺伝子検査」です。
+                  <span class="u-txt-point">がんは遺伝子の変化によって発症する</span>ことが分かってきました。がんの発症に強く関連する遺伝子はこれまでに数百種類見つかっています。それらの遺伝子に変化がないかどうかを調べるのが「がん遺伝子検査」です。
                 </p>
               </div>
             </li>
@@ -120,7 +120,7 @@
               </div>
               <div class="p-about-list__item__info">
                 <p class="p-about-list__item__info__txt">
-                  次世代シークエンサーという解析装置を使った「<span class="u-txt-point">パネル検査</span>」の登場により、がん遺伝子検査は大きく進化しました。どの遺伝子に異常があるのかが分かれば、<span class="u-txt-point">効率的で効果的な診断と治療が期待できる</span>のです。
+                  次世代シークエンサーという解析装置を使った「<span class="u-txt-point">がん遺伝子パネル検査</span>」の登場により、がん遺伝子検査は大きく進化しました。どの遺伝子に変化があるのかが分かれば、<span class="u-txt-point">効率的で効果的な診断と治療が期待できる</span>のです。
                 </p>
               </div>
             </li>

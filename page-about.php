@@ -38,7 +38,7 @@
 							</div>
 							<img class="p-about-main__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/illust_about03.png" alt="">
 						</div>
-						<h2 class="c-title l-about-main__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>なぜパネル検査をするのか</h2>
+						<h2 class="c-title l-about-main__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>なぜがん遺伝子パネル検査をするのか</h2>
 						<div class="l-container3 l-about-main__description p-about-main__description -desc03">
 							<div class="c-txtbox">														
 								<p class="l-about-main__description__txt">がん遺伝子パネル検査をすることで、どの遺伝子に変化があるのかが分かれば、より効果の高い治療が期待できます。<br>遺伝子の変化は患者さんごとに異なります。<span class="u-txt-point">同じ臓器のがん、例えば同じ胃がんでも、原因となる遺伝子が違えば、効果的な治療も変わってくる</span>のです。さらに、短期間で効率的に検査できるので、早期の治療開始が期待できます。効率的・効果的な診断と治療を目指すために、がん遺伝子パネル検査が役立ちます。</p>
@@ -53,6 +53,11 @@
 							</div>
 							<img class="p-about-main__description__img -img04" src="<?php echo get_theme_file_uri() ?>/img/illust_about05.png" alt="">
 						</div>
+						<div class="l-container3 l-about-main__description p-about-main__description -desc04-2">
+							<div class="c-txtbox">
+								<p class="l-about-main__description__txt">がんゲノム医療やパネル検査についてさらに詳しく知りたい方は、<a href="https://gan-genome.jp" target="_blank" rel="noopener noreferrer" class="u-under-line u-txt-point u-external-link">おしえてがんゲノム医療(中外製薬)</a>も合わせてご覧ください。</p>
+							</div>
+						</div>
 						<div class="l-about-main__photo p-about-main__photo">
 							<img class="p-about-main__photo__img -img01" src="<?php echo get_theme_file_uri() ?>/img/photo_about01.jpg" alt="">
 							<img class="p-about-main__photo__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_about02.jpg" alt="">
@@ -66,6 +71,7 @@
 								<span class="c-top-title-child"><span class="c-top-title-child-inner">の</span></span>
 								<span class="c-top-title-child"><span class="c-top-title-child-inner">種</span></span>
 								<span class="c-top-title-child"><span class="c-top-title-child-inner">類</span></span>
+
 							</h2>
 						</div>
 						<ul class="p-kensa-list l-top-kensa-list">

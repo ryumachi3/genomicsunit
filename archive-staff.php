@@ -14,9 +14,6 @@
                         <span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">介</span></span>
                     </h1>
                     <div class="c-contents">
-                        <section class="l-staff-description">
-                            <p class="l-staff-description__txt">ゲノム医療ユニットのメンバーを紹介します。</p>
-                        </section>
                         <section class="l-doctor-sec p-doctor-sec -sec01">
                             <h2 class="c-title l-doctor-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>医師</h2>
                             <?php if (have_posts()) : ?>

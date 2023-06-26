@@ -16,7 +16,7 @@
 					</h1>
 					<div class="c-contents">
 						<section class="l-iryo-description">
-							<p class="l-iryo-description__txt">患者さんが「がん遺伝子検査」を受けるための<span class="u-txt-point">ご予約方法</span>と<span class="u-txt-point">検体や書類の準備</span>について、医療機関の方へのお願い事をまとめました。ご確認のうえ、ご対応をお願いいたします。</p>
+							<p class="l-iryo-description__txt">患者さんが「がん遺伝子パネル検査」を受けるための<span class="u-txt-point">ご予約方法</span>と<span class="u-txt-point">検体や書類の準備</span>について、医療機関の方へのお願い事をまとめました。ご確認のうえ、ご対応をお願いいたします。</p>
 						</section>
 						<?php
 						$cat_id = get_cat_ID('医療機関の方へ');
@@ -118,9 +118,8 @@
 								<p class="p-hoken-sec__note c-description__note -kome"><span class="u-txt-point">病理検体がない場合は先に検査の可否についてゲノム医療ユニットまでご相談ください</span>。尚、予約確定後、使用する病理検体の選定についてのご案内を、こちらの担当者よりご連絡させて頂きますので、診療情報提供書内に連絡先を明記願います。</p>
 							</div>
 						</section>
-						<?php /*
 						<section class="l-hoken-sec p-hoken-sec -sec03 -last">
-							<h2 class="c-title l-hoken-sec__title">病理検体の提出先</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の提出先</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
 								<p class="p-hoken-sec__intro__txt">下記の「検体送付・受領書」をダウンロードして必要事項をご記入いただき、<span class="u-txt-point">病理検体、病理診断書コピー、該当するブロックが記載されている切り出し図コピー</span>を同封のうえ、郵便または宅急便(ワレモノ・室温)にて郵送をお願い致します。</p>
 								<a href="" class="c-btn p-hoken-sec__intro__btn -iryo">
@@ -128,6 +127,7 @@
 								</a>
 							</div>
 							<div class="l-container3 l-hoken-sec__note p-hoken-sec__note">
+								<p class="p-hoken-sec__note c-description__note -kome">1枚目はご準備いただく検体の説明です。2枚目を提出してください。</p>
 								<p class="p-hoken-sec__note c-description__note -kome">受領時には、FAXで受領のご連絡をさせていただきます。</p>
 								<p class="p-hoken-sec__note c-description__note -kome">郵送が間に合わない場合には、患者さんに渡して、受診当日持参でも構いません。(患者さんに渡した際に、送付表の FAX をお願い致します。)</p>
 							</div>
@@ -143,7 +143,6 @@
 								</div>
 							</div>
 						</section>
-						*/ ?>
 					</div>
 				</section>
 			</div>

@@ -57,8 +57,8 @@ switch ($face) {
         </picture>
         <div class="p-doctor-sec__modal__profile__info">
             <div class="p-doctor-sec__modal__profile__info__name__wrap">
+            <p class="p-doctor-sec__modal__profile__info__position"><?php the_field('yaku') ?></p>
                 <h3 class="p-doctor-sec__modal__profile__info__name"><?php the_title(); ?></h3>
-                <p class="p-doctor-sec__modal__profile__info__position"><?php the_field('yaku') ?></p>
             </div>
             <p class="p-doctor-sec__modal__profile__info__kana"><?php the_field('roman'); ?></p>
             <h4 class="p-doctor-sec__modal__profile__info__field__title">専門/担当分野</h4>
