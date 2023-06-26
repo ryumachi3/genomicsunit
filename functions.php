@@ -9,7 +9,7 @@ function project()
 //version
 function lastupdate()
 {
-	return '20230525'; //キャッシュ対策に更新日を入れる
+	return '20230626'; //キャッシュ対策に更新日を入れる
 }
 
 function theme_setup()
