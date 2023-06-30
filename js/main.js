@@ -1,5 +1,5 @@
 const TB = 769;
-const PC = 960;
+const PC = 1280;
 
 const wp_dir = "/wp/";
 
@@ -59,87 +59,73 @@ new Vue({
 
       const mvtl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
-      mvtl
-      .to(".p-header", {
+      let head_class = '';
+
+      mvtl.to(".p-header", {
         opacity: 1,
-        delay: .5,
-        duration: .5,
+        delay: .2,
+        duration: .2,
         x: 0,
         ease: "power4.out",
-      },)
-      .to(".l-main", {
+      },);
+      mvtl.to(".p-header-sp", {
+        opacity: 1,
+        delay: .2,
+        duration: .3,
+        ease: "power4.out",
+      },"<");
+      mvtl.to(".l-main", {
           opacity: 1,
           duration: .05,
           ease: "power4.out",
-        }, "+=.8")
-        // .from(".l-header-sp__inner,.p-header__logo,.p-nav", {
-        // .from(".l-header-sp__inner,.p-header__logo", {
-        //     opacity: 0,
-        //   duration: .7,
-        //   ease: "power4.out",
-        // },"<")
-        .from(".p-kv__inner__title__line1", {
-          x: 20,
-          opacity: 0,
-          duration: .5,
-        }, "<")
-        .from(".p-kv__inner__title__line2", {
-          x: -20,
-          opacity: 0,
-          duration: .5,
-        }, "<")
-        .from(".p-kv__inner__title__char__inner", {
-          y: 60,
-          duration: .8,
-          ease: "power4.out",
-          stagger: 0.1, // 0.02秒ごとに出現
-        })
-        .from(".p-kv__inner__photo__main", {
-          delay: .6,
-          duration: 1,
-          opacity: 0,
-          ease: "power2.out",
-        })
-        .from(".p-kv__inner__photo__sub", {
-          duration: 1,
-          opacity: 0,
-          ease: "power2.out",
-        }, "<")
-        .from(".p-kv__inner__description__txt", {
-          duration: 1,
-          opacity: 0,
-          ease: "power2.out",
-        }, "<")
-        .from(".p-kv__inner__description__illust__wrap", {
-          duration: 1,
-          opacity: 0,
-          ease: "power2.out",
-        }, "<")
-        .from("#contents", {
-          opacity: 0,
-          duration: .7,
-          y: 20,          
-          ease: "power2.out",
-        }, "-=.5")
-        .from(".g-mv-txt-point", {
-          color: '#2C4680',
-          duration: 1,
-          ease: "power2.out",
-        }, "-=.5")
-
-
-      // gsap.from(".l-top-about", {
-      //   scrollTrigger: ".l-top-about", // .boxがビューポート内に入った時にアニメーションが開始。
-      //   opacity: 0,
-      //   duration: .5
-      // });
-
-      // gsap.from(".l-top-kensa", {
-      //   scrollTrigger: ".l-top-kensa", // .boxがビューポート内に入った時にアニメーションが開始。
-      //   opacity: 0,
-      //   duration: .5
-      // });
-
+        }, "+=.6");
+      mvtl.from(".p-kv__inner__title__line1", {
+        x: 20,
+        opacity: 0,
+        duration: .4,
+      }, "<");
+      mvtl.from(".p-kv__inner__title__line2", {
+        x: -20,
+        opacity: 0,
+        duration: .4,
+      }, "<");
+      mvtl.from(".p-kv__inner__title__char__inner", {
+        y: 60,
+        duration: .4,
+        ease: "power4.out",
+        stagger: 0.1, // 0.02秒ごとに出現
+      });
+      mvtl.from(".p-kv__inner__photo__main", {
+        opacity: 0,
+        duration: .5,
+        ease: "power2.out",
+      },"+=.3");
+      mvtl.from(".p-kv__inner__photo__sub", {
+        duration: .5,
+        opacity: 0,
+        ease: "power2.out",
+      }, "<");
+      mvtl.from(".p-kv__inner__description__txt", {
+        duration: .4,
+        opacity: 0,
+        ease: "power2.out",
+      }, "<");
+      mvtl.from(".p-kv__inner__description__illust__wrap", {
+        duration: .4,
+        opacity: 0,
+        ease: "power2.out",
+      }, "<");
+      mvtl.from("#contents", {
+        opacity: 0,
+        duration: .6,
+        y: 20,          
+        ease: "power2.out",
+      }, "-=.4");
+      mvtl.from(".g-mv-txt-point", {
+        color: '#2C4680',
+        duration: 1,
+        ease: "power2.out",
+      }, "-=.4");
 
     } else {
 
@@ -162,21 +148,58 @@ new Vue({
         duration: .01,
       })
 
+    const othertl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
+    //正規表現パターン（半角英数４桁に一致）
+    var regex = new RegExp(/\/news\/.*\//);
+    if (regex.test(location.pathname)) {
       gsap
         .timeline({ repeat: 0, repeatDelay: 0.5 })
         .to(".p-header", {
           opacity: 1,
-          delay: .5,
-          duration: .5,
+          delay: .2,
+          duration: .2,
           x: 0,
           ease: "power4.out",
-        },)  
+        },)
+        .to(".p-header-sp", {
+          opacity: 1,
+          delay: .2,
+          duration: .3,
+          ease: "power4.out",
+        },"<")  
         .to(".l-main", {
           opacity: 1,
           duration: .05,
           ease: "power4.out",
-        },"+=.55")
+        },"+=.5")
+        .from(".c-contents", {
+          opacity: 0,
+          duration: .7,
+          y: 20,
+          ease: "power2.out",
+        })
+    } else {
+      gsap
+        .timeline({ repeat: 0, repeatDelay: 0.5 })
+        .to(".p-header", {
+          opacity: 1,
+          delay: .2,
+          duration: .2,
+          x: 0,
+          ease: "power4.out",
+        },)
+        .to(".p-header-sp", {
+          opacity: 1,
+          delay: .2,
+          duration: .3,
+          ease: "power4.out",
+        },"<")
+        .to(".l-main", {
+          opacity: 1,
+          duration: .05,
+          ease: "power4.out",
+        },"+=.5")
         .from(".c-head-title.-anime", {
           y: 10,
           opacity: 0,
@@ -184,15 +207,10 @@ new Vue({
         },"<")
         .from(".c-head-title__char__inner", {
           y: 100,
-          duration: .8,
+          duration: .5,
           ease: "power4.out",
           stagger: 0.03, // 0.02秒ごとに出現
         })
-        // .from(".p-header__logo,.p-nav", {
-        //   autoAlpha: 0,
-        //   duration: .7,
-        //   ease: "power2.out",
-        // })
         .from(".c-contents", {
           opacity: 0,
           duration: .7,
@@ -200,6 +218,7 @@ new Vue({
           ease: "power2.out",
         })
     }
+  }
 
 
 

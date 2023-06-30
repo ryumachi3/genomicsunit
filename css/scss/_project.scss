@@ -702,11 +702,11 @@
 }
 
 .p-header-sp {
+  opacity: 0;
   @include mq(pc) {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
   @include mq(sp) {
     padding-top: 25px;
     padding-bottom: 25px;

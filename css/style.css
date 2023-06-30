@@ -2089,6 +2089,10 @@ select:focus {
   color: #fff;
 }
 
+.p-header-sp {
+  opacity: 0;
+}
+
 @media screen and (max-width: 1280px) {
   .p-header-sp {
     padding-top: 32px;

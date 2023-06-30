@@ -88,7 +88,7 @@ MYBGAPP.init = () => {
 	MYBGAPP.charCntH = Math.ceil(MYBGAPP.wh / MYBGAPP.charH);
 
 	if (location.pathname == '/stg/' || location.pathname == '/wp/' || location.pathname == '/') {
-		MYBGAPP.start(6000);
+		MYBGAPP.start(5500);
 	} else {
 		MYBGAPP.start(4000);
 	}
