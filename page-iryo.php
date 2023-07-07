@@ -122,7 +122,7 @@
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の提出先</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
 								<p class="p-hoken-sec__intro__txt">下記の「検体送付・受領書」をダウンロードして必要事項をご記入いただき、<span class="u-txt-point">病理検体、病理診断書コピー、該当するブロックが記載されている切り出し図コピー</span>を同封のうえ、郵便または宅急便(ワレモノ・室温)にて郵送をお願い致します。</p>
-								<a href="" class="c-btn p-hoken-sec__intro__btn -iryo">
+								<a href="<?php echo get_theme_file_uri() ?>/pdf/fax02_20230630.pdf" class="c-btn p-hoken-sec__intro__btn -iryo" target="_blank" rel="noopener noreferrer">
 									<i class="c-icon-pdf"></i>検体送付・受領書(送付表)
 								</a>
 							</div>
