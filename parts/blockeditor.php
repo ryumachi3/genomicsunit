@@ -8,6 +8,7 @@ add_filter('allowed_block_types_all', function ($allowed_block_types, $block_edi
             'core/heading', // 見出し
             'core/image', // 画像
             'core/list', // リスト
+            'core/list-item', // リストアイテム
             'core/table', // テーブル
             'core/html', // カスタムHTML
             //'core/columns', //カラム
