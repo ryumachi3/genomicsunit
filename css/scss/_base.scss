@@ -62,7 +62,8 @@ $breakpoints: (
   'sp2': 'screen and (max-width: 560px)',
   'sp': 'screen and (max-width: 768px)',
   'tb': 'screen and (max-width: 960px)',
-  'pc': 'screen and (max-width: 1280px)',
+  'pc': 'screen and (max-width: 1199px)',
+  'pc2': 'screen and (max-width: 1279px)',
   'maxwidth': 'screen and (max-width: 1366px)',
   'min': 'screen and (max-width: 352px)'
 ) !default;
@@ -79,6 +80,11 @@ $breakpoints: (
 $master-width-pc: 1366px;
 @function pxvwPC($target){
   @return ($target / $master-width-pc) * 100vw;
+}
+
+$master-width-pc2: 1280px;
+@function pxvwPC2($target){
+  @return ($target / $master-width-pc2) * 100vw;
 }
 
 $master-width-sp: 375px;

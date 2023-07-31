@@ -180,7 +180,7 @@
               </div>
               <div class="p-kensa-list__item__info">
                 <p class="p-kensa-list__item__info__txt">
-                  保険診療を受けられない、より詳しい検査をしたい、という方には自費診療でのがん遺伝子パネル検査をお勧めします。
+                  保険診療を受けられない、より詳しい検査をしたい、という方には自費診療でのがん遺伝子検査をお勧めします。
                 </p>
               </div>
               <div class="p-kensa-list__item__btn l-btn">

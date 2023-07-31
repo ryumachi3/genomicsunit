@@ -9,7 +9,13 @@
   margin-right: auto;
   max-width: 1246px;
   position: relative;
+  @include mq(pc2){
+    margin-left: 40px;
+    grid-template-columns: 270px auto;
+    max-width: 1166px;
+  }
   @include mq(pc){
+    margin-left: auto;
     grid-template-columns: initial;
     display: block;
   }
@@ -125,6 +131,9 @@
     grid-column-end: initial;
     margin-left: auto;
     margin-right: auto; 
+  }
+  @include mq(pc2){
+    width: 866px;
   }
   @include mq(tb){
     width: 100%;
@@ -534,6 +543,7 @@
 
 .l-hoken-sec__hiyo{
   margin-top: 44px;
+  margin-bottom: 44px;
 }
 
 .l-hoken-sec{
@@ -554,7 +564,7 @@
 }
 
 .l-doctor-sec{
-  margin-bottom: 76px;
+  margin-bottom: 40px;
 }
 
 .l-staff-sec{

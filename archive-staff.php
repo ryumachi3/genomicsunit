@@ -15,7 +15,6 @@
                     </h1>
                     <div class="c-contents">
                         <section class="l-doctor-sec p-doctor-sec -sec01">
-                            <h2 class="c-title l-doctor-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>医師</h2>
                             <?php if (have_posts()) : ?>
                                 <ul class="p-doctor-sec__list">
                                     <?php while (have_posts()) : the_post(); ?>
@@ -28,8 +27,6 @@
                         </section>
                         <?php if (have_rows('member', 'staff_sec2')) : ?>
                             <section class="l-staff-sec p-staff-sec -sec02">
-                                <h2 class="c-title l-staff-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>スタッフ・共同研究員</h2>
-
                                 <ul class="p-staff-sec__list">
                                     <?php while (have_rows('member', 'staff_sec2')) : the_row();
                                         $st_name = get_sub_field('name');

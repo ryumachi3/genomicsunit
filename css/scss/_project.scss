@@ -319,12 +319,14 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 76px;
-
+  @include mq(pc2) {
+    padding-left: 40px;
+  }
   @include mq(pc) {
+    padding-left: 0;
     justify-content: center;
     padding-top: 20px;
   }
-
   @include mq(tb) {}
 
   @include mq(sp) {
@@ -357,7 +359,14 @@
   padding-top: 34px;
   width: 312px;
   text-align: center;
-
+  @include mq(pc2) {
+    padding-top: pxvwPC2(34px);
+    width:pxvwPC2(312px);
+  }
+  @include mq(pc) {
+    padding-top: 34px;
+    width:312px;
+  }
   @include mq(tb) {
     padding-top: 24px;
     width: 265px;
@@ -369,7 +378,14 @@
 .p-kv__inner__photo__sub {
   width: 236px;
   margin-top: -84px;
-
+  @include mq(pc2) {
+    width: pxvwPC2(236px);
+    margin-top: pxvwPC2(-84px);  
+  }
+  @include mq(pc) {
+    width: 236px;
+    margin-top: -84px;  
+  }
   @include mq(tb) {
     width: 196px;
     margin-top: -69px;
@@ -383,6 +399,16 @@
   display: flex;
   flex-direction: row-reverse;
 
+  @include mq(pc2){
+    width: pxvwPC2(224px);
+    padding-left: pxvwPC2(50px);
+    padding-right: pxvwPC2(40px);  
+  }
+  @include mq(pc){
+    width: 224px;
+    padding-left: 50px;
+    padding-right: 40px;  
+  }
   @include mq(tb) {
     position: absolute;
     top: 0;
@@ -420,6 +446,16 @@
   align-items: center;
   justify-content: center;
 
+  @include mq(pc2){
+    width: pxvwPC2(66px);
+    height: pxvwPC2(66px); 
+    font-size: pxvwPC2(54px);
+  }
+  @include mq(pc){
+    width: 66px;
+    height: 66px;
+    font-size: rem(54);
+  }
   @include mq(tb) {
     font-size: rem(36);
     width: 45px;
@@ -468,6 +504,14 @@
   line-height: 1.77;
   text-align: justify;
 
+  @include mq(pc2){
+    font-size: pxvwPC2(18px);
+    margin-top: pxvwPC2(44px);
+  }
+  @include mq(pc){
+    font-size: rem(18);
+    margin-top: 44px;  
+  }
   @include mq(tb) {
     margin-top: 24px;
     font-size: rem(16);
@@ -499,6 +543,18 @@
   animation-duration: 3.5s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
+  @include mq(pc2){
+    left: pxvwPC2(130px);
+    top: pxvwPC2(123px);
+    width: pxvwPC2(40px);
+    height: pxvwPC2(40px);  
+  }
+  @include mq(pc){
+    left: 130px;
+    top: 123px;
+    width: 40px;
+    height: 40px;  
+  }
 }
 
 @keyframes light-anime {
@@ -1656,7 +1712,9 @@
   list-style: none;
   margin-left: 20px;
   margin-bottom: 30px;
-
+  &:nth-child(3n+1){
+    margin-left: 0;
+  }
   @include mq(sp) {
     width: 100%;
     margin-left: 0;
@@ -1754,7 +1812,6 @@
 .p-staff-sec__list {
   background: $white;
   border-radius: 10px;
-  margin-left: 20px;
   padding: 45px 58px 14px;
   display: flex;
   flex-wrap: wrap;

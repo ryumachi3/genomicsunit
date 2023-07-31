@@ -80,11 +80,13 @@
           医療機関の方へ
         </a>
       </li>
+      <?php /*
       <li class="p-nav__sublist__item">
         <a tabindex="100" href="<?php echo home_url(); ?>/kenkyusya" class="p-nav__sublist__item__link <?php echo is_page('kenkyusya') ? '-is-active' : '' ?>">
           研究者の方へ
         </a>
       </li>
+      */ ?>
     </ul>
   </nav>
 </header>
