@@ -79,6 +79,9 @@
   background-color: $white;
   transition: transform 0.25s;
   position: relative;
+  @include mq(minh){
+    // font-size: pxvhPC(16px);
+  }
   &.-line {
     overflow: hidden;
   }
@@ -139,6 +142,9 @@
 
 .p-nav__list__item+.p-nav__list__item {
   margin-top: 10px;
+  @include mq(minh){
+    margin-top: pxvhPC(10px);
+  }  
 }
 
 .p-nav__list__item:hover .p-nav__list__item__horn {
@@ -160,6 +166,10 @@
   padding-top: .625em;
   padding-bottom: .625em;
   margin: .25em; // outlineがhiddenで隠れないように対策
+  @include mq(minh){
+    padding-top: pxvhPC(10px);
+    padding-bottom: pxvhPC(10px);
+  }
   &.-horn {
     padding-right: .875em;
     padding-left: 1.25em;
@@ -319,6 +329,9 @@
   display: flex;
   justify-content: flex-end;
   padding-top: 76px;
+  @include mq(minh) {
+    padding-top: pxvhPC(46px);
+  }
   @include mq(pc2) {
     padding-left: 40px;
   }
@@ -1708,7 +1721,7 @@
 }
 
 .p-doctor-sec__list__item {
-  width: calc(33.3333% - 20px);
+  width: calc(33.3333% - 14px);
   list-style: none;
   margin-left: 20px;
   margin-bottom: 30px;

@@ -62,6 +62,11 @@
           患者の皆さまへ(臨床研究)
         </a>
       </li>
+      <li class="p-nav__list__item -line <?php echo is_page('iryo') ? '-is-active' : '' ?>">
+        <a tabindex="100" href="<?php echo home_url(); ?>/iryo" class="p-nav__list__item__link">
+        医療機関の方へ
+        </a>
+      </li>
       <li class="p-nav__list__item -line <?php echo is_post_type_archive('post') || is_singular('post') ? '-is-active' : '' ?>">
         <a tabindex="100" href="<?php echo home_url(); ?>/news" class="p-nav__list__item__link">
           お知らせ
@@ -74,20 +79,20 @@
         </a>
       </li>
     </ul>
+    <?php /*
     <ul class="p-nav__sublist l-nav__sublist js-light-out">
       <li class="p-nav__sublist__item">
         <a tabindex="100" href="<?php echo home_url(); ?>/iryo" class="p-nav__sublist__item__link <?php echo is_page('iryo') ? '-is-active' : '' ?>">
           医療機関の方へ
         </a>
       </li>
-      <?php /*
       <li class="p-nav__sublist__item">
         <a tabindex="100" href="<?php echo home_url(); ?>/kenkyusya" class="p-nav__sublist__item__link <?php echo is_page('kenkyusya') ? '-is-active' : '' ?>">
           研究者の方へ
         </a>
       </li>
-      */ ?>
     </ul>
+    */ ?>
   </nav>
 </header>
 <!-- スマホ用ヘッダー -->

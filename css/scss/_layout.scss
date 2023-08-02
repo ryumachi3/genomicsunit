@@ -34,6 +34,10 @@
   position: fixed;
   top: 0;
   overflow-y: auto;
+  @include mq(minh){
+    padding-top: pxvhPC(32px);
+    padding-bottom: pxvhPC(32px);
+  }
   @include mq(pc){
   }
 }
@@ -106,6 +110,9 @@
 .l-header__logo{
   width: 262px;
   margin-bottom: 50px;
+  @include mq(minh){
+    margin-bottom: pxvhPC(32px);
+  }
   @include mq(pc){
     display: none;
   }

@@ -234,7 +234,6 @@ new Vue({
 
     
     const staggerPoint = gsap.utils.toArray(".u-txt-point");
-
     staggerPoint.forEach((point) => {
       gsap.from(point, {
         color: '#2C4680',
