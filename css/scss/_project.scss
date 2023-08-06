@@ -99,6 +99,9 @@
   }
   &.-line.-point::before {
     background-color: $point;
+  }
+  &.-line.-iryo::before {
+    background-color: $color-iryo;
   }  
   &:hover {
     transform: translateX(10px);
@@ -1325,15 +1328,16 @@
 
   &.-img04 {
     width: 236px;
-    right: -259px;
-    top: -76px;
+    right: -257px;
+    top: 0;
 
     @include mq(tb) {
-      right: -189px;
-      top: -116px;
+      // right: -257px;
+      // top: 0;
     }
 
     @include mq(sp) {
+      width: 220px;
       right: inherit;
       top: inherit;
       margin-top: -16px;

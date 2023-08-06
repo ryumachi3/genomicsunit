@@ -44,8 +44,8 @@
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-03">
 								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Guardant360 CDx がん遺伝子パネル<br>(ガーダント360 CDx がん遺伝子パネル)</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">73遺伝子</span>について、<span class="u-txt-point">血液のみ</span>で調べます。がん組織が不要であることと、<span class="u-txt-point">検査結果が早くわかる</span>ことが特徴です。</p>
+									<h3 class="p-hoken-sec__description__title">Guardant360 がん遺伝子パネル<br>(ガーダント360 がん遺伝子パネル)</h3>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">83遺伝子</span>について、<span class="u-txt-point">血液のみ</span>で調べます。がん組織が不要であることと、<span class="u-txt-point">検査結果が早くわかる</span>ことが特徴です。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt><dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">561,000</span>円(税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に相談料等かかります</span><dd>
 									</dl>

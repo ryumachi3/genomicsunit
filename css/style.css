@@ -800,7 +800,7 @@ select:focus {
 }
 
 .l-about-main__description {
-  max-width: 543px;
+  max-width: 462px;
   position: relative;
 }
 
@@ -892,7 +892,7 @@ select:focus {
 .c-top-title {
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.3;
   padding: 0.625em 1.6em;
   position: relative;
   display: inline-block;
@@ -1453,6 +1453,10 @@ select:focus {
 
 .p-nav__list__item.-line.-point::before {
   background-color: #D05210;
+}
+
+.p-nav__list__item.-line.-iryo::before {
+  background-color: #55B5C1;
 }
 
 .p-nav__list__item:hover {
@@ -2789,18 +2793,13 @@ select:focus {
 }
 .p-about-main__description__img.-img04 {
   width: 236px;
-  right: -259px;
-  top: -76px;
+  right: -257px;
+  top: 0;
 }
 
-@media screen and (max-width: 960px) {
-  .p-about-main__description__img.-img04 {
-    right: -189px;
-    top: -116px;
-  }
-}
 @media screen and (max-width: 768px) {
   .p-about-main__description__img.-img04 {
+    width: 220px;
     right: inherit;
     top: inherit;
     margin-top: -16px;

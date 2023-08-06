@@ -88,6 +88,37 @@
             </div>
           </section>
         <?php endif; ?>
+
+        <section class="l-top-about">
+          <div class="l-top-title">
+            <h2 class="c-top-title">
+              <span class="c-top-title-child">当</span>
+              <span class="c-top-title-child">院</span>
+              <span class="c-top-title-child">に</span>
+              <span class="c-top-title-child">お</span>
+              <span class="c-top-title-child">け</span>
+              <span class="c-top-title-child">る</span><br class="u-sp_br">
+              <span class="c-top-title-child">が</span>
+              <span class="c-top-title-child">ん</span>
+              <span class="c-top-title-child">ゲ</span>
+              <span class="c-top-title-child">ノ</span>
+              <span class="c-top-title-child">ム</span>
+              <span class="c-top-title-child">医</span>
+              <span class="c-top-title-child">療</span>
+              <span class="c-top-title-child">に</span>
+              <span class="c-top-title-child">つ</span>
+              <span class="c-top-title-child">い</span>
+              <span class="c-top-title-child">て</span>
+            </h2>
+          </div>
+          <div class="l-about-main__description p-about-main__description -desc04">
+            <div class="c-txtbox">
+              <p class="l-about-main__description__txt">私たちゲノム医療ユニットは、人の細胞の中にあるDNAの遺伝情報(<span class="u-txt-point">ヒトゲノム*</span>と呼ばれています)を調べ、病気の診断や治療に役立つように医療と研究を行っています。<br>2017年から「遺伝子パネル検査」を導入し、2019年3月よりヒトのほぼ全ての遺伝子を解析する検査を開始しており、我が国のがんゲノム医療をけん引してきました。2018年2月に厚生労働省から「がんゲノム医療中核拠点病院」に認定され、当院のがんゲノム連携病院17施設（2023年8月現在）と共に、がんゲノム医療を推進しています。</p>
+              <p class="l-about-main__description__note p-about-main__description__note"><span class="u-txt-point">*ヒトゲノムの情報量は32億文字ほどもあります。その中の”タンパク質の設計図の部分”が「遺伝子」と呼ばれ、人間には約23,000個の遺伝子があると言われています。</span></p>
+            </div>
+            <img class="p-about-main__description__img -img04" src="<?php echo get_theme_file_uri() ?>/img/illust_about05.png" alt="">
+          </div>
+        </section>
         <section class="l-top-about">
           <div class="l-top-title">
             <h2 class="c-top-title">

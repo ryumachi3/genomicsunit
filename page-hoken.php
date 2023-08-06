@@ -13,7 +13,7 @@
 					</h1>
 					<div class="c-contents">
 						<section class="l-hoken-description">
-							<p class="l-hoken-description__txt">2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。<br>2023年8月現在、当院で行っている保険診療のがん遺伝子パネル検査は3種類あります。</p>
+							<p class="l-hoken-description__txt">2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。<br>2023年8月現在、当院で行っている保険診療のがん遺伝子パネル検査は4種類あります。</p>
 							<img class="p-hoken-sec__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_sinryo01.png" alt="">
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
@@ -35,6 +35,12 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne Liquid CDx がんゲノムプロファイル</h3>
 									<p class="p-hoken-sec__description__txt">がんに関連した324遺伝子について調べます。血液を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
+								</div>
+							</div>
+							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-04">
+								<div class="c-txtbox">
+									<h3 class="p-hoken-sec__description__title">Guardant360 CDx がん遺伝子パネル</h3>
+									<p class="p-hoken-sec__description__txt">がんに関連した74遺伝子について調べます。血液を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__hiyo p-hoken-sec__hiyo">

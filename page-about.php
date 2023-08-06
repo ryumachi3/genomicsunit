@@ -45,14 +45,6 @@
 							</div>
 							<img class="p-about-main__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/illust_about04.png" alt="">
 						</div>
-						<h2 class="c-title l-about-main__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>当院におけるがんゲノム医療について</h2>
-						<div class="l-container3 l-about-main__description p-about-main__description -desc04">
-							<div class="c-txtbox">
-								<p class="l-about-main__description__txt">私たちゲノム医療ユニットは、人の細胞の中にあるDNAの遺伝情報(<span class="u-txt-point">ヒトゲノム*</span>と呼ばれています)を調べ、病気の診断や治療に役立つように医療と研究を行っています。<br>2017年から「遺伝子パネル検査」を導入し、2019年3月よりヒトのほぼ全ての遺伝子を解析する検査を開始しており、我が国のがんゲノム医療をけん引してきました。2018年2月に厚生労働省から「がんゲノム医療中核拠点病院」に認定され、当院のがんゲノム連携病院17施設（2023年8月現在）と共に、がんゲノム医療を推進しています。</p>
-								<p class="l-about-main__description__note p-about-main__description__note"><span class="u-txt-point">*ヒトゲノムの情報量は32億文字ほどもあります。その中の”タンパク質の設計図の部分”が「遺伝子」と呼ばれ、人間には約23,000個の遺伝子があると言われています。</span></p>
-							</div>
-							<img class="p-about-main__description__img -img04" src="<?php echo get_theme_file_uri() ?>/img/illust_about05.png" alt="">
-						</div>
 						<div class="l-about-main__photo p-about-main__photo">
 							<img class="p-about-main__photo__img -img01" src="<?php echo get_theme_file_uri() ?>/img/photo_about01.jpg" alt="">
 							<img class="p-about-main__photo__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_about02.jpg" alt="">
