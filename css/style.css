@@ -871,8 +871,16 @@ select:focus {
   margin-bottom: 70px;
 }
 
+.l-staff-sec.-sec03 {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 768px) {
   .l-staff-sec {
+    margin-bottom: 56px;
+  }
+
+  .l-staff-sec.-sec03 {
     margin-bottom: 0;
   }
 }

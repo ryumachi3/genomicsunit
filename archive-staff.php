@@ -48,6 +48,9 @@
                                 </ul>
                             </section>
                         <?php endif; ?>
+                        <section class="l-staff-sec p-staff-sec -sec03">
+                            <img src="<?php echo get_theme_file_uri() ?>/img/group_photo.png" alt="">
+                        </section>
                     </div><!-- c-contents -->
                 </section>
             </div>

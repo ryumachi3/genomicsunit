@@ -576,8 +576,14 @@
 
 .l-staff-sec{
   margin-bottom: 70px;
-  @include mq(sp){
+  &.-sec03{
     margin-bottom: 0;
+  }
+  @include mq(sp){
+    margin-bottom: 56px;
+    &.-sec03{
+      margin-bottom: 0;
+    }  
   }
 }
 
