@@ -44,10 +44,10 @@ function my_meta_ogp()
                 $ogp_descr = 'ゲノム医療に関するお知らせをお届けします。';
             } elseif (is_post_type_archive('staff')) {
                 $ogp_title = 'スタッフ紹介 | 慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット';
-                $ogp_descr = 'ゲノム医療ユニットのメンバー（医師、スタッフ、共同研究員）を紹介します。';
+                $ogp_descr = 'ゲノム医療ユニットのメンバー (医師、スタッフ、共同研究員)を紹介します。';
             } elseif (is_category()) {
                 $cat_title = single_cat_title('', false);
-                $ogp_title = 'お知らせ（' . $cat_title . '）| 慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット';
+                $ogp_title = 'お知らせ (' . $cat_title . ') | 慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット';
                 $ogp_descr = 'ゲノム医療に関するお知らせをお届けします。';
             }
         }

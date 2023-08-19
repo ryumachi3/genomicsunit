@@ -79,13 +79,13 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">保険診療の場合</h3>
 									<p class="p-hoken-sec__description__txt">慶應義塾大学病院<span class="u-txt-point">セカンドオピニオン外来</span>をご予約ください。</p>
-									<p class="p-hoken-sec__description__txt">必要書類や送付先等の詳細は慶應義塾大学病院ホームページ内「<a class="p-hoken-sec__link" href="https://www.hosp.keio.ac.jp/annai/raiin/2ndopini/taimen_nagare.html" target="_blank" rel="noopener noreferrer">セカンドオピニオン外来（対面）の申し込みから相談終了までの流れ</a>」をご確認ください。</p>
+									<p class="p-hoken-sec__description__txt">必要書類や送付先等の詳細は慶應義塾大学病院ホームページ内「<a class="p-hoken-sec__link" href="https://www.hosp.keio.ac.jp/annai/raiin/2ndopini/taimen_nagare.html" target="_blank" rel="noopener noreferrer">セカンドオピニオン外来 (対面)の申し込みから相談終了までの流れ</a>」をご確認ください。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-02">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">自費診療の場合</h3>
-									<p class="p-hoken-sec__description__txt">慶應義塾大学病院へ<span class="u-txt-point">電話にて</span>ご予約ください。<br><span class="u-txt-point">がん専門初診外来予約窓口：<a class="p-hoken-sec__tel -point" href="tel:03-5363-3020">03-5363-3020</a></span><br>（電話受付時間：診察日の午前8時30分～午後4時00分）</p>
+									<p class="p-hoken-sec__description__txt">慶應義塾大学病院へ<span class="u-txt-point">電話にて</span>ご予約ください。<br><span class="u-txt-point">がん専門初診外来予約窓口：<a class="p-hoken-sec__tel -point" href="tel:03-5363-3020">03-5363-3020</a></span><br>(電話受付時間：診察日の8:30-16:00)</p>
 									<p class="p-hoken-sec__description__txt">必要書類や送付先等の詳細は慶應義塾大学病院ホームページ内「<a class="p-hoken-sec__link" href="https://www.hosp.keio.ac.jp/annai/raiin/yoyaku_nagare.html" target="_blank" rel="noopener noreferrer">診察のご予約の流れ</a>」をご確認のうえ、がん専門初診外来予約窓口へお電話ください。</p>
 								</div>
 							</div>
@@ -96,14 +96,14 @@
 						<section class="l-hoken-sec p-hoken-sec -sec02">
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の準備について</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
-								<p class="p-hoken-sec__intro__txt"><span class="u-txt-point">ご予約前に病理検体の有無をご確認ください</span>。核酸抽出検査を行うための手術・生検時のホルマリン固定パラフィン包埋（FFPE）から作成された未染色標本が必要となります。</p>
+								<p class="p-hoken-sec__intro__txt"><span class="u-txt-point">ご予約前に病理検体の有無をご確認ください</span>。核酸抽出検査を行うための手術・生検時のホルマリン固定パラフィン包埋 (FFPE)から作成された未染色標本が必要となります。</p>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc02-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">ご用意いただく病理検体</h3>
 									<ul class="p-hoken-sec__taisyo__list">
-										<li class="c-list__item p-hoken-sec__taisyo__list__item">HE標本3枚(未染標本を作製したものと同一ブロックから作製)</li>
-										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本4枚(5 μm厚・コーティングガラス)</li>
+										<li class="c-list__item p-hoken-sec__taisyo__list__item">HE標本3枚 (未染標本を作製したものと同一ブロックから作製)</li>
+										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本4枚 (5 μm厚、コーティングガラス)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本10枚 (10 μm厚、ノンコーティングガラス)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">病理診断書のコピー</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">該当するブロックが記載されている切り出し図のコピー</li>
@@ -117,7 +117,7 @@
 						<section class="l-hoken-sec p-hoken-sec -sec03 -last">
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の提出先</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
-								<p class="p-hoken-sec__intro__txt">下記の「検体送付・受領書」をダウンロードして必要事項をご記入いただき、<span class="u-txt-point">病理検体、病理診断書コピー、該当するブロックが記載されている切り出し図コピー</span>を同封のうえ、郵送(ワレモノ・室温)をお願い致します。</p>
+								<p class="p-hoken-sec__intro__txt">下記の「検体送付・受領書」をダウンロードして必要事項をご記入いただき、<span class="u-txt-point">病理検体、病理診断書コピー、該当するブロックが記載されている切り出し図コピー</span>を同封のうえ、郵送 (ワレモノ・室温)をお願い致します。</p>
 								<a href="<?php echo get_theme_file_uri() ?>/pdf/fax02_20230728.pdf" class="c-btn p-hoken-sec__intro__btn -iryo" target="_blank" rel="noopener noreferrer">
 									<i class="c-icon-pdf"></i>検体送付・受領書(送付表)
 								</a>

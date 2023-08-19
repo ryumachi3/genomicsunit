@@ -396,7 +396,7 @@
 }
 
 .c-txtbox {
-  text-align: left;
+  text-align: justify;
   background-color: $white;
   padding: 21px 21px;
   border-radius: 10px;
@@ -408,6 +408,7 @@
 
 
 .c-description__note {
+  text-align: justify;
   font-size: rem(14);
   color: #666666;
   position: relative;

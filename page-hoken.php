@@ -21,7 +21,7 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">OncoGuide™️ NCCオンコパネル システム</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方で調べます。この検査の特徴としては、二次的所見（遺伝的に生まれながらにして持つがんに関する遺伝子変化）についての結果も得ることができます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方で調べます。この検査の特徴としては、二次的所見 (遺伝的に生まれながらにして持つがんに関する遺伝子変化)についての結果も得ることができます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-02">
@@ -34,13 +34,13 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-03">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne Liquid CDx がんゲノムプロファイル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した324遺伝子について調べます。血液を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-04">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Guardant360 CDx がん遺伝子パネル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した74遺伝子について調べます。血液を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">74遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__hiyo p-hoken-sec__hiyo">
@@ -65,7 +65,7 @@
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-04">
 								<div class="c-txtbox">
-									<p class="l-about-main__description__txt">がんゲノム医療やパネル検査についてさらに詳しく知りたい方は、<a href="https://gan-genome.jp" target="_blank" rel="noopener noreferrer" class="u-under-line u-txt-point u-external-link">おしえてがんゲノム医療(中外製薬)</a>もあわせてご覧ください。</p>
+									<p class="l-about-main__description__txt">がんゲノム医療やパネル検査についてさらに詳しく知りたい方は、<a href="https://gan-genome.jp" target="_blank" rel="noopener noreferrer" class="u-under-line u-txt-point u-external-link">おしえてがんゲノム医療 (中外製薬)</a>もあわせてご覧ください。</p>
 								</div>
 							</div>
 						</section>
@@ -73,7 +73,7 @@
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>保険診療検査の対象となる方</h2>
 							<div class="l-container2">
 								<ul class="p-hoken-sec__taisyo__list">
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">病理組織学的検査によって悪性腫瘍（がん）と診断された方</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">病理組織学的検査によって悪性腫瘍 (がん)と診断された方</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">悪性腫瘍の標準治療 (薬物療法)が終了となった、もしくは終了が見込まれる方</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">原発不明がんの方</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">血液がん以外の方</li>
@@ -83,7 +83,7 @@
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">実際に検査の対象となる状態かどうかは担当医が判断します。</li>
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">検査を希望されても担当医が適切ではないと判断した場合はおすすめしない場合もあります。</li>
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">がんに罹患しているかどうかを調べること (スクリーニング、検診など)の目的には使用できません。</li>
-									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性のがん（遺伝性乳がん卵巣がん症候群、リンチ症候群等）についての検査を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
+									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性のがん (遺伝性乳がん卵巣がん症候群、リンチ症候群等)についての検査を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
 								</ul>
 							</div>
 						</section>
@@ -97,7 +97,7 @@
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
 								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Step.2 受診(1回目)：検査説明</h3>
+									<h3 class="p-hoken-sec__description__title">Step.2 受診 (1回目)：検査説明</h3>
 									<p class="p-hoken-sec__description__txt">指定された日時に「<span class="u-txt-point">慶應義塾大学病院 セカンドオピニオン外来</span>」にお越しください。<br>医師により検査の説明を行います。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">保険での検査が可能であれば、外来後に当院からかかりつけ医へ病理検体の準備を依頼します。次回の外来受診日までに、病理検体の確認を行います。</p>
 									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01.png" alt="">
@@ -105,9 +105,9 @@
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-03">
 								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Step.3 受診(2回目)：検査同意</h3>
+									<h3 class="p-hoken-sec__description__title">Step.3 受診 (2回目)：検査同意</h3>
 									<p class="p-hoken-sec__description__txt">検査に同意される場合は同意書にご署名いただきます。<br>同意取得後に検査開始となります。当院より病理検体や血液を検査センターへ郵送し、がん遺伝子パネル検査を行います。</p>
-									<p class="p-hoken-sec__description__note c-description__note -kome">NCCオンコパネル・FoundationOne Liquid CDxがんゲノムプロファイルの場合は採血があります。</p>
+									<p class="p-hoken-sec__description__note c-description__note -kome">OncoGuide™ NCCオンコパネル、FoundationOne Liquid CDx がんゲノムプロファイル、Guardant360 CDx がん遺伝子パネルの場合は採血があります。</p>
 									<div class="p-hoken-sec__description__sinryojikan">
 										<h4 class="p-hoken-sec__description__sinryojikan__title">＜がん遺伝子外来の保険診療時間＞</h4>
 										<ul class="p-hoken-sec__description__sinryojikan__list">
@@ -120,7 +120,7 @@
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-04">
 								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Step.4 受診(3回目)：結果説明</h3>
+									<h3 class="p-hoken-sec__description__title">Step.4 受診 (3回目)：結果説明</h3>
 									<p class="p-hoken-sec__description__txt">検査申し込み日より<span class="u-txt-point">4～6週間後</span>に、当院の担当医からがん遺伝子パネル検査の結果説明を行います。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome -desc04">推奨治療法は、がん遺伝子パネル検査の結果をもとに、担当医や病理医、バイオインフォマティシャンなどにより事前検討しています。</p>
 									<img class="p-hoken-sec__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo02.png" alt="">

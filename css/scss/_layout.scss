@@ -433,6 +433,7 @@
 
 .l-jihi-description
 {
+  text-align: justify;
   position: relative;
   margin-bottom: 112px;
   width: 556px;
@@ -460,6 +461,7 @@
 }
 
 .l-hoken-sec__note{
+  text-align: justify;
   margin-top: 30px;
   @include mq(sp){
     margin-top: 20px;
@@ -488,6 +490,7 @@
 }
 
 .l-rinsyo-description{
+  text-align: justify;
   line-height: 1.675;
   margin-bottom: 4px;
   @include mq(tb){
@@ -599,3 +602,4 @@
   margin-left: 8px;
   margin-bottom: 40px;
 }
+

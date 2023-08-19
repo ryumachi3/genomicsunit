@@ -27,7 +27,7 @@
 						<h2 class="c-title l-about-main__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>がんの原因は遺伝子の変化</h2>
 						<div class="l-container3 l-about-main__description p-about-main__description -desc01">
 							<div class="c-txtbox">														
-								<p class="p-about-main__description__txt">「がん」は、”生後に発生した遺伝子変化の蓄積”によって発症することが多数の研究により明らかになってきました。遺伝子とは体の設計図です。その設計図を元に日々細胞が作られ、体が成り立っています。<span class="u-txt-point">遺伝子に変化が起き、それが修復されないまま蓄積すると、正常ではない細胞、つまり「がん」になってしまう</span>場合があるのです。</p>
+								<p class="p-about-main__description__txt">「がん」は、“生後に発生した遺伝子変化の蓄積”によって発症することが多数の研究により明らかになってきました。遺伝子とは体の設計図です。その設計図を元に日々細胞が作られ、体が成り立っています。<span class="u-txt-point">遺伝子に変化が起き、それが修復されないまま蓄積すると、正常ではない細胞、つまり「がん」になってしまう</span>場合があるのです。</p>
 							</div>
 							<img class="p-about-main__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_about01.png" alt="">
 						</div>

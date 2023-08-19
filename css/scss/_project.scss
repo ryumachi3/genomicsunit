@@ -733,6 +733,7 @@
 }
 
 .p-info-list {
+  text-align: justify;
   list-style: none;
 }
 
@@ -839,6 +840,7 @@
 }
 
 .p-news-dt__body {
+  text-align: justify;
   border-radius: 10px;
   background-color: $white;
   padding: 45px 38px 66px;
@@ -1116,6 +1118,7 @@
 }
 
 .p-about-list__item__info {
+  text-align: justify;
   background-color: $white;
   padding: 1.12em;
   border-radius: 10px;
@@ -1240,6 +1243,7 @@
 }
 
 .p-kensa-list__item__info {
+  text-align: justify;
   margin-bottom: 16px;
 }
 
@@ -1507,11 +1511,16 @@
   margin-top: .5em;
 }
 
+.p-hoken-sec__hiyo__txt__note-list{
+  text-align: justify;
+}
+
 .p-hoken-sec__description__note {
   margin-top: .5em;
 }
 
 .p-hoken-sec__taisyo__list {
+  text-align: justify;
   margin-bottom: .8em;
 }
 
@@ -1672,6 +1681,10 @@
   text-decoration: underline;
 }
 
+.p-hoken-sec__intro__txt{
+  text-align: justify;
+}
+
 .p-hoken-sec__intro__btn {
   margin-top: .8em;
 }
@@ -1716,6 +1729,7 @@
 }
 
 .p-doctor-sec__list {
+  text-align: justify;
   display: flex;
   flex-wrap: wrap;
 
@@ -1827,6 +1841,7 @@
 }
 
 .p-staff-sec__list {
+  text-align: justify;
   background: $white;
   border-radius: 10px;
   padding: 45px 58px 14px;

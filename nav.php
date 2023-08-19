@@ -59,7 +59,7 @@
       </li>
       <li class="p-nav__list__item -line <?php echo is_page('rinsyo') ? '-is-active' : '' ?>">
         <a tabindex="100" href="<?php echo home_url(); ?>/rinsyo" class="p-nav__list__item__link">
-          患者の皆さまへ(臨床研究)
+          患者の皆さまへ (臨床研究)
         </a>
       </li>
       <li class="p-nav__list__item -line -iryo <?php echo is_page('iryo') ? '-is-active' : '' ?>">

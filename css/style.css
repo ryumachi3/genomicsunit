@@ -721,6 +721,7 @@ select:focus {
   }
 }
 .l-jihi-description {
+  text-align: justify;
   position: relative;
   margin-bottom: 112px;
   width: 556px;
@@ -746,6 +747,7 @@ select:focus {
 }
 
 .l-hoken-sec__note {
+  text-align: justify;
   margin-top: 30px;
 }
 
@@ -782,6 +784,7 @@ select:focus {
   }
 }
 .l-rinsyo-description {
+  text-align: justify;
   line-height: 1.675;
   margin-bottom: 4px;
 }
@@ -1296,7 +1299,7 @@ select:focus {
 }
 
 .c-txtbox {
-  text-align: left;
+  text-align: justify;
   background-color: #fff;
   padding: 21px 21px;
   border-radius: 10px;
@@ -1308,6 +1311,7 @@ select:focus {
   }
 }
 .c-description__note {
+  text-align: justify;
   font-size: 0.875rem;
   color: #666666;
   position: relative;
@@ -2187,6 +2191,7 @@ select:focus {
   }
 }
 .p-info-list {
+  text-align: justify;
   list-style: none;
 }
 
@@ -2303,6 +2308,7 @@ select:focus {
   }
 }
 .p-news-dt__body {
+  text-align: justify;
   border-radius: 10px;
   background-color: #fff;
   padding: 45px 38px 66px;
@@ -2583,6 +2589,7 @@ select:focus {
   }
 }
 .p-about-list__item__info {
+  text-align: justify;
   background-color: #fff;
   padding: 1.12em;
   border-radius: 10px;
@@ -2708,6 +2715,7 @@ select:focus {
   }
 }
 .p-kensa-list__item__info {
+  text-align: justify;
   margin-bottom: 16px;
 }
 
@@ -2978,11 +2986,16 @@ select:focus {
   margin-top: 0.5em;
 }
 
+.p-hoken-sec__hiyo__txt__note-list {
+  text-align: justify;
+}
+
 .p-hoken-sec__description__note {
   margin-top: 0.5em;
 }
 
 .p-hoken-sec__taisyo__list {
+  text-align: justify;
   margin-bottom: 0.8em;
 }
 
@@ -3151,6 +3164,10 @@ select:focus {
   text-decoration: underline;
 }
 
+.p-hoken-sec__intro__txt {
+  text-align: justify;
+}
+
 .p-hoken-sec__intro__btn {
   margin-top: 0.8em;
 }
@@ -3195,6 +3212,7 @@ select:focus {
 }
 
 .p-doctor-sec__list {
+  text-align: justify;
   display: flex;
   flex-wrap: wrap;
 }
@@ -3315,6 +3333,7 @@ select:focus {
 }
 
 .p-staff-sec__list {
+  text-align: justify;
   background: #fff;
   border-radius: 10px;
   padding: 45px 58px 14px;
