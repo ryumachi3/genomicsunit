@@ -21,13 +21,13 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">OncoGuide™️ NCCオンコパネル システム</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方で調べます。この検査の特徴としては、二次的所見 (遺伝的に生まれながらにして持つがんに関する遺伝子変化)についての結果も得ることができます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について調べます。<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方を用いて実施します。この検査の特徴としては、二次的所見 (遺伝的に生まれながらにして持つがんに関する遺伝子変化)についての結果も得ることができます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-02">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne CDx がんゲノムプロファイル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">がん組織のみ</span>の検査で血液検査は必要ありません。この検査の特徴としては、NCCオンコパネルに比べて解析対象となる遺伝子が多いことと、<span class="u-txt-point">TMB-highのコンパニオン診断の役割</span>も有していることがあります。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">がん組織のみ</span>の検査で血液検査は必要ありません。この検査の特徴としては、<span class="u-txt-point">TMB-highなどのコンパニオン診断の役割</span>も有していることがあります。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">TMB：Tumor Mutation Burden。腫瘍細胞に生じた遺伝子変異量のこと。</p>
 								</div>
 							</div>
@@ -41,6 +41,13 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Guardant360 CDx がん遺伝子パネル</h3>
 									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">74遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
+								</div>
+							</div>
+
+							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-05">
+								<div class="c-txtbox">
+									<h3 class="p-hoken-sec__description__title">GenMineTOP がんゲノムプロファイリングシステム</h3>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">737遺伝子</span>について調べます。<span class="u-txt-point">がん組織と血液の両方</span>を用いて実施します。この検査の特徴としては、二次的所見（遺伝的に生まれながらにして持つがんに関する遺伝子変化）も得ることができます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__hiyo p-hoken-sec__hiyo">
