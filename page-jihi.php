@@ -62,7 +62,7 @@
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
 										<div class="p-jihi-sec__price__box">
 											<dd class="p-jihi-sec__description__hiyo__txt">初回 <span class="p-jihi-sec__description__hiyo__price">561,000</span>円 (税込)<dd>
-											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span><dd>
+											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note -last">※検査費用とは別に診察料等がかかります</span><dd>
 										</div>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">

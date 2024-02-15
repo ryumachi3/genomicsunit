@@ -1552,6 +1552,11 @@
 
 .p-jihi-sec__description__hiyo__note {
   font-size: rem(13);
+  margin-left: .8em;
+
+  &.-last {
+    margin-left: 0;
+  }
 }
 
 .p-jihi-sec__description__hiyo__price {
