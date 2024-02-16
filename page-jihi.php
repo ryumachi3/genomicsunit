@@ -47,7 +47,11 @@
 									<h3 class="p-hoken-sec__description__title">Guardant360<br class="u-sp_br"> (ガーダント360)</h3>
 									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">83遺伝子</span>について、<span class="u-txt-point">血液のみ</span>で調べます。がん組織が不要であることと、<span class="u-txt-point">検査結果が早くわかる</span>ことが特徴です。</p>
 									<dl class="p-jihi-sec__description__hiyo">
-										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt><dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">561,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span><dd>
+										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
+										<div class="p-jihi-sec__price__box">
+											<dd class="p-jihi-sec__description__hiyo__txt">初回 <span class="p-jihi-sec__description__hiyo__price">561,000</span>円 (税込)<dd>
+											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note -last">※検査費用とは別に診察料等がかかります</span><dd>
+										</div>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
 										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt><dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">3</span>週間<dd>
@@ -60,10 +64,7 @@
 									<p class="p-hoken-sec__description__txt">血液中の血中循環腫腫瘍DNAから、がんの遺伝子異常を検出するシステムです。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
-										<div class="p-jihi-sec__price__box">
-											<dd class="p-jihi-sec__description__hiyo__txt">初回 <span class="p-jihi-sec__description__hiyo__price">561,000</span>円 (税込)<dd>
-											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note -last">※検査費用とは別に診察料等がかかります</span><dd>
-										</div>
+										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">380,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span><dd>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
 										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt><dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">3</span>週間<dd>
