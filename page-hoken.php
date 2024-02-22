@@ -13,7 +13,7 @@
 					</h1>
 					<div class="c-contents">
 						<section class="l-hoken-description">
-							<p class="l-hoken-description__txt">2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。<br>2023年8月現在、当院で行っている保険診療のがん遺伝子パネル検査は4種類あります。</p>
+							<p class="l-hoken-description__txt">2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。<br>2024年2月現在、当院で行っている保険診療のがん遺伝子パネル検査は5種類あります。</p>
 							<img class="p-hoken-sec__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_sinryo01.png" alt="">
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
@@ -145,7 +145,7 @@
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査の結果、効果が期待される薬剤の情報が得られた場合には、「適応外申請を行って自費診療で治療を行う」、あるいは「先進医療実施病院を紹介して、自費診療と保険診療を並行して治療を行う」可能性が考えられます。 これらの場合、治療費が高額となります。</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査を実施しても、治療薬の選定に有用な情報が何も得られない可能性もあります。がん遺伝子検査の結果に基づいて治療を行っても、十分な治療効果が得られない可能性もあります。</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査は、あくまで主治医の判断に必要な情報を提供するものであって、がん遺伝子解析の結果が、主治医の判断よりも優先されることはありません。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">検査後の治療は、原則として紹介元の病院での治療となり、当院あるいは慶應義塾大学病院で治療を実施することを確約するものではありません。</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">検査後の治療は、原則として紹介元の病院での治療となります。本検査は当院での治療を確約するものではありません。</li>
 								</ul>
 							</div>
 						</section>
