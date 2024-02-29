@@ -99,7 +99,7 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
-									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生に予約をご依頼ください。</p>
+									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生にご相談の上、ご予約ください。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
