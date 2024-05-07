@@ -2182,3 +2182,61 @@
     font-size: 30px;
   }
 }
+
+
+
+.p-gyouseki__list {
+  padding: 2.8em 0;
+
+  @include mq(sp) {
+    margin-left: 1.6em;
+    margin-right: 1em;
+  }
+}
+
+.p-gyouseki__list__item {
+  padding-bottom: 1.25em;
+}
+
+.p-gyouseki__btn__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  @include mq(sp) {
+    flex-wrap: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    padding-left: 20px;
+  }
+}
+
+.p-gyouseki__btn__list::-webkit-scrollbar {
+  display: none;
+}
+
+.p-gyouseki__btn__list__item {
+  display: flex;
+}
+
+.p-gyouseki__btn__link {
+  font-family: $now-font;
+  line-height: 1;
+  font-size: 14px;
+  padding: 1em 1.7em;
+  margin: 0 5px 5px 0;
+  color: #fff;
+  background-color: $color-iryo;
+  border-radius: 50px;
+  text-decoration: none;
+
+  &.-active {
+    background-color: #fff;
+    color: $color-iryo;
+    border: 1px solid $color-iryo;
+  }
+}

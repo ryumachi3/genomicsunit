@@ -1170,6 +1170,34 @@ select:focus {
     margin-top: 2px;
   }
 }
+.c-head-title__number {
+  position: relative;
+  font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #55B5C1;
+  padding-left: 50px;
+  font-feature-settings: "palt";
+}
+
+@media screen and (max-width: 768px) {
+  .c-head-title__number {
+    font-size: 1.875rem;
+  }
+}
+.c-head-title__number::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: #55B5C1;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, 0);
+}
+
 .c-head-title__char,
 .c-square-title__char {
   font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -3566,6 +3594,64 @@ select:focus {
     font-size: 30px;
   }
 }
+.p-gyouseki__list {
+  padding: 2.8em 0;
+}
+
+@media screen and (max-width: 768px) {
+  .p-gyouseki__list {
+    margin-left: 1.6em;
+    margin-right: 1em;
+  }
+}
+.p-gyouseki__list__item {
+  padding-bottom: 1.25em;
+}
+
+.p-gyouseki__btn__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .p-gyouseki__btn__list {
+    flex-wrap: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-right: calc((100vw - 100%) / 2 * -1);
+    margin-left: calc((100vw - 100%) / 2 * -1);
+    padding-left: 20px;
+  }
+}
+.p-gyouseki__btn__list::-webkit-scrollbar {
+  display: none;
+}
+
+.p-gyouseki__btn__list__item {
+  display: flex;
+}
+
+.p-gyouseki__btn__link {
+  font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1;
+  font-size: 14px;
+  padding: 1em 1.7em;
+  margin: 0 5px 5px 0;
+  color: #fff;
+  background-color: #55B5C1;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.p-gyouseki__btn__link.-active {
+  background-color: #fff;
+  color: #55B5C1;
+  border: 1px solid #55B5C1;
+}
+
 .page-numbers {
   position: relative;
   list-style: none;

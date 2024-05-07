@@ -38,7 +38,7 @@ new Vue({
     window.addEventListener('scroll', this.handleScroll);
     window.addEventListener('resize', this.handleResize);
     window.addEventListener('mousemove', this.handleMousemove);
-    window.addEventListener("keydown", this.handleKeyDown);    
+    window.addEventListener("keydown", this.handleKeyDown);
 
 
     if (window.innerWidth >= PC) {
@@ -73,12 +73,12 @@ new Vue({
         delay: .2,
         duration: .3,
         ease: "power4.out",
-      },"<");
+      }, "<");
       mvtl.to(".l-main", {
-          opacity: 1,
-          duration: .05,
-          ease: "power4.out",
-        }, "+=.6");
+        opacity: 1,
+        duration: .05,
+        ease: "power4.out",
+      }, "+=.6");
       mvtl.from(".p-kv__inner__title__line1", {
         x: 20,
         opacity: 0,
@@ -99,7 +99,7 @@ new Vue({
         opacity: 0,
         duration: .5,
         ease: "power2.out",
-      },"+=.3");
+      }, "+=.3");
       mvtl.from(".p-kv__inner__photo__sub", {
         duration: .5,
         opacity: 0,
@@ -118,7 +118,7 @@ new Vue({
       mvtl.from("#contents", {
         opacity: 0,
         duration: .6,
-        y: 20,          
+        y: 20,
         ease: "power2.out",
       }, "-=.4");
       mvtl.from(".g-mv-txt-point", {
@@ -148,77 +148,77 @@ new Vue({
         duration: .01,
       })
 
-    const othertl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
+      const othertl = gsap.timeline({ repeat: 0, repeatDelay: 0.5 });
 
-    //正規表現パターン（半角英数４桁に一致）
-    var regex = new RegExp(/\/news\/.*\//);
-    if (regex.test(location.pathname)) {
-      gsap
-        .timeline({ repeat: 0, repeatDelay: 0.5 })
-        .to(".p-header", {
-          opacity: 1,
-          delay: .2,
-          duration: .2,
-          x: 0,
-          ease: "power4.out",
-        },)
-        .to(".p-header-sp", {
-          opacity: 1,
-          delay: .2,
-          duration: .3,
-          ease: "power4.out",
-        },"<")  
-        .to(".l-main", {
-          opacity: 1,
-          duration: .05,
-          ease: "power4.out",
-        },"+=.5")
-        .from(".c-contents", {
-          opacity: 0,
-          duration: .7,
-          y: 20,
-          ease: "power2.out",
-        })
-    } else {
-      gsap
-        .timeline({ repeat: 0, repeatDelay: 0.5 })
-        .to(".p-header", {
-          opacity: 1,
-          delay: .2,
-          duration: .2,
-          x: 0,
-          ease: "power4.out",
-        },)
-        .to(".p-header-sp", {
-          opacity: 1,
-          delay: .2,
-          duration: .3,
-          ease: "power4.out",
-        },"<")
-        .to(".l-main", {
-          opacity: 1,
-          duration: .05,
-          ease: "power4.out",
-        },"+=.5")
-        .from(".c-head-title.-anime", {
-          y: 10,
-          opacity: 0,
-          duration: .5,
-        },"<")
-        .from(".c-head-title__char__inner", {
-          y: 100,
-          duration: .5,
-          ease: "power4.out",
-          stagger: 0.03, // 0.02秒ごとに出現
-        })
-        .from(".c-contents", {
-          opacity: 0,
-          duration: .7,
-          y: 20,
-          ease: "power2.out",
-        })
+      //正規表現パターン（半角英数４桁に一致）
+      var regex = new RegExp(/\/news\/.*\//);
+      if (regex.test(location.pathname)) {
+        gsap
+          .timeline({ repeat: 0, repeatDelay: 0.5 })
+          .to(".p-header", {
+            opacity: 1,
+            delay: .2,
+            duration: .2,
+            x: 0,
+            ease: "power4.out",
+          },)
+          .to(".p-header-sp", {
+            opacity: 1,
+            delay: .2,
+            duration: .3,
+            ease: "power4.out",
+          }, "<")
+          .to(".l-main", {
+            opacity: 1,
+            duration: .05,
+            ease: "power4.out",
+          }, "+=.5")
+          .from(".c-contents", {
+            opacity: 0,
+            duration: .7,
+            y: 20,
+            ease: "power2.out",
+          })
+      } else {
+        gsap
+          .timeline({ repeat: 0, repeatDelay: 0.5 })
+          .to(".p-header", {
+            opacity: 1,
+            delay: .2,
+            duration: .2,
+            x: 0,
+            ease: "power4.out",
+          },)
+          .to(".p-header-sp", {
+            opacity: 1,
+            delay: .2,
+            duration: .3,
+            ease: "power4.out",
+          }, "<")
+          .to(".l-main", {
+            opacity: 1,
+            duration: .05,
+            ease: "power4.out",
+          }, "+=.5")
+          .from(".c-head-title.-anime", {
+            y: 10,
+            opacity: 0,
+            duration: .5,
+          }, "<")
+          .from(".c-head-title__char__inner", {
+            y: 100,
+            duration: .5,
+            ease: "power4.out",
+            stagger: 0.03, // 0.02秒ごとに出現
+          })
+          .from(".c-contents", {
+            opacity: 0,
+            duration: .7,
+            y: 20,
+            ease: "power2.out",
+          })
+      }
     }
-  }
 
 
 
@@ -232,7 +232,7 @@ new Vue({
     //   ease: "power4.out",
     // })
 
-    
+
     const staggerPoint = gsap.utils.toArray(".u-txt-point");
     staggerPoint.forEach((point) => {
       gsap.from(point, {
@@ -278,28 +278,28 @@ new Vue({
 
     const staggerTitle = gsap.utils.toArray(".c-title");
     staggerTitle.forEach((title) => {
-      gsap.timeline({ 
+      gsap.timeline({
         repeat: 0,
         scrollTrigger: {
           trigger: title,
           start: 'top 88%'
         },
       })
-      .from(title.querySelector(".c-title__line-tate"), {
-        height: 0,
-        duration: 1,
-        ease: "power4.out",
-      })
-      .from(title.querySelector(".c-title__line-yoko"), {
-        width: 0,
-        duration: 1.3,
-        ease: "power4.out",
-      }, "<");
+        .from(title.querySelector(".c-title__line-tate"), {
+          height: 0,
+          duration: 1,
+          ease: "power4.out",
+        })
+        .from(title.querySelector(".c-title__line-yoko"), {
+          width: 0,
+          duration: 1.3,
+          ease: "power4.out",
+        }, "<");
     });
 
     const mediaQuery = window.matchMedia('(max-width: 1280px)');
     const pNav = document.querySelector('.p-nav__list');
-    const footer = document.getElementById('footer');    
+    const footer = document.getElementById('footer');
     const pNavHeight = pNav.offsetHeight; // .p-navの高さを取得
     const pNavTop = pNav.offsetTop; // .p-navのページ上部からの位置を取得
     gsap.to('.g-nav-access-horn', {
@@ -325,9 +325,9 @@ new Vue({
     //     toggleActions: "play reverse play reverse" // アニメーションの再生と逆再生を指定 
     //   },
     // });
-    
+
     // リロード時も最上部を表示するために、ページの上部にスクロールする処理
-    $(function() {
+    $(function () {
       $('html,body').animate({ scrollTop: 0 }, '1');
     });
   },
@@ -335,7 +335,7 @@ new Vue({
   beforeDestroy() {
     window.removeEventListener('resize', this.handleResize);
     window.removeEventListener('scroll', this.handleScroll);
-    window.removeEventListener("keydown", this.handleKeyDown);    
+    window.removeEventListener("keydown", this.handleKeyDown);
     window.removeEventListener('mousemove', this.handleMousemove);
   },
   methods: {
@@ -343,7 +343,7 @@ new Vue({
       // Menuを閉じる
       this.isMenu = false;
     },
-    clickCarouselNext(){
+    clickCarouselNext() {
       // 要素の取得
       var element = document.querySelector(".carousel__button.is-next");
 
@@ -352,7 +352,7 @@ new Vue({
         element.click();
       }
     },
-    clickCarouselPrev(){
+    clickCarouselPrev() {
       // 要素の取得
       var element = document.querySelector(".carousel__button.is-prev");
 
@@ -366,7 +366,7 @@ new Vue({
       // イベントが発生した要素を取得する
       const targetElement = event.target;
       // 要素をクリックする
-      targetElement.click();      
+      targetElement.click();
     },
     clickMenu() {
       this.isMenu = !this.isMenu;
@@ -377,7 +377,7 @@ new Vue({
       if (this.isMenu) {
         hamburgerButton.focus();
         jQuery('a:not(.p-header a ,.p-header button)').attr('tabindex', '-1');
-        jQuery('iframe').attr('tabindex', '-1');  
+        jQuery('iframe').attr('tabindex', '-1');
       }
     },
     handleKeyDown(event) {
@@ -403,11 +403,11 @@ new Vue({
       const title_tate = document.querySelectorAll(".c-title__line-tate");
       title_tate.forEach((element) => {
         element.style = "";
-      });      
+      });
       const title_yoko = document.querySelectorAll(".c-title__line-yoko");
       title_yoko.forEach((element) => {
         element.style = "";
-      });      
+      });
 
       if (window.innerWidth >= PC) {
         this.isPC = true;
@@ -425,12 +425,12 @@ new Vue({
       // this.cursorX = event.clientX;
       // this.cursorY = event.clientY;
       // const pointer = this.$refs.cursor;
-    
+
       // // マウス下の要素一覧を取得
       // const elements = document.elementsFromPoint(event.clientX, event.clientY);
-    
+
       // const target = elements.find((el) => el.classList.contains("js-light-out") || el.classList.contains("c-btn") || el.classList.contains("p-news-list"));
-    
+
       // if (event.clientX < SURPLUS || event.clientY < SURPLUS || event.clientX >= window.innerWidth - SURPLUS || event.clientY >= window.innerHeight - SURPLUS) {
       //   // マウスカーソルがブラウザ画面外に出た場合
       //   pointer.style.animationName = 'light-out';

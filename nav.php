@@ -62,6 +62,11 @@
           患者の皆さまへ (臨床研究)
         </a>
       </li>
+      <li class="p-nav__list__item -line -iryo <?php echo is_page('gyouseki') ? '-is-active' : '' ?>">
+        <a tabindex="100" href="<?php echo home_url(); ?>/gyouseki" class="p-nav__list__item__link">
+        業績一覧
+        </a>
+      </li>
       <li class="p-nav__list__item -line -iryo <?php echo is_page('iryo') ? '-is-active' : '' ?>">
         <a tabindex="100" href="<?php echo home_url(); ?>/iryo" class="p-nav__list__item__link">
         医療機関の方へ
