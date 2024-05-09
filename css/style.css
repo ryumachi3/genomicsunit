@@ -3724,6 +3724,7 @@ p + .c-title.-gyouseki {
   background-color: #fff;
   color: #55B5C1;
   border: 1px solid #55B5C1;
+  pointer-events: none;
 }
 
 .page-numbers {
