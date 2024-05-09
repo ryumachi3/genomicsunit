@@ -167,6 +167,12 @@
 
 }
 
+ol + .c-title.-gyouseki,
+p + .c-title.-gyouseki
+{
+  margin-top: 3.25em;
+}
+
 .c-toggle {
   cursor: pointer;
   display: flex;
@@ -491,5 +497,13 @@
     height: .625em;
     border-radius: 50%;
     background-color: $main-txt;
+  }
+}
+
+.c-contents.-gyouseki{
+  word-break: break-word;
+  margin-bottom: 2.8em;
+  p,li {
+    margin-bottom: 1.25em;
   }
 }

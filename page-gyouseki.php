@@ -13,33 +13,23 @@
 						<span class="c-head-title__number c-contents">2024</span>
 					</h1>
 
-					<div class="c-contents">
-						<ul class="p-gyouseki__btn__list">
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link -active">2024</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2023</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2022</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2021</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2020</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2019</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2018</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2017</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2016</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2015</a></li>
-							<li class="p-gyouseki__btn__list__item"><a href="" class="p-gyouseki__btn__link">2014</a></li>
-						</ul>
-						<script>
-						$(function(){
-						$(".p-gyouseki__btn__link").click(function () {
-						preventDefault(); //htmlデフォルトの挙動をキャンセルする
-						$(".p-gyouseki__btn__link").removeClass("-active");
-						$(this).addClass("-active");
-						});
-						})
-						</script>
-						
+					<ul class="p-gyouseki__btn__list">
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2024</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2023</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link -active">2022</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2021</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2020</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2019</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2018</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2017</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2016</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2015</a></li>
+						<li class="p-gyouseki__btn__list__item"><a href="#" class="p-gyouseki__btn__link">2014</a></li>
+					</ul>
+
+					<div class="c-contents -gyouseki">
 						<?php 
 						$content_string = get_the_content();
-
 						$content_string = str_replace('<h2 class="wp-block-heading">','<h2 class="wp-block-heading c-title -gyouseki"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span> ',$content_string);
 						$content_string = str_replace('<ol','<ol class="p-gyouseki__list" ',$content_string);
 						$content_string = str_replace('<li','<li class="p-gyouseki__list__item" ',$content_string);
