@@ -3716,6 +3716,8 @@ p + .c-title.-gyouseki {
   background-color: #55B5C1;
   border-radius: 50px;
   text-decoration: none;
+  width: 6.5em;
+  text-align: center;
 }
 
 .p-gyouseki__btn__link.-active {
