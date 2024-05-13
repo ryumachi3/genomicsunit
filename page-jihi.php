@@ -3,7 +3,7 @@
 	<?php get_template_part('nav'); ?>
 	<div class="l-main p-main">
 		<div id="contents" class="l-contents">
-      <div class="l-container">
+			<div class="l-container">
 				<section class="l-common-sec">
 					<h1 class="c-head-title -anime l-head-title l-hoken-head-title">
 						<span class="c-head-title__char -point"><span class="c-head-title__char__inner">自</span></span>
@@ -23,10 +23,14 @@
 									<h3 class="p-hoken-sec__description__title">PleSSision-Panel検査<br class="u-sp_br"> (プレシジョン パネル検査)</h3>
 									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">145遺伝子</span>について、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液 (もしくは口腔粘膜)</span>の両方で調べます。病理医が精度管理することにより、がんの組織から採取した<span class="u-txt-point">検体が少量の場合でも</span>遺伝子解析が可能です。</p>
 									<dl class="p-jihi-sec__description__hiyo">
-										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt><dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">385,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span><dd>
+										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
+										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">385,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span>
+										<dd>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
-										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt><dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">4</span>週間<dd>
+										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt>
+										<dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">4</span>週間
+										<dd>
 									</dl>
 								</div>
 							</div>
@@ -35,10 +39,14 @@
 									<h3 class="p-hoken-sec__description__title">PleSSision-Exome検査<br class="u-sp_br"> (プレシジョン エクソーム検査)</h3>
 									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">ヒトのほぼ全ての遺伝子 (約2万種類)</span>を、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液 (もしくは口腔粘膜)</span>の両方で調べます。PleSSision-Panel検査では見つけられない遺伝子変化の情報を得られる可能性があります。</p>
 									<dl class="p-jihi-sec__description__hiyo">
-										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt><dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">1,012,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span><dd>
+										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
+										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">1,012,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span>
+										<dd>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
-										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt><dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">8</span>週間<dd>
+										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt>
+										<dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">8</span>週間
+										<dd>
 									</dl>
 								</div>
 							</div>
@@ -49,12 +57,16 @@
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
 										<div class="p-jihi-sec__price__box">
-											<dd class="p-jihi-sec__description__hiyo__txt">初回 <span class="p-jihi-sec__description__hiyo__price">561,000</span>円 (税込)<dd>
-											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note -last">※検査費用とは別に診察料等がかかります</span><dd>
+											<dd class="p-jihi-sec__description__hiyo__txt">初回 <span class="p-jihi-sec__description__hiyo__price">561,000</span>円 (税込)
+											<dd>
+											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note -last">※検査費用とは別に診察料等がかかります</span>
+											<dd>
 										</div>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
-										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt><dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">3</span>週間<dd>
+										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt>
+										<dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">3</span>週間
+										<dd>
 									</dl>
 								</div>
 							</div>
@@ -64,10 +76,13 @@
 									<p class="p-hoken-sec__description__txt">血液中の血中循環腫腫瘍DNAから、がんの遺伝子異常を検出するシステムです。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
-										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">380,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span><dd>
+										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">418,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span>
+										<dd>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
-										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt><dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">3</span>週間<dd>
+										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt>
+										<dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">3</span>週間
+										<dd>
 									</dl>
 								</div>
 							</div>
@@ -142,9 +157,9 @@
 				</section>
 			</div>
 		</div>
-    <!-- contents -->
-  </div>
-  <!-- l-main -->
+		<!-- contents -->
+	</div>
+	<!-- l-main -->
 </div>
 <!-- l-main-grid -->
 <?php get_footer(); ?>
