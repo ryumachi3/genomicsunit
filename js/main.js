@@ -359,10 +359,10 @@ new Vue({
           // アクティブなリンクを含むli要素の位置を計算
           const activeOffsetLeft = listItems[activeIndex].offsetLeft;
 
-          let offset = 0;
+          let offset = 40;
             
           // 横スクロールをアクティブなリンクを含むli要素の位置に移動する
-          document.querySelector(".p-gyouseki__btn__list").scrollLeft = activeOffsetLeft;
+          document.querySelector(".p-gyouseki__btn__list").scrollLeft = activeOffsetLeft - offset;
       }
 
     },
