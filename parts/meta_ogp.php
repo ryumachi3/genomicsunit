@@ -33,6 +33,9 @@ function my_meta_ogp()
             if (is_page('rinsyo')) {
                 $ogp_title = get_the_title() . ' | 慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット';
             }
+            if (is_singular('gyouseki')) {
+                $ogp_title = get_the_title() . '年業績 | 慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット';
+            }
             if (is_singular('post')) {
                 $ogp_title = get_the_title() . ' | 慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット';
                 $ogp_descr = '';
