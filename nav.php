@@ -62,14 +62,27 @@
           患者の皆さまへ (臨床研究)
         </a>
       </li>
-      <li class="p-nav__list__item -line -iryo <?php echo is_page('gyouseki') ? '-is-active' : '' ?>">
-        <a tabindex="100" href="<?php echo home_url(); ?>/gyouseki" class="p-nav__list__item__link">
-        業績一覧
-        </a>
-      </li>
+      <?php
+      $gyouseki_args = array(
+        'post_type' => 'gyouseki',
+        'posts_per_page' => 1
+      );
+      $gyouseki_posts = get_posts($gyouseki_args);
+      if (!empty($gyouseki_posts)) :
+        foreach ($gyouseki_posts as $post) :
+          setup_postdata($post);
+      ?>
+          <li class="p-nav__list__item -line -iryo <?php echo is_singular('gyouseki') ? '-is-active' : '' ?>">
+            <a tabindex="100" href="<?php the_permalink(); ?>" class="p-nav__list__item__link">
+              業績一覧
+            </a>
+          </li>
+      <?php endforeach;
+        wp_reset_postdata();
+      endif; ?>
       <li class="p-nav__list__item -line -iryo <?php echo is_page('iryo') ? '-is-active' : '' ?>">
         <a tabindex="100" href="<?php echo home_url(); ?>/iryo" class="p-nav__list__item__link">
-        医療機関の方へ
+          医療機関の方へ
         </a>
       </li>
       <li class="p-nav__list__item -line <?php echo is_post_type_archive('post') || is_singular('post') ? '-is-active' : '' ?>">
