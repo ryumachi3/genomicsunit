@@ -172,6 +172,9 @@ function change_title_parts($title)
 	if (is_post_type_archive('staff')) {
 		$title['title'] = 'スタッフ紹介';
 	}
+	if (is_singular('gyouseki')) {
+		$title['title'] .= '年業績';
+	}
 	if (is_category()) {
 		$title['title'] = 'お知らせ（' . single_cat_title('', false) . '）';
 	}
