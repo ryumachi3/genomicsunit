@@ -2198,6 +2198,25 @@
   padding: 2.8em 0 0;
 }
 
+.p-gyouseki__list__item .p-gyouseki__list{
+  margin: .5em 0 0 0;
+}
+
+.p-gyouseki__list__item li.p-gyouseki__list__item{
+  margin-bottom: .5em;
+  position: relative;
+  padding-left: 2em;
+  list-style-type: none;
+  counter-increment: cnt;
+  &::before{
+    position: absolute;
+    left: 0;
+    content: "(" counter(cnt) ") ";
+  }
+}
+
+
+
 .p-gyouseki__btn__list {
   list-style: none;
   display: flex;
