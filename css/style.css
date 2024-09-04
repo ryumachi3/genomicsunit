@@ -181,18 +181,10 @@ a:not([class]):visited {
   color: #001E62;
 }
 
-img, svg {
+img,
+svg {
   width: 100%;
   height: auto;
-}
-
-@-webkit-keyframes fadebody {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadebody {
@@ -232,7 +224,7 @@ select:focus {
 .l-main-grid {
   padding-bottom: 156px;
   display: grid;
-  grid-template-columns: 300px auto;
+  grid-template-columns: 324px auto;
   margin-left: auto;
   margin-right: auto;
   max-width: 1246px;
@@ -260,7 +252,7 @@ select:focus {
 }
 .l-header {
   z-index: 100;
-  width: 300px;
+  width: 324px;
   padding-top: 56px;
   padding-bottom: 56px;
   position: fixed;
@@ -317,7 +309,7 @@ select:focus {
   }
 }
 .l-footer__copyright {
-  padding-left: 300px;
+  padding-left: 324px;
   margin-left: auto;
   margin-right: auto;
   text-align: right;
@@ -352,7 +344,7 @@ select:focus {
   }
 }
 .l-header__logo {
-  width: 262px;
+  width: 324px;
   margin-bottom: 50px;
 }
 
@@ -364,6 +356,11 @@ select:focus {
 @media screen and (max-width: 1199px) {
   .l-header__logo {
     display: none;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .l-header__logo {
+    width: 280px;
   }
 }
 .l-nav__list {
@@ -700,8 +697,8 @@ select:focus {
 
 @media screen and (max-width: 960px) {
   .l-iryo-head-title,
-.l-hoken-head-title,
-.l-staff-head-title {
+  .l-hoken-head-title,
+  .l-staff-head-title {
     margin-bottom: 60px;
   }
 }
@@ -882,7 +879,6 @@ select:focus {
   .l-staff-sec {
     margin-bottom: 56px;
   }
-
   .l-staff-sec.-sec03 {
     margin-bottom: 0;
   }
@@ -1166,7 +1162,7 @@ p + .c-title.-gyouseki {
 
 @media screen and (max-width: 768px) {
   .c-head-title,
-.c-square-title {
+  .c-square-title {
     justify-content: center;
   }
 }
@@ -1229,7 +1225,7 @@ p + .c-title.-gyouseki {
 
 @media screen and (max-width: 768px) {
   .c-head-title__char,
-.c-square-title__char {
+  .c-square-title__char {
     width: 38px;
     height: 38px;
     font-size: 1.875rem;
@@ -1412,8 +1408,14 @@ p + .c-title.-gyouseki {
 .p-header {
   opacity: 0;
   transform: translate(-20px, 0);
+  text-align: -webkit-center;
 }
 
+@media screen and (max-width: 1279px) {
+  .p-header {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 1199px) {
   .p-header {
     padding-top: 120px;
@@ -1738,7 +1740,6 @@ p + .c-title.-gyouseki {
   .p-nav__sublist__item__link:hover {
     transform: translateX(-10px);
   }
-
   .p-nav__sublist__item__link:hover::after {
     transform: translateX(-87%);
   }
@@ -1755,7 +1756,6 @@ p + .c-title.-gyouseki {
   .p-nav__sublist__item__link.-is-active {
     transform: translateX(-10px);
   }
-
   .p-nav__sublist__item__link.-is-active::after {
     transform: translateX(-87%);
   }
@@ -2027,14 +2027,10 @@ p + .c-title.-gyouseki {
   border-radius: 50%;
   opacity: 0.55;
   background: radial-gradient(#F4F1AD, transparent);
-  -webkit-animation-name: light-anime;
-          animation-name: light-anime;
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-name: light-anime;
+  animation-duration: 3.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 1279px) {
@@ -2053,20 +2049,6 @@ p + .c-title.-gyouseki {
     height: 40px;
   }
 }
-@-webkit-keyframes light-anime {
-  0% {
-    opacity: 0.55;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 0.78;
-    transform: translate(-50%, -50%) scale(1.65);
-  }
-  100% {
-    opacity: 0.55;
-    transform: translate(-50%, -50%) scale(1);
-  }
-}
 @keyframes light-anime {
   0% {
     opacity: 0.55;
@@ -2079,20 +2061,6 @@ p + .c-title.-gyouseki {
   100% {
     opacity: 0.55;
     transform: translate(-50%, -50%) scale(1);
-  }
-}
-@-webkit-keyframes light-out {
-  0% {
-    opacity: 0.55;
-    transform: translate(-50%, -50%) scale(1);
-  }
-  50% {
-    opacity: 0.33;
-    transform: translate(-50%, -50%) scale(0.5);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0);
   }
 }
 @keyframes light-out {
@@ -2122,16 +2090,11 @@ p + .c-title.-gyouseki {
   border-radius: 50%;
   opacity: 0.55;
   background: radial-gradient(#FFF593, rgba(255, 255, 255, 0) 60%);
-  -webkit-animation-name: light-out;
-          animation-name: light-out;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: light-out;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   pointer-events: none;
 }
 
@@ -2302,12 +2265,12 @@ p + .c-title.-gyouseki {
 
 @media screen and (max-width: 1199px) {
   .p-header-sp__logo__link {
-    width: 262px;
+    width: 370px;
   }
 }
 @media screen and (max-width: 768px) {
   .p-header-sp__logo__link {
-    width: 240px;
+    width: 265px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -2631,7 +2594,6 @@ p + .c-title.-gyouseki {
   .p-about-list__item:nth-child(2n+1) {
     flex-direction: column;
   }
-
   .p-about-list__item:nth-child(2n) {
     flex-direction: column;
   }
@@ -2757,7 +2719,6 @@ p + .c-title.-gyouseki {
   .p-kensa-list__item__illust__img.-img01 {
     max-width: 126px;
   }
-
   .p-kensa-list__item__illust__img.-img02 {
     max-width: 178px;
   }
@@ -2959,7 +2920,7 @@ p + .c-title.-gyouseki {
 
 @media screen and (max-width: 768px) {
   .p-jihi-sec__description__hiyo,
-.p-jihi-sec__description__kekka {
+  .p-jihi-sec__description__kekka {
     display: block;
   }
 }
@@ -2997,7 +2958,7 @@ p + .c-title.-gyouseki {
 
 @media screen and (max-width: 768px) {
   .p-jihi-sec__description__hiyo__title,
-.p-jihi-sec__description__kekka__title {
+  .p-jihi-sec__description__kekka__title {
     margin-bottom: 0.3em;
   }
 }
