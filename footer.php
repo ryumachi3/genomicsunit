@@ -10,8 +10,9 @@
             <div class="l-footer__contents">
               <address class="l-footer__contents__main">
                 <p>
-                  慶應義塾大学医学部腫瘍センター<br>
-                  ゲノム医療ユニット
+                慶應義塾大学医学部<br>
+                がんゲノム医療センター<br>
+                腫瘍センター がんゲノム医療ユニット
                 </p>
                 <p>
                   〒160-8582 東京都新宿区信濃町 35<br>
@@ -32,8 +33,7 @@
       </div> <!-- .l-footer -->
       <div class="l-footer__copyright">
         <small>
-          Copyright 2023 Genomics Unit. Keio Cancer Center. Keio University School of Medicine. All Rights
-          Reserved.
+          Copyright 2024 Center for Cancer Genomics/Genomics Unit,Keio Cancer Center,Keio University School of Medicine, All Rights Reserved.
         </small>
       </div>
     </footer>
