@@ -9,6 +9,7 @@
 // -----------------------------------------------------------------
 $jp-font: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $yu-font: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$now-font: "ナウ-GM","游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $en-font: 'Yeseva One', cursive;
 
 // -----------------------------------------------------------------
@@ -59,11 +60,14 @@ $weight-extra-black: 950;
 // -----------------------------------------------------------------
 $breakpoints: (
   'sp2': 'screen and (max-width: 560px)',
+  'sp3': 'screen and (max-width: 600px)',
   'sp': 'screen and (max-width: 768px)',
   'tb': 'screen and (max-width: 960px)',
-  'pc': 'screen and (max-width: 1280px)',
+  'pc': 'screen and (max-width: 1199px)',
+  'pc2': 'screen and (max-width: 1279px)',
   'maxwidth': 'screen and (max-width: 1366px)',
-  'min': 'screen and (max-width: 352px)'
+  'min': 'screen and (max-width: 352px)',
+  'minh': 'screen and (max-height: 680px) and (min-width: 1200px)',
 ) !default;
 
 @mixin mq($breakpoint: pc) {
@@ -75,9 +79,20 @@ $breakpoints: (
 // -----------------------------------------------------------------
 // function
 // -----------------------------------------------------------------
+// 縦幅が短い時の調整
+$master-height-pc: 680px;
+@function pxvhPC($target){
+  @return ($target / $master-height-pc) * 100vh;
+}
+
 $master-width-pc: 1366px;
 @function pxvwPC($target){
   @return ($target / $master-width-pc) * 100vw;
+}
+
+$master-width-pc2: 1280px;
+@function pxvwPC2($target){
+  @return ($target / $master-width-pc2) * 100vw;
 }
 
 $master-width-sp: 375px;
@@ -105,7 +120,9 @@ html {
 }
 
 body {
-  background: $bg;
+  background-color: $bg;
+  background-image: radial-gradient(#F9F9F9 0%, $bg 50%);
+  background-attachment: fixed;  
   color: $main-txt;
   font-size: rem(16);
   font-family: $jp-font;
@@ -126,6 +143,7 @@ body *{
 
 a {
   cursor : pointer;
+  //outline: 2px solid blue;  
 }
 
 a:not([class]) {
@@ -151,7 +169,7 @@ img,svg {
 
 // 文字選択時の色
 ::selection {
-//  background: 
+  background: rgba($color: #FFF593, $alpha: .5)
 }
 //Firefox
 ::-moz-selection {
@@ -163,4 +181,13 @@ input[type="text"]:focus,
 select:focus
 {
   outline: solid 2px $point;
+}
+
+// 背景
+#bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
 }
