@@ -1481,6 +1481,21 @@
   margin-bottom: .9em;
 }
 
+.p-hoken-sec__description__subtitle {
+  font-size: rem(17);
+  margin-bottom: .4em;
+}
+
+.p-hoken-sec__description__title__hoken,
+.p-hoken-sec__description__title__jihi {
+  text-decoration: underline;
+  margin-bottom: 1em;
+}
+
+.p-hoken-sec__description__title__jihi {
+  margin-top: 2em;
+}
+
 .p-hoken-sec__hiyo {
   display: flex;
   align-items: flex-start;
@@ -1759,17 +1774,35 @@
   text-decoration: underline;
 }
 
+.l-hoken-sec.-sec02 .p-hoken-sec__intro__txt {
+  padding-left: 1.1em;
+}
+
+.l-hoken-sec.-sec02 .p-hoken-sec__intro__txt::before {
+  content: "※";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 .p-hoken-sec__intro__txt {
+  position: relative;
   text-align: justify;
 }
 
 .p-hoken-sec__intro__btn {
-  margin-top: .8em;
+  padding: .7em 2em;
 }
 
 .p-hoken-sec__intro__btn i {
   margin-right: 0.5em;
   transform: translate(0, 15%);
+}
+
+.p-hoken-sec__intro__btn span {
+  font-size: rem(14);
 }
 
 .p-info-list__item__link {

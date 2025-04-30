@@ -13,7 +13,7 @@
 					</h1>
 					<div class="c-contents">
 						<section class="l-hoken-description">
-							<p class="l-hoken-description__txt">2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。<br>2024年2月現在、当院で行っている保険診療のがん遺伝子パネル検査は5種類あります。</p>
+							<p class="l-hoken-description__txt">2019年6月に保険診療下でのがん遺伝子パネル検査がスタートしました。<br>現在、当院で行っている保険診療のがん遺伝子パネル検査は5種類あります。</p>
 							<img class="p-hoken-sec__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_sinryo01.png" alt="">
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
@@ -99,35 +99,47 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
-									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生にご相談の上、ご予約ください。</p>
+									<p class="p-hoken-sec__description__txt">
+										慶應義塾大学病院以外で治療中の方で受診を希望される場合は、かかりつけ医とご相談のうえ、ご予約ください。当院で通院中の方で検査を希望される場合は、主治医にご相談ください。<br>
+										当院に通院中でない方は、セカオピ外来への予約（下記URLをご確認ください）<br>
+									</p>
+									<a href="https://www.hosp.keio.ac.jp/annai/2ndopini/taimen" target="_blank" rel="noopener noreferrer" class="u-under-line u-txt-point u-external-link -hoken">https://www.hosp.keio.ac.jp/<br>annai/2ndopini/taimen</a>
+									<div class="p-hoken-sec__description__sinryojikan">
+										<h4 class="p-hoken-sec__description__sinryojikan__title">
+											＜がん遺伝子外来の保険診療時間＞<br>
+											・ 火曜日午後<br>
+											・ 金曜日午後
+										</h4>
+									</div>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
 								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Step.2 受診 (1回目)：検査説明</h3>
-									<p class="p-hoken-sec__description__txt">指定された日時に「<span class="u-txt-point">慶應義塾大学病院 セカンドオピニオン外来</span>」にお越しください。<br>医師により検査の説明を行います。</p>
-									<p class="p-hoken-sec__description__note c-description__note -kome">保険での検査が可能であれば、外来後に当院からかかりつけ医へ病理検体の準備を依頼します。次回の外来受診日までに、病理検体の確認を行います。</p>
+									<h3 class="p-hoken-sec__description__title">Step.2 受診 (1回目)</h3>
+									<h4 class="p-hoken-sec__description__subtitle">①検査説明</h4>
+									<p class="p-hoken-sec__description__txt">
+										指定された日時に
+										「<span class="u-txt-point">慶應義塾大学病院 セカンドオピニオン外来</span>」にお越しください。<br>
+										医師により検査の説明を行います。
+								    </p>
+									<p class="p-hoken-sec__description__note c-description__note -kome">初回受診時に病理検体が揃っている場合は、検査説明と同時に検査同意の手続きを進めることができます。通院の負担を軽減するため、検査を希望する方は病理検体を可能な限り事前に郵送していただくか、診察日に持参していただくようお願いします。かかりつけ医には、こちらの書類をダウンロードしてお渡しください。</p>
+									<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Insured_202504.pdf" target="_blank" rel="noopener noreferrer" class="c-btn p-hoken-sec__intro__btn -pdf -hoken">
+										<i class="c-icon-pdf"></i>
+										<p>検体送付・受領書(送付表) <br><span>保険診療用</span></p>
+									</a>
+
+									<h4 class="p-hoken-sec__description__subtitle">②検査同意</h4>
+									<p class="p-hoken-sec__description__txt">
+										検査に同意される場合は同意書にご署名いただきます。<br>同意取得後に検査開始となります。当院より病理検体や血液を検査センターへ郵送し、がん遺伝子パネル検査を行います。
+								    </p>
+									<p class="p-hoken-sec__description__note c-description__note -kome">OncoGuide™ NCCオンコパネル、FoundationOne Liquid CDx がんゲノムプロファイル、Guardant360 CDxがん遺伝子パネル 、GenMineTOPがんゲノムプロファイリングの場合は採血があります。</p>
+
 									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01.png" alt="">
-								</div>
-							</div>
-							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-03">
-								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Step.3 受診 (2回目)：検査同意</h3>
-									<p class="p-hoken-sec__description__txt">検査に同意される場合は同意書にご署名いただきます。<br>同意取得後に検査開始となります。当院より病理検体や血液を検査センターへ郵送し、がん遺伝子パネル検査を行います。</p>
-									<p class="p-hoken-sec__description__note c-description__note -kome">OncoGuide™ NCCオンコパネル、FoundationOne Liquid CDx がんゲノムプロファイル、Guardant360 CDx がん遺伝子パネルの場合は採血があります。</p>
-									<div class="p-hoken-sec__description__sinryojikan">
-										<h4 class="p-hoken-sec__description__sinryojikan__title">＜がん遺伝子外来の保険診療時間＞</h4>
-										<ul class="p-hoken-sec__description__sinryojikan__list">
-											<li class="p-hoken-sec__description__sinryojikan__list__item">火曜日 14:00-16:30 (最終受付 16:00)</li>
-											<li class="p-hoken-sec__description__sinryojikan__list__item">木曜日 13:30-16:00 (最終受付 15:30)</li>
-											<li class="p-hoken-sec__description__sinryojikan__list__item">金曜日 13:00-15:30 (最終受付 15:00)</li>
-										</ul>
-									</div>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-04">
 								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Step.4 受診 (3回目)：結果説明</h3>
+									<h3 class="p-hoken-sec__description__title">Step.3 受診 (2回目)：結果説明</h3>
 									<p class="p-hoken-sec__description__txt">検査申し込み日より<span class="u-txt-point">4～6週間後</span>に、当院の担当医からがん遺伝子パネル検査の結果説明を行います。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome -desc04">推奨治療法は、がん遺伝子パネル検査の結果をもとに、担当医や病理医、バイオインフォマティシャンなどにより事前検討しています。</p>
 									<img class="p-hoken-sec__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo02.png" alt="">

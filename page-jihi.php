@@ -13,7 +13,7 @@
 					</h1>
 					<div class="c-contents">
 						<section class="l-jihi-description">
-							<p class="l-hoken-description__txt"><span class="u-txt-point">保険診療を受けられない</span>患者さん、<span class="u-txt-point">より詳しい検査をしたい</span>患者さん、<span class="u-txt-point">結果を早く知りたい</span>患者さんには自費診療も紹介しています。<br>2024年2月現在、当院で行っている自費診療のがん遺伝子パネル検査は4種類あります。</p>
+							<p class="l-hoken-description__txt"><span class="u-txt-point">保険診療を受けられない</span>患者さん、<span class="u-txt-point">より詳しい検査をしたい</span>患者さん、<span class="u-txt-point">結果を早く知りたい</span>患者さんには自費診療も紹介しています。<br>現在、当院で行っている自費診療のがん遺伝子パネル検査は4種類あります。</p>
 							<img class="p-jihi-sec__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_jihi01.png" alt="">
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
@@ -113,17 +113,17 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
 									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生にご相談の上、ご予約ください。</p>
+									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">問合せ先：3号館3Y予約受付：<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">03-5363-3858</a></span><br>(電話受付時間：診察日の8:30-16:00)</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.2 受診 (1回目)：検査説明・同意</h3>
-									<p class="p-hoken-sec__description__txt">指定された日時に「<span class="u-txt-point">慶應義塾大学病院 がん遺伝子外来</span>」にお越しください。<br>検査の説明と医師による診察を行います。<br>説明後、検査に同意される場合は同意書にご署名いただきます。<br>同意取得後に検査開始となります。<br>採血もしくは口腔粘膜の採取を行います。その後、当院より検体を検査センターへ郵送し、がん遺伝子検査を行います。</p>
+									<p class="p-hoken-sec__description__txt">指定された日時に「<span class="u-txt-point">慶應義塾大学病院 がん遺伝子外来</span>」にお越しください。<br>そこで、検査の説明を受け、医師による診察を行います。<br>説明後、検査に同意される場合は、同意書にサインをしていただきます。<br>同意取得後、採血または口の中の細胞を採取します。<br>その後、当院からかかりつけ医に病理検体の準備をお願いし、検体が到着次第、検査を開始します。</p>
 									<div class="p-hoken-sec__description__sinryojikan">
 										<h4 class="p-hoken-sec__description__sinryojikan__title">＜がん遺伝子外来の自費診療時間＞</h4>
 										<ul class="p-hoken-sec__description__sinryojikan__list">
-											<li class="p-hoken-sec__description__sinryojikan__list__item">水曜日 13:30-15:00 (最終受付 14:30)</li>
-											<li class="p-hoken-sec__description__sinryojikan__list__item">木曜日 13:30-15:00 (最終受付 14:30)</li>
+											<li class="p-hoken-sec__description__sinryojikan__list__item">水曜日 午後</li>
 										</ul>
 									</div>
 									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01.png" alt="">

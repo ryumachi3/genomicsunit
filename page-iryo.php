@@ -96,30 +96,38 @@
 						<section class="l-hoken-sec p-hoken-sec -sec02">
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の準備について</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
-								<p class="p-hoken-sec__intro__txt"><span class="u-txt-point">ご予約前に病理検体の有無をご確認ください</span>。核酸抽出検査を行うための手術・生検時のホルマリン固定パラフィン包埋 (FFPE)から作成された未染色標本が必要となります。</p>
+								<p class="p-hoken-sec__intro__txt">検査の希望が既に決まっている場合、初回受診時に病理検体が揃っていれば、検査説明と同時に検査同意の手続きを進めることができます。患者さんの通院負担を軽減するため、病理検体を事前に郵送していただくか、診察日に持参していただくようお願いします。</p>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc02-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">ご用意いただく病理検体</h3>
+									<h4 class="p-hoken-sec__description__title__hoken">保険診療の場合</h4>
+									<ul class="p-hoken-sec__taisyo__list">
+										<li class="c-list__item p-hoken-sec__taisyo__list__item">HE標本3枚 (未染標本を作製したものと同一ブロックから作製)</li>
+										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本10枚 (10 μm厚、ノンコーティングガラス)</li>
+										<li class="c-list__item p-hoken-sec__taisyo__list__item">病理診断書のコピー</li>
+									</ul>
+									<h4 class="p-hoken-sec__description__title__jihi">自費診療の場合</h4>
 									<ul class="p-hoken-sec__taisyo__list">
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">HE標本3枚 (未染標本を作製したものと同一ブロックから作製)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本4枚 (5 μm厚、コーティングガラス)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本10枚 (10 μm厚、ノンコーティングガラス)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">病理診断書のコピー</li>
-										<li class="c-list__item p-hoken-sec__taisyo__list__item">該当するブロックが記載されている切り出し図のコピー</li>
 									</ul>
 								</div>
-							</div>
-							<div class="l-container3 l-hoken-sec__note p-hoken-sec__note">
-								<p class="p-hoken-sec__note c-description__note -kome"><span class="u-txt-point">病理検体がない場合は先に検査の可否についてゲノム医療ユニットまでご相談ください。</span></p>
 							</div>
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec03 -last">
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>病理検体の提出先</h2>
 							<div class="l-container3 l-hoken-sec__intro p-hoken-sec__intro">
-								<p class="p-hoken-sec__intro__txt">下記の「検体送付・受領書」をダウンロードして必要事項をご記入いただき、<span class="u-txt-point">病理検体、病理診断書コピー、該当するブロックが記載されている切り出し図コピー</span>を同封のうえ、郵送 (ワレモノ・室温)をお願い致します。</p>
-								<a href="<?php echo get_theme_file_uri() ?>/pdf/fax02_20230728.pdf" class="c-btn p-hoken-sec__intro__btn -iryo" target="_blank" rel="noopener noreferrer">
-									<i class="c-icon-pdf"></i>検体送付・受領書(送付表)
+								<p class="p-hoken-sec__intro__txt">下記の「検体送付・受領書」をダウンロードして必要事項をご記入いただき、<span class="u-txt-point">病理検体、病理診断書コピー</span>を同封のうえ、郵送 (ワレモノ・室温)をお願い致します。</p>
+								<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Insured_202504.pdf" class="c-btn p-hoken-sec__intro__btn -pdf" target="_blank" rel="noopener noreferrer">
+									<i class="c-icon-pdf"></i>
+									<p>検体送付・受領書(送付表)<br><span>保険診療用</span></p>
+								</a>
+								<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Self-paid_202504.pdf" class="c-btn p-hoken-sec__intro__btn -pdf -point" target="_blank" rel="noopener noreferrer">
+									<i class="c-icon-pdf"></i>
+									<p>検体送付・受領書(送付表)<br><span>自費診療用</span></p>
 								</a>
 							</div>
 							<div class="l-container3 l-hoken-sec__note p-hoken-sec__note">
@@ -131,8 +139,8 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">病理検体の提出先</h3>
 									<p>
-										〒160-8582 東京都新宿区信濃町35　総合医科学研究棟 3-S5<br>
-										慶應義塾大学医学部 腫瘍センター ゲノム医療ユニット<br>
+										〒160-8582 東京都新宿区信濃町35<br>
+										慶應義塾大学病院 臨床検査科 ゲノム検査室<br>
 									</p>
 								</div>
 							</div>

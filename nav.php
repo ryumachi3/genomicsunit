@@ -52,6 +52,11 @@
           </span> -->
         </a>
       </li>
+      <li class="p-nav__list__item -line <?php echo is_page('gairai') ? '-is-active' : '' ?>">
+        <a tabindex="100" href="<?php echo home_url(); ?>/gairai" class="p-nav__list__item__link">
+          外来予約方法
+        </a>
+      </li>
       <li class="p-nav__list__item -line <?php echo is_post_type_archive('staff') ? '-is-active' : '' ?>">
         <a tabindex="100" href="<?php echo home_url(); ?>/staff" class="p-nav__list__item__link">
           スタッフ紹介
