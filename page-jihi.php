@@ -113,19 +113,29 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
 									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生にご相談の上、ご予約ください。</p>
-									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">問合せ先：3号館3Y予約受付：<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">03-5363-3858</a></span><br>(電話受付時間：診察日の8:30-16:00)</p>
+									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">お問合せ先：3号館3Y予約受付<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">（03-5363-3858）</a></span><br>(病院診療日の8:30-16:00)</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
 								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">Step.2 受診 (1回目)：検査説明・同意</h3>
-									<p class="p-hoken-sec__description__txt">指定された日時に「<span class="u-txt-point">慶應義塾大学病院 がん遺伝子外来</span>」にお越しください。<br>そこで、検査の説明を受け、医師による診察を行います。<br>説明後、検査に同意される場合は、同意書にサインをしていただきます。<br>同意取得後、採血または口の中の細胞を採取します。<br>その後、当院からかかりつけ医に病理検体の準備をお願いし、検体が到着次第、検査を開始します。</p>
-									<div class="p-hoken-sec__description__sinryojikan">
-										<h4 class="p-hoken-sec__description__sinryojikan__title">＜がん遺伝子外来の自費診療時間＞</h4>
-										<ul class="p-hoken-sec__description__sinryojikan__list">
-											<li class="p-hoken-sec__description__sinryojikan__list__item">水曜日 午後</li>
-										</ul>
-									</div>
+									<h3 class="p-hoken-sec__description__title">Step.2 受診 (1回目)</h3>
+									<h4 class="p-hoken-sec__description__subtitle">①検査説明</h4>
+									<p class="p-hoken-sec__description__txt">
+										指定された日時に
+										「<span class="u-txt-point">慶應義塾大学病院 がん遺伝子外来</span>」にお越しください。<br>
+										医師により検査の説明を行います。
+								    </p>
+									<p class="p-hoken-sec__description__note c-description__note -kome">初回受診時に病理検体が揃っている場合は、検査説明と同時に検査同意の手続きを進めることができます。通院の負担を軽減するため、検査を希望する方は病理検体を可能な限り事前に郵送していただくか、診察日に持参していただくようお願いします。かかりつけ医には、こちらの書類をダウンロードしてお渡しください。</p>
+									<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Self-paid_202504.pdf" target="_blank" rel="noopener noreferrer" class="c-btn p-hoken-sec__intro__btn -pdf -hoken -point">
+										<i class="c-icon-pdf"></i>
+										<p>検体送付・受領書(送付表) <br><span>自費診療用</span></p>
+									</a>
+
+									<h4 class="p-hoken-sec__description__subtitle">②検査同意</h4>
+									<p class="p-hoken-sec__description__txt">
+										検査に同意される場合は同意書にご署名いただきます。<br>採血または口の中（口腔粘膜）の細胞を採取します。<br>当院より検体を検査会社に郵送し、検査を開始します。
+								    </p>
+
 									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01.png" alt="">
 								</div>
 							</div>

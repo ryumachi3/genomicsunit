@@ -101,7 +101,7 @@
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
 									<p class="p-hoken-sec__description__txt">
 										慶應義塾大学病院以外で治療中の方で受診を希望される場合は、かかりつけ医とご相談のうえ、ご予約ください。当院で通院中の方で検査を希望される場合は、主治医にご相談ください。<br>
-										当院に通院中でない方は、セカオピ外来への予約（下記URLをご確認ください）<br>
+										当院に通院中でない方は、セカンドオピニオン外来をご予約ください。（下記URLをご確認ください。）<br>
 									</p>
 									<a href="https://www.hosp.keio.ac.jp/annai/2ndopini/taimen" target="_blank" rel="noopener noreferrer" class="u-under-line u-txt-point u-external-link -hoken">https://www.hosp.keio.ac.jp/<br>annai/2ndopini/taimen</a>
 									<div class="p-hoken-sec__description__sinryojikan">
@@ -130,7 +130,7 @@
 
 									<h4 class="p-hoken-sec__description__subtitle">②検査同意</h4>
 									<p class="p-hoken-sec__description__txt">
-										検査に同意される場合は同意書にご署名いただきます。<br>同意取得後に検査開始となります。当院より病理検体や血液を検査センターへ郵送し、がん遺伝子パネル検査を行います。
+										検査に同意される場合は同意書にご署名いただきます。<br>当院より病理検体や血液を検査センターへ郵送し、がん遺伝子パネル検査を行います。
 								    </p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">OncoGuide™ NCCオンコパネル、FoundationOne Liquid CDx がんゲノムプロファイル、Guardant360 CDxがん遺伝子パネル 、GenMineTOPがんゲノムプロファイリングの場合は採血があります。</p>
 
