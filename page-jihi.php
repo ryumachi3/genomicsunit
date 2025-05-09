@@ -113,7 +113,7 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
 									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生にご相談の上、ご予約ください。</p>
-									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">お問合せ先：3号館3Y予約受付<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">（03-5363-3858）</a></span><br>(病院診療日の8:30-16:00)</p>
+									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">お問合せ先&nbsp;：&nbsp;3号館3Y予約受付<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">（03-5363-3858）</a></span><br>(電話受付時間&nbsp;：&nbsp;病院診療日の8:30-16:00)</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
