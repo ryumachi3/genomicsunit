@@ -14,7 +14,7 @@
                 <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_main.jpg" alt="" class="p-kv__inner__photo__main">
                 </source>
               </picture>
-              <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_sub.jpg" alt="" class="p-kv__inner__photo__sub">
+              <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_sub_v2.jpg" alt="" class="p-kv__inner__photo__sub">
             </div>
           </div>
           <div class="p-kv__inner__title">

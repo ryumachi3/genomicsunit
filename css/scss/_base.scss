@@ -9,7 +9,7 @@
 // -----------------------------------------------------------------
 $jp-font: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $yu-font: "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-$now-font: "ナウ-GM","游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$now-font: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 $en-font: 'Yeseva One', cursive;
 
 // -----------------------------------------------------------------
@@ -36,7 +36,7 @@ $light-gray: #C1BBB6;
 // constant
 // -----------------------------------------------------------------
 $header-height-sp: 40px;
-$header-width-pc: 300px;
+$header-width-pc: 324px;
 $def-link-height: 44px;
 $tb-width: 560px;
 $pc-width: 960px;
@@ -68,7 +68,7 @@ $breakpoints: (
   'maxwidth': 'screen and (max-width: 1366px)',
   'min': 'screen and (max-width: 352px)',
   'minh': 'screen and (max-height: 680px) and (min-width: 1200px)',
-) !default;
+  ) !default;
 
 @mixin mq($breakpoint: pc) {
   @media #{map-get($breakpoints, $breakpoint)} {
@@ -81,28 +81,33 @@ $breakpoints: (
 // -----------------------------------------------------------------
 // 縦幅が短い時の調整
 $master-height-pc: 680px;
-@function pxvhPC($target){
+
+@function pxvhPC($target) {
   @return ($target / $master-height-pc) * 100vh;
 }
 
 $master-width-pc: 1366px;
-@function pxvwPC($target){
+
+@function pxvwPC($target) {
   @return ($target / $master-width-pc) * 100vw;
 }
 
 $master-width-pc2: 1280px;
-@function pxvwPC2($target){
+
+@function pxvwPC2($target) {
   @return ($target / $master-width-pc2) * 100vw;
 }
 
 $master-width-sp: 375px;
-@function pxvwSP($target){
+
+@function pxvwSP($target) {
   @return ($target / $master-width-sp) * 100vw;
 }
 
 $baseFontSize: 16;
-  @function rem($pixels) {
-    @return $pixels / $baseFontSize * 1rem;
+
+@function rem($pixels) {
+  @return $pixels / $baseFontSize * 1rem;
 }
 
 // ==========================================================================
@@ -121,47 +126,50 @@ html {
 
 body {
   background-color: $bg;
-  background-image: radial-gradient(#F9F9F9 0%, $bg 50%);
-  background-attachment: fixed;  
-  color: $main-txt;
-  font-size: rem(16);
-  font-family: $jp-font;
-  font-weight: 300;
-  font-style: normal;
-  height: 100%;
-  font-feature-settings: "palt";
-  letter-spacing: .05em;
-  box-sizing: border-box;
-  &.-noscroll{
-    
-  }
+  background-image: radial-gradient(#F9F9F9 0%, $bg 50%
+  );
+background-attachment: fixed;
+color: $main-txt;
+font-size: rem(16);
+font-family: $jp-font;
+font-weight: 300;
+font-style: normal;
+height: 100%;
+font-feature-settings: "palt";
+letter-spacing: .05em;
+box-sizing: border-box;
+
+&.-noscroll {}
 }
 
-body *{
+body * {
   box-sizing: inherit;
 }
 
 a {
-  cursor : pointer;
+  cursor: pointer;
   //outline: 2px solid blue;  
 }
 
 a:not([class]) {
   color: $main-txt;
-  &:visited{
-    color: $main-txt;    
+
+  &:visited {
+    color: $main-txt;
   }
 }
 
-img,svg {
+img,
+svg {
   width: 100%;
   height: auto;
 }
 
-@keyframes fadebody{
+@keyframes fadebody {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -171,20 +179,20 @@ img,svg {
 ::selection {
   background: rgba($color: #FFF593, $alpha: .5)
 }
+
 //Firefox
 ::-moz-selection {
-//  background: 
+  //  background: 
 }
 
 // 
 input[type="text"]:focus,
-select:focus
-{
+select:focus {
   outline: solid 2px $point;
 }
 
 // 背景
-#bg{
+#bg {
   position: fixed;
   top: 0;
   left: 0;

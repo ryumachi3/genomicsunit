@@ -5,7 +5,7 @@
       <div class="l-header__logo p-header__logo">
       <?php endif; ?>
       <a tabindex="1" href="<?php echo home_url(); ?>" class="p-header__logo__link">
-        <img width="262" height="69" src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="慶應義塾大学医学部 がんゲノム医療センター／腫瘍センター がんゲノム医療ユニット" class="p-header__logo__img">
+        <img width="262" height="69" src="<?php bloginfo('template_url'); ?>/img/logo.png?v2" alt="慶應義塾大学医学部 がんゲノム医療センター／腫瘍センター がんゲノム医療ユニット" class="p-header__logo__img">
       </a>
       <?php if (is_front_page()) : ?>
     </h1>
@@ -50,6 +50,11 @@
             </span>
             <span class="p-nav__list__item__link__day__time">13:30〜15:00</span>
           </span> -->
+        </a>
+      </li>
+      <li class="p-nav__list__item -line <?php echo is_page('gairai') ? '-is-active' : '' ?>">
+        <a tabindex="100" href="<?php echo home_url(); ?>/gairai" class="p-nav__list__item__link">
+          外来予約方法
         </a>
       </li>
       <li class="p-nav__list__item -line <?php echo is_post_type_archive('staff') ? '-is-active' : '' ?>">
@@ -119,7 +124,7 @@
   <div class="l-header-sp__inner">
     <div class="l-header-sp__logo p-header-sp__logo">
       <a href="<?php echo home_url(); ?>" class="p-header-sp__logo__link">
-        <img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="慶應義塾大学医学部 がんゲノム医療センター／腫瘍センター がんゲノム医療ユニット" class="p-header-sp__logo__img">
+        <img src="<?php bloginfo('template_url'); ?>/img/logo.png?v2" alt="慶應義塾大学医学部 がんゲノム医療センター／腫瘍センター がんゲノム医療ユニット" class="p-header-sp__logo__img">
       </a>
     </div>
     <!-- <button class="c-toggle p-header-sp__btn -toggle" :class="isMenu?'-ismenu':''" @click="isMenu=!isMenu"> -->
