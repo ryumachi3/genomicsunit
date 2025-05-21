@@ -73,7 +73,7 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-04">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Guardant Reveal<br class="u-sp_br"> (ガーダント リビール)</h3>
-									<p class="p-hoken-sec__description__txt">血液中の血中循環腫腫瘍DNAから、がんの遺伝子異常を検出するシステムです。</p>
+									<p class="p-hoken-sec__description__txt">血液中の血中循環腫瘍DNAから、がんの遺伝子変化を検出するシステムです。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
 										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">418,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span>
@@ -126,7 +126,7 @@
 										医師により検査の説明を行います。
 								    </p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">初回受診時に病理検体が揃っている場合は、検査説明と同時に検査同意の手続きを進めることができます。通院の負担を軽減するため、検査を希望する方は病理検体を可能な限り事前に郵送していただくか、診察日に持参していただくようお願いします。かかりつけ医には、こちらの書類をダウンロードしてお渡しください。</p>
-									<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Self-paid_202504.pdf" target="_blank" rel="noopener noreferrer" class="c-btn p-hoken-sec__intro__btn -pdf -hoken -point">
+									<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Self-paid_202505.pdf" target="_blank" rel="noopener noreferrer" class="c-btn p-hoken-sec__intro__btn -pdf -hoken -point">
 										<i class="c-icon-pdf"></i>
 										<p>検体送付・受領書(送付表) <br><span>自費診療用</span></p>
 									</a>

@@ -21,48 +21,48 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">OncoGuide™️ NCCオンコパネル システム</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について調べます。<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方を用いて実施します。この検査の特徴としては、二次的所見 (遺伝的に生まれながらにして持つがんに関する遺伝子変化)についての結果も得ることができます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について調べます。<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方を用いて実施します。この検査の特徴としては、二次的所見 (遺伝的に生まれながらにして持つがんに関する遺伝子変化)の情報も得ることができます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-02">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne CDx がんゲノムプロファイル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">がん組織のみ</span>の検査で血液検査は必要ありません。この検査の特徴としては、<span class="u-txt-point">TMB-highなどのコンパニオン診断の役割</span>も有していることがあります。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">がん組織のみ</span>の検査で血液検査は必要ありません。この検査の特徴としては、<span class="u-txt-point">TMB-highなど複数の遺伝子変異等に対応する薬剤のコンパニオン診断機能</span>も有しています。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">TMB：Tumor Mutation Burden。腫瘍細胞に生じた遺伝子変異量のこと。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-03">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne Liquid CDx がんゲノムプロファイル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。<span class="u-txt-point">コンパニオン診断機能</span>も有しています。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-04">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Guardant360 CDx がん遺伝子パネル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">74遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">74遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。<span class="u-txt-point">コンパニオン診断機能</span>も有しています。</p>
 								</div>
 							</div>
 
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-05">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">GenMineTOP がんゲノムプロファイリングシステム</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">737遺伝子</span>について調べます。<span class="u-txt-point">がん組織と血液の両方</span>を用いて実施します。この検査の特徴としては、二次的所見（遺伝的に生まれながらにして持つがんに関する遺伝子変化）も得ることができます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">737遺伝子</span>について調べます。<span class="u-txt-point">がん組織と血液の両方</span>を用いて実施します。この検査の特徴としては、二次的所見（遺伝的に生まれながらにして持つがんに関する遺伝子変化）の情報も得ることができます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__hiyo p-hoken-sec__hiyo">
 								<h3 class="p-hoken-sec__hiyo__title c-hiyo-title">検査費用</h3>
 								<div class="p-hoken-sec__hiyo__txt">
 									<p class="p-hoken-sec__hiyo__txt__top">
-									いずれの検査も<span class="p-hoken-sec__hiyo__txt__top__price">56</span>万円
+									いずれの検査も<span class="p-hoken-sec__hiyo__txt__top__price">560,000</span>円
 									</p>
 									<p class="p-hoken-sec__hiyo__txt">
 										患者負担割合は以下のとおりです。
 									</p>
 									<ul class="p-hoken-sec__hiyo__txt__list">
-										<li>1割の場合：5万6千円</li>
-										<li>2割の場合：11万2千円</li>
-										<li>3割の場合：16万8千円</li>
+										<li>1割の場合：56,000円</li>
+										<li>2割の場合：112,000円</li>
+										<li>3割の場合：168,000円</li>
 									</ul>
 									<ul class="p-hoken-sec__hiyo__txt__note-list">
 										<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">その他、検体の準備などの費用が追加で必要となる場合があります。</li>
@@ -123,7 +123,7 @@
 										医師により検査の説明を行います。
 								    </p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">初回受診時に病理検体が揃っている場合は、検査説明と同時に検査同意の手続きを進めることができます。通院の負担を軽減するため、検査を希望する方は病理検体を可能な限り事前に郵送していただくか、診察日に持参していただくようお願いします。かかりつけ医には、こちらの書類をダウンロードしてお渡しください。</p>
-									<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Insured_202504.pdf" target="_blank" rel="noopener noreferrer" class="c-btn p-hoken-sec__intro__btn -pdf -hoken">
+									<a href="<?php echo get_theme_file_uri() ?>/pdf/Specimen_Receipt_Insured_202505.pdf" target="_blank" rel="noopener noreferrer" class="c-btn p-hoken-sec__intro__btn -pdf -hoken">
 										<i class="c-icon-pdf"></i>
 										<p>検体送付・受領書(送付表) <br><span>保険診療用</span></p>
 									</a>

@@ -1469,10 +1469,17 @@ p + .c-title.-gyouseki {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1200px) and (max-height: 650px) {
+@media screen and (min-width: 1200px) and (max-height: 770px) {
   .p-nav {
     overflow: auto;
     height: 79vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+@media screen and (min-width: 1200px) and (max-height: 770px) {
+  .p-nav::-webkit-scrollbar {
+    display: none;
   }
 }
 .p-nav__bg {
@@ -1504,7 +1511,7 @@ p + .c-title.-gyouseki {
 }
 
 .p-nav {
-  width: 262px;
+  width: 290px;
   font-family: "ナウ-GM", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
