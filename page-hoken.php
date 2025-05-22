@@ -21,33 +21,33 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">OncoGuide™️ NCCオンコパネル システム</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について調べます。<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方を用いて実施します。この検査の特徴としては、二次的所見 (遺伝的に生まれながらにして持つがんに関する遺伝子変化)の情報も得ることができます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">124遺伝子</span>について調べます。<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液</span>の両方を用いて実施します。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-02">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne CDx がんゲノムプロファイル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">がん組織のみ</span>の検査で血液検査は必要ありません。この検査の特徴としては、<span class="u-txt-point">TMB-highなど複数の遺伝子変異等に対応する薬剤のコンパニオン診断機能</span>も有しています。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">がん組織のみ</span>の検査で血液検査は必要ありません。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">TMB：Tumor Mutation Burden。腫瘍細胞に生じた遺伝子変異量のこと。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-03">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne Liquid CDx がんゲノムプロファイル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。<span class="u-txt-point">コンパニオン診断機能</span>も有しています。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-04">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Guardant360 CDx がん遺伝子パネル</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">74遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。<span class="u-txt-point">コンパニオン診断機能</span>も有しています。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">74遺伝子</span>について調べます。<span class="u-txt-point">血液</span>を用いて実施します。この検査は、<span class="u-txt-point">がん組織が採取できない、もしくは古くて検査には用いることができない場合</span>に実施されます。</p>
 								</div>
 							</div>
 
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-05">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">GenMineTOP がんゲノムプロファイリングシステム</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">737遺伝子</span>について調べます。<span class="u-txt-point">がん組織と血液の両方</span>を用いて実施します。この検査の特徴としては、二次的所見（遺伝的に生まれながらにして持つがんに関する遺伝子変化）の情報も得ることができます。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">737遺伝子</span>について調べます。<span class="u-txt-point">がん組織と血液の両方</span>を用いて実施します。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__hiyo p-hoken-sec__hiyo">
@@ -90,7 +90,7 @@
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">実際に検査の対象となる状態かどうかは担当医が判断します。</li>
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">検査を希望されても担当医が適切ではないと判断した場合はおすすめしない場合もあります。</li>
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">がんに罹患しているかどうかを調べること (スクリーニング、検診など)の目的には使用できません。</li>
-									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性のがん (遺伝性乳がん卵巣がん症候群、リンチ症候群等)についての検査を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
+									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性腫瘍 (遺伝性乳がん卵巣がん症候群、リンチ症候群等)についての検査を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
 								</ul>
 							</div>
 						</section>
