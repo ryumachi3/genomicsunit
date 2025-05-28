@@ -28,7 +28,6 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">FoundationOne CDx がんゲノムプロファイル</h3>
 									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">324遺伝子</span>について調べます。<span class="u-txt-point">がん組織のみ</span>の検査で血液検査は必要ありません。</p>
-									<p class="p-hoken-sec__description__note c-description__note -kome">TMB：Tumor Mutation Burden。腫瘍細胞に生じた遺伝子変異量のこと。</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-03">

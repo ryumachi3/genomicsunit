@@ -106,7 +106,7 @@
 									</ul>
 									<h4 class="p-hoken-sec__description__title__jihi">自費診療の場合</h4>
 									<ul class="p-hoken-sec__taisyo__list">
-										<li class="c-list__item p-hoken-sec__taisyo__list__item">HE標本3枚 (未染標本を作製したものと同一ブロックから作製)</li>
+										<li class="c-list__item p-hoken-sec__taisyo__list__item">HE標本1枚 (未染標本を作製したものと同一ブロックから作製)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本4枚 (5 μm厚、コーティングガラス)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">未染色標本10枚 (10 μm厚、ノンコーティングガラス)</li>
 										<li class="c-list__item p-hoken-sec__taisyo__list__item">病理診断書のコピー</li>

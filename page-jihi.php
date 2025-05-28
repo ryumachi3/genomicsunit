@@ -53,7 +53,7 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-03">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Guardant360<br class="u-sp_br"> (ガーダント360)</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">739遺伝子</span>について、<span class="u-txt-point">血液のみ</span>で調べます。がん組織が不要であることと、<span class="u-txt-point">検査結果が早くわかる</span>ことが特徴です。</p>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">744遺伝子</span>について、<span class="u-txt-point">血液のみ</span>で調べます。がん組織が不要であることと、<span class="u-txt-point">検査結果が早くわかる</span>ことが特徴です。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
 										<div class="p-jihi-sec__price__box">
