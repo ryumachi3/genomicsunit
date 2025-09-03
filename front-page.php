@@ -10,8 +10,8 @@
           <div class="p-kv__inner__photo">
             <div class="l-kv__inner__photo__inner">
               <picture>
-                <source media="(max-width: 960px)" srcset="<?php echo get_theme_file_uri() ?>/img/kv_photo_main_tb.jpg">
-                <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_main.jpg" alt="" class="p-kv__inner__photo__main">
+                <source media="(max-width: 960px)" srcset="<?php echo get_theme_file_uri() ?>/img/kv_photo_main_tb_v2.jpg">
+                <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_main_v2.jpg" alt="" class="p-kv__inner__photo__main">
                 </source>
               </picture>
               <img src="<?php echo get_theme_file_uri() ?>/img/kv_photo_sub_v2.jpg" alt="" class="p-kv__inner__photo__sub">

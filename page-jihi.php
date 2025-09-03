@@ -18,34 +18,34 @@
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>自費診療検査の種類と費用</h2>
-							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
-								<div class="c-txtbox">
-									<h3 class="p-hoken-sec__description__title">PleSSision-Panel検査<br class="u-sp_br"> (プレシジョン パネル検査)</h3>
-									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">216遺伝子</span>について、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液 (もしくは口腔粘膜)</span>の両方で調べます。病理医が精度管理することにより、がんの組織から採取した<span class="u-txt-point">検体が少量の場合でも</span>遺伝子解析が可能です。</p>
-									<dl class="p-jihi-sec__description__hiyo">
-										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
-										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">385,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span>
-										<dd>
-									</dl>
-									<dl class="p-jihi-sec__description__kekka">
-										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt>
-										<dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">4</span>週間
-										<dd>
-									</dl>
-								</div>
-							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-02">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">PleSSision-Exome検査<br class="u-sp_br"> (プレシジョン エクソーム検査)</h3>
 									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">ヒトのほぼ全ての遺伝子 (約2万種類)</span>を、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液 (もしくは口腔粘膜)</span>の両方で調べます。PleSSision-Panel検査では見つけられない遺伝子変化の情報を得られる可能性があります。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
-										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">1,012,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span>
+										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">1,012,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に検査説明料等がかかります</span>
 										<dd>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
 										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt>
 										<dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">8</span>週間
+										<dd>
+									</dl>
+								</div>
+							</div>
+							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-01">
+								<div class="c-txtbox">
+									<h3 class="p-hoken-sec__description__title">PleSSision-Panel検査<br class="u-sp_br"> (プレシジョン パネル検査)</h3>
+									<p class="p-hoken-sec__description__txt">がんに関連した<span class="u-txt-point">216遺伝子</span>について、<span class="u-txt-point">がん組織</span>と<span class="u-txt-point">血液 (もしくは口腔粘膜)</span>の両方で調べます。病理医が精度管理することにより、がんの組織から採取した<span class="u-txt-point">検体が少量の場合でも</span>遺伝子解析が可能です。</p>
+									<dl class="p-jihi-sec__description__hiyo">
+										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
+										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">385,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に検査説明料等がかかります</span>
+										<dd>
+									</dl>
+									<dl class="p-jihi-sec__description__kekka">
+										<dt class="p-jihi-sec__description__kekka__title c-kekka-title">結果がわかるまで</dt>
+										<dd class="p-jihi-sec__description__kekka__txt">約<span class="p-jihi-sec__description__kekka__num">4</span>週間
 										<dd>
 									</dl>
 								</div>
@@ -59,7 +59,7 @@
 										<div class="p-jihi-sec__price__box">
 											<dd class="p-jihi-sec__description__hiyo__txt">初回 <span class="p-jihi-sec__description__hiyo__price">561,000</span>円 (税込)
 											<dd>
-											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note -last">※検査費用とは別に診察料等がかかります</span>
+											<dd class="p-jihi-sec__description__hiyo__txt">2回目以降 <span class="p-jihi-sec__description__hiyo__price">446,600</span>円 (税込)<br><span class="p-jihi-sec__description__hiyo__note -last">※検査費用とは別に検査説明料等がかかります</span>
 											<dd>
 										</div>
 									</dl>
@@ -76,7 +76,7 @@
 									<p class="p-hoken-sec__description__txt">血液中の血中循環腫瘍DNAから、がんの遺伝子変化を検出するシステムです。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
-										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">418,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に診察料等がかかります</span>
+										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">418,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に検査説明料等がかかります</span>
 										<dd>
 									</dl>
 									<dl class="p-jihi-sec__description__kekka">
@@ -113,7 +113,7 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
 									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生にご相談の上、ご予約ください。</p>
-									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">お問合せ先&nbsp;：&nbsp;3号館3Y予約受付<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">（03-5363-3858）</a></span><br>(電話受付時間&nbsp;：&nbsp;病院診療日の8:30-16:00)</p>
+									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">お問合せ先&nbsp;：&nbsp;3号館3Y予約受付<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">（03-5363-3858）</a></span><br>(電話受付時間&nbsp;：&nbsp;病院診療日の8:30-17:00)</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
@@ -122,7 +122,7 @@
 									<h4 class="p-hoken-sec__description__subtitle">①検査説明</h4>
 									<p class="p-hoken-sec__description__txt">
 										指定された日時に
-										「<span class="u-txt-point">慶應義塾大学病院 がん遺伝子外来</span>」にお越しください。<br>
+										「<span class="u-txt-point">慶應義塾大学病院 がんゲノム外来</span>」にお越しください。<br>
 										医師により検査の説明を行います。
 								    </p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">初回受診時に病理検体が揃っている場合は、検査説明と同時に検査同意の手続きを進めることができます。通院の負担を軽減するため、検査を希望する方は病理検体を可能な限り事前に郵送していただくか、診察日に持参していただくようお願いします。かかりつけ医には、こちらの書類をダウンロードしてお渡しください。</p>
@@ -136,7 +136,7 @@
 										検査に同意される場合は同意書にご署名いただきます。<br>採血または口の中（口腔粘膜）の細胞を採取します。<br>当院より検体を検査会社に郵送し、検査を開始します。
 								    </p>
 
-									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01.png" alt="">
+									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01_v2.png" alt="">
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-04">
@@ -144,7 +144,7 @@
 									<h3 class="p-hoken-sec__description__title">Step.3 受診 (2回目)：結果説明</h3>
 									<p class="p-hoken-sec__description__txt">検査申し込み日より<span class="u-txt-point">3～8週間後</span>に、当院の担当医師からがん遺伝子パネル検査の結果説明と推奨治療の提示を行います。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome -desc04">推奨治療法は、がん遺伝子パネル検査の結果をもとに、担当医や病理医、バイオインフォマティシャンなどにより事前検討しています。</p>
-									<img class="p-hoken-sec__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo02.png" alt="">
+									<img class="p-hoken-sec__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo02_v2.png" alt="">
 								</div>
 							</div>
 						</section>

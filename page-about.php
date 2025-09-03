@@ -46,8 +46,8 @@
 								<img class="p-about-main__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/illust_about04.png" alt="">
 							</div>
 							<div class="l-about-main__photo p-about-main__photo">
-								<img class="p-about-main__photo__img -img01" src="<?php echo get_theme_file_uri() ?>/img/photo_about01.jpg" alt="">
-								<img class="p-about-main__photo__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_about02.jpg" alt="">
+								<img class="p-about-main__photo__img -img01" src="<?php echo get_theme_file_uri() ?>/img/photo_about01_v2.jpg" alt="">
+								<img class="p-about-main__photo__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_about02_v2.jpg" alt="">
 							</div>
 						</section>
 						<section class="l-top-kensa">

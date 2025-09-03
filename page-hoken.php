@@ -133,7 +133,7 @@
 								    </p>
 									<p class="p-hoken-sec__description__note c-description__note -kome">OncoGuide™ NCCオンコパネル、FoundationOne Liquid CDx がんゲノムプロファイル、Guardant360 CDxがん遺伝子パネル 、GenMineTOPがんゲノムプロファイリングの場合は採血があります。</p>
 
-									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01.png" alt="">
+									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01_v2.png" alt="">
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-04">
@@ -141,7 +141,7 @@
 									<h3 class="p-hoken-sec__description__title">Step.3 受診 (2回目)：結果説明</h3>
 									<p class="p-hoken-sec__description__txt">検査申し込み日より<span class="u-txt-point">4～6週間後</span>に、当院の担当医からがん遺伝子パネル検査の結果説明を行います。</p>
 									<p class="p-hoken-sec__description__note c-description__note -kome -desc04">推奨治療法は、がん遺伝子パネル検査の結果をもとに、担当医や病理医、バイオインフォマティシャンなどにより事前検討しています。</p>
-									<img class="p-hoken-sec__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo02.png" alt="">
+									<img class="p-hoken-sec__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo02_v2.png" alt="">
 								</div>
 							</div>
 						</section>
