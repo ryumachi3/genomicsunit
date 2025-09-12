@@ -89,7 +89,7 @@
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">実際に検査の対象となる状態かどうかは担当医が判断します。</li>
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">検査を希望されても担当医が適切ではないと判断した場合はおすすめしない場合もあります。</li>
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">がんに罹患しているかどうかを調べること (スクリーニング、検診など)の目的には使用できません。</li>
-									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性腫瘍 (遺伝性乳がん卵巣がん症候群、リンチ症候群等)についての検査を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
+									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性腫瘍 (遺伝性乳がん卵巣がん症候群、リンチ症候群等)についての診断を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
 								</ul>
 							</div>
 						</section>
@@ -148,15 +148,14 @@
 
 
 						<section class="l-hoken-sec -sec04 -last">
-							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>検査後の治療について</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>検査結果の取り扱いについて</h2>
 							<div class="l-container2">
 								<ul class="p-hoken-sec__taisyo__list">
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査を実施しても、遺伝子変異が検出されない可能性、検出されてもがんの性質の把握、治療薬の選定に有用な情報が得られない可能性もあります。</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">現在、保険診療で認められている標準治療が行われている患者さんは、その標準治療が優先され、がん遺伝子検査の結果に基づく治療は全ての標準治療が終了した後の選択肢として考慮されます。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査の結果、現在行われている治験に登録が可能と考えられた場合、その治験を実施している病院をご紹介します。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査の結果、効果が期待される薬剤の情報が得られた場合には、「適応外申請を行って自費診療で治療を行う」、あるいは「先進医療実施病院を紹介して、自費診療と保険診療を並行して治療を行う」可能性が考えられます。 これらの場合、治療費が高額となります。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査を実施しても、治療薬の選定に有用な情報が何も得られない可能性もあります。がん遺伝子検査の結果に基づいて治療を行っても、十分な治療効果が得られない可能性もあります。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査は、あくまで主治医の判断に必要な情報を提供するものであって、がん遺伝子解析の結果が、主治医の判断よりも優先されることはありません。</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査の結果、効果が期待される薬剤の情報が得られた場合には、「治験を実施している施設で治療を行う」、「適応外申請を行って自費診療で治療を行う」、あるいは「先進医療実施病院を紹介して、自費診療と保険診療を並行して治療を行う」可能性が考えられます。治療内容によっては、治療費が高額となります。</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">検査後の治療は、原則として紹介元の病院での治療となります。本検査は当院での治療を確約するものではありません。</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査は、あくまで主治医の判断に必要な情報を提供するものであって、がん遺伝子解析の結果が、主治医の判断よりも優先されることはありません。</li>
 								</ul>
 							</div>
 						</section>

@@ -13,7 +13,7 @@
 					</h1>
 					<div class="c-contents">
 						<section class="l-jihi-description">
-							<p class="l-hoken-description__txt"><span class="u-txt-point">保険診療を受けられない</span>患者さん、<span class="u-txt-point">より詳しい検査をしたい</span>患者さん、<span class="u-txt-point">結果を早く知りたい</span>患者さんには自費診療も紹介しています。<br>現在、当院で行っている自費診療のがん遺伝子パネル検査は4種類あります。</p>
+							<p class="l-hoken-description__txt"><span class="u-txt-point">保険診療でのがん遺伝子パネル検査が適応ではない</span>患者さん、<span class="u-txt-point">より詳しい検査をしたい</span>患者さんには自費診療も紹介しています。<br>現在、当院で行っている自費診療のがん遺伝子パネル検査は4種類あります。</p>
 							<img class="p-jihi-sec__description__img -img01" src="<?php echo get_theme_file_uri() ?>/img/illust_jihi01.png" alt="">
 						</section>
 						<section class="l-hoken-sec p-hoken-sec -sec01">
@@ -73,7 +73,7 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc01-04">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Guardant Reveal<br class="u-sp_br"> (ガーダント リビール)</h3>
-									<p class="p-hoken-sec__description__txt">血液中の血中循環腫瘍DNAから、がんの遺伝子変化を検出するシステムです。</p>
+									<p class="p-hoken-sec__description__txt">血液中の血中循環腫瘍DNAから、がんの遺伝子変化を検出するシステムで、肺がん・大腸がん・乳がんの根治切除後の再発予測に用いられる検査です。</p>
 									<dl class="p-jihi-sec__description__hiyo">
 										<dt class="p-jihi-sec__description__hiyo__title c-hiyo-title">検査費用</dt>
 										<dd class="p-jihi-sec__description__hiyo__txt"><span class="p-jihi-sec__description__hiyo__price">418,000</span>円 (税込)<span class="p-jihi-sec__description__hiyo__note">※検査費用とは別に検査説明料等がかかります</span>
@@ -96,14 +96,14 @@
 							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>自費診療検査の対象となる方</h2>
 							<div class="l-container2">
 								<ul class="p-hoken-sec__taisyo__list">
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">保険診療下でのがん遺伝子パネル検査の条件を満たしていない方</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">病理組織学的検査によって悪性腫瘍 (がん)と診断された方</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">悪性腫瘍の薬物治療を予定されている又は現在、悪性腫瘍 (がん)の治療が行われている方</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">病理組織学的検査によって悪性腫瘍（がん）と診断された方</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">保険診療のがん遺伝子パネル検査の条件を満たしていない方（早期がん、診断直後、手術後に経過観察中の方など）</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">過去に保険診療のがん遺伝子パネル検査を受けたことがある方</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">血液がん以外の方</li>
 								</ul>
 								<ul class="p-hoken-sec__hiyo__txt__note-list">
 									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">がんに罹患しているかどうかを調べること (スクリーニング、検診など)の目的には使用できません。</li>
-									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性腫瘍 (遺伝性乳がん卵巣がん症候群、リンチ症候群等)についての検査を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
+									<li class="p-hoken-sec__hiyo__txt__note-list__item c-description__note -kome">また、遺伝性腫瘍 (遺伝性乳がん卵巣がん症候群、リンチ症候群等)についての診断を希望される場合には、別途、遺伝カウンセリングの受診が必要となります。</li>
 								</ul>
 							</div>
 						</section>
@@ -113,7 +113,7 @@
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.1 予約</h3>
 									<p class="p-hoken-sec__description__txt">受診希望の方はかかりつけの先生にご相談の上、ご予約ください。</p>
-									<p class="p-hoken-sec__description__txt"><span class="u-txt-point">お問合せ先&nbsp;：&nbsp;3号館3Y予約受付<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">（03-5363-3858）</a></span><br>(電話受付時間&nbsp;：&nbsp;病院診療日の8:30-17:00)</p>
+									<p class="p-hoken-sec__description__txt"><span>固形がん全般：水曜日午後、肺がん：金曜日午後</span><br><span class="u-txt-point">お問合せ先&nbsp;：&nbsp;3号館3Y予約受付<a class="p-hoken-sec__tel -point" href="tel:03-5363-3858">（03-5363-3858）</a></span><br>(電話受付時間&nbsp;：&nbsp;病院診療日の8:30-17:00)</p>
 								</div>
 							</div>
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-02">
@@ -133,7 +133,7 @@
 
 									<h4 class="p-hoken-sec__description__subtitle">②検査同意</h4>
 									<p class="p-hoken-sec__description__txt">
-										検査に同意される場合は同意書にご署名いただきます。<br>採血または口の中（口腔粘膜）の細胞を採取します。<br>当院より検体を検査会社に郵送し、検査を開始します。
+										検査に同意される場合は同意書にご署名いただきます。<br>採血または口の中（口腔粘膜）の細胞を採取します。<br>検査を開始します。
 								    </p>
 
 									<img class="p-hoken-sec__description__img -img02" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo01_v2.png" alt="">
@@ -142,8 +142,7 @@
 							<div class="l-container3 l-hoken-sec__description p-hoken-sec__description -desc03-04">
 								<div class="c-txtbox">
 									<h3 class="p-hoken-sec__description__title">Step.3 受診 (2回目)：結果説明</h3>
-									<p class="p-hoken-sec__description__txt">検査申し込み日より<span class="u-txt-point">3～8週間後</span>に、当院の担当医師からがん遺伝子パネル検査の結果説明と推奨治療の提示を行います。</p>
-									<p class="p-hoken-sec__description__note c-description__note -kome -desc04">推奨治療法は、がん遺伝子パネル検査の結果をもとに、担当医や病理医、バイオインフォマティシャンなどにより事前検討しています。</p>
+									<p class="p-hoken-sec__description__txt">検査申し込み日より<span class="u-txt-point">3～8週間後</span>にがん遺伝子パネル検査の結果説明を行います。</p>
 									<img class="p-hoken-sec__description__img -img03" src="<?php echo get_theme_file_uri() ?>/img/photo_sinryo02_v2.png" alt="">
 								</div>
 							</div>
@@ -151,15 +150,14 @@
 
 
 						<section class="l-hoken-sec -sec04">
-							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>検査後の治療について</h2>
+							<h2 class="c-title l-hoken-sec__title"><span class="c-title__line-tate"></span><span class="c-title__line-yoko"></span>検査結果の取り扱いについて</h2>
 							<div class="l-container2">
 								<ul class="p-hoken-sec__taisyo__list">
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査を実施しても、遺伝子変異が検出されない可能性、検出されてもがんの性質の把握、治療薬の選定に有用な情報が得られない可能性もあります。</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">現在、保険診療で認められている標準治療が行われている患者さんは、その標準治療が優先され、がん遺伝子検査の結果に基づく治療は全ての標準治療が終了した後の選択肢として考慮されます。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査の結果、現在行われている治験に登録が可能と考えられた場合、その治験を実施している病院をご紹介します。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査の結果、効果が期待される薬剤の情報が得られた場合には、「適応外申請を行って自費診療で治療を行う」、あるいは「先進医療実施病院を紹介して、自費診療と保険診療を並行して治療を行う」可能性が考えられます。 これらの場合、治療費が高額となります。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査を実施しても、治療薬の選定に有用な情報が何も得られない可能性もあります。がん遺伝子検査の結果に基づいて治療を行っても、十分な治療効果が得られない可能性もあります。</li>
-									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査は、あくまで主治医の判断に必要な情報を提供するものであって、がん遺伝子解析の結果が、主治医の判断よりも優先されることはありません。</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査の結果、効果が期待される薬剤の情報が得られた場合には、「治験を実施している施設で治療を行う」、「適応外申請を行って自費診療で治療を行う」、あるいは「先進医療実施病院を紹介して、自費診療と保険診療を並行して治療を行う」可能性が考えられます。治療内容によっては、治療費が高額となります。</li>
 									<li class="c-list__item p-hoken-sec__taisyo__list__item">検査後の治療は、原則として紹介元の病院での治療となります。本検査は当院での治療を確約するものではありません。</li>
+									<li class="c-list__item p-hoken-sec__taisyo__list__item">がん遺伝子検査は、あくまで主治医の判断に必要な情報を提供するものであって、がん遺伝子解析の結果が、主治医の判断よりも優先されることはありません。</li>
 								</ul>
 							</div>
 						</section>

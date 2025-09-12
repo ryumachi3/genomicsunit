@@ -3186,7 +3186,7 @@ p + .c-title.-gyouseki {
   width: 200px;
   height: auto;
   right: 25px;
-  bottom: 0;
+  bottom: -100px;
   z-index: 1;
 }
 
@@ -3764,6 +3764,27 @@ p + .c-title.-gyouseki {
   color: #55B5C1;
   border: 1px solid #55B5C1;
   pointer-events: none;
+}
+
+.p-pdf__container {
+  background-color: rgb(40, 40, 40);
+  position: relative;
+  z-index: 99;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw;
+  padding: 3vw 0;
+}
+
+.p-pdf__img {
+  position: relative;
+  z-index: 100;
+  width: 95%;
+  touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .page-numbers {

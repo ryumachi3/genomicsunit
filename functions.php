@@ -9,7 +9,7 @@ function project()
 //version
 function lastupdate()
 {
-	return '20250501v2'; //キャッシュ対策に更新日を入れる
+	return '20250908v10'; //キャッシュ対策に更新日を入れる
 }
 
 function theme_setup()
@@ -431,3 +431,10 @@ function login_logo()
 	echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/css/login-style.css" />';
 }
 add_action('login_head', 'login_logo');
+
+// スラッグが特定の固定ページだけ右クリック禁止にする
+add_action('wp_head', function () {
+    if (is_page() && get_post_field('post_name', get_post()) === 'kdip_2025-9-2') {
+        echo '<script>document.oncontextmenu = function () { return false; }</script>';
+    }
+});
