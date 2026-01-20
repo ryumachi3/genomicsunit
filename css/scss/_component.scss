@@ -4,7 +4,7 @@
 .c-top-title {
   font-size: rem(24);
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.3;
   padding: .625em 1.6em;
   position: relative;
   display: inline-block;
@@ -55,7 +55,7 @@
   margin-left: -.15em;
 }
 
-.c-top-title-child ＋ .c-top-title-child{
+.c-top-title-child ＋ .c-top-title-child {
   margin-left: 0;
 }
 
@@ -71,7 +71,7 @@
   text-decoration: none;
   font-weight: 500;
   color: $white;
-  transition: background-color .1s ease-out,border-color .1s ease-out,transform 0.1s ease-out;
+  transition: background-color .1s ease-out, border-color .1s ease-out, transform 0.1s ease-out;
 
   &:hover {
     background-color: #032f8e;
@@ -83,15 +83,17 @@
     border: solid 2px $color-iryo;
     background-color: $color-iryo;
   }
+
   &.-iryo:hover {
     background-color: #60C6D3;
     border-color: #60C6D3;
-  } 
+  }
 
   &.-point {
     border: solid 2px $point;
     background-color: $point;
   }
+
   &.-point:hover {
     background-color: #ea590b;
     border-color: #ea590b;
@@ -151,6 +153,7 @@
     position: absolute;
     left: 0;
     top: 0;
+
     @include mq(sp) {
       height: calc(100% + 11px);
     }
@@ -162,6 +165,12 @@
     }
   }
 
+}
+
+ol + .c-title.-gyouseki,
+p + .c-title.-gyouseki
+{
+  margin-top: 3.25em;
 }
 
 .c-toggle {
@@ -219,21 +228,25 @@
   border-radius: 50%;
   position: absolute;
   right: 50%;
-  transform: translate(650px,0);
+  transform: translate(650px, 0);
   top: -44px - 24px;
-  transition: background-color .1s ease-out,border-color .1s ease-out,transform 0.1s ease-out;
+  transition: background-color .1s ease-out, border-color .1s ease-out, transform 0.1s ease-out;
+
   &:hover {
     background-color: #032f8e;
     border-color: #032f8e;
-    transform: translate(650px,0) scale(1.06);
+    transform: translate(650px, 0) scale(1.06);
+
     @include mq(maxwidth) {
-      transform: translate(0,0) scale(1.06);
+      transform: translate(0, 0) scale(1.06);
     }
   }
+
   @include mq(maxwidth) {
     right: 24px;
-    transform: translate(0,0)
+    transform: translate(0, 0)
   }
+
   @include mq(sp) {
     right: 20px;
   }
@@ -254,8 +267,7 @@
 }
 
 .c-head-title,
-.c-square-title
-{
+.c-square-title {
   display: flex;
   justify-content: flex-start;
 
@@ -277,9 +289,35 @@
   }
 }
 
+.c-head-title__number {
+  position: relative;
+  font-family: $now-font;
+  font-weight: normal;
+  font-size: rem(40);
+  line-height: 1.2;
+  color: $color-iryo;
+  padding-left: 50px;
+  font-feature-settings: "palt";
+
+  @include mq(sp) {
+    font-size: rem(30);
+  }
+}
+
+.c-head-title__number::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 2px;
+  background-color: $color-iryo;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  transform: translate(-50%, 0);
+}
+
 .c-head-title__char,
-.c-square-title__char
-{
+.c-square-title__char {
   font-family: $now-font;
   font-weight: $weight-medium;
   overflow: hidden;
@@ -304,21 +342,19 @@
   }
 }
 
-.c-square-title__char{
+.c-square-title__char {
   width: 27px;
   height: 27px;
   font-size: rem(22);
 }
 
 .c-head-title__char+.c-head-title__char,
-.c-square-title__char+.c-square-title__char
-{
+.c-square-title__char+.c-square-title__char {
   margin-left: 2px;
 }
 
 .c-head-title__char,
-.c-square-title__char
-{
+.c-square-title__char {
   &.-navy {
     border: solid 1px $main-txt;
     color: #fff;
@@ -356,7 +392,7 @@
   }
 }
 
-.c-square-title__char{
+.c-square-title__char {
   &.-navy-frame {
     background-color: transparent;
   }
@@ -376,13 +412,14 @@
 }
 
 .c-news-tag__item {
-  transition: background-color .1s ease-out,border-color .1s ease-out,transform 0.1s ease-out;
+  transition: background-color .1s ease-out, border-color .1s ease-out, transform 0.1s ease-out;
   display: inline-block;
   text-align: center;
   border-radius: 999px;
-  padding: .2em 1.08em .4em;
+  padding: .25em 1.08em .25em;
   line-height: 1.1;
-  margin-right: .5em;
+  margin-right: .1em;
+  margin-bottom: .2em;
 
   &.-yellow {
     background: $point_alt;
@@ -395,7 +432,7 @@
 }
 
 .c-txtbox {
-  text-align: left;
+  text-align: justify;
   background-color: $white;
   padding: 21px 21px;
   border-radius: 10px;
@@ -407,6 +444,7 @@
 
 
 .c-description__note {
+  text-align: justify;
   font-size: rem(14);
   color: #666666;
   position: relative;
@@ -459,5 +497,13 @@
     height: .625em;
     border-radius: 50%;
     background-color: $main-txt;
+  }
+}
+
+.c-contents.-gyouseki{
+  word-break: break-word;
+  margin-bottom: 2.8em;
+  p,li {
+    margin-bottom: 1.25em;
   }
 }

@@ -3,7 +3,7 @@
 	<?php get_template_part('nav'); ?>
 	<div class="l-main p-main">
 		<div id="contents" class="l-contents">
-      <div class="l-container">
+			<div class="l-container">
 				<section class="l-common-sec">
 					<h1 class="c-head-title -anime l-head-title l-news-head-title">
 						<span class="c-head-title__char -navy"><span class="c-head-title__char__inner">お</span></span>
@@ -12,73 +12,40 @@
 						<span class="c-head-title__char -navy-frame"><span class="c-head-title__char__inner">せ</span></span>
 					</h1>
 					<div class="c-contents">
-						<ul class="p-news-list l-news-list-archive">
-							<li class="p-news-list__item">
-								<a href="<?php echo get_home_url(); ?>/news/26/" class="p-news-list__item__link">
-									<time class="p-news-list__item__time">2023年4月10日</time>
-									<div class="c-news-tag p-news-list__item__main__tag">
-										<span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
-											研究者の方へ
-										</span>
-									</div>
-									<h3 class="p-news-list__item__main__title">
-										臨床研究支援員募集
-									</h3>
-								</a>
-							</li>
-							<li class="p-news-list__item">
-								<a class="p-news-list__item__link">
-									<time class="p-news-list__item__time">
-										2023年5月9日
-									</time>
-									<div class="c-news-tag p-news-list__item__main__tag">
-										<span class="c-news-tag__item p-news-list__item__main__tag__item -yellow">
-											<i class="c-icon-pin"></i>
-											固定されたお知らせ
-										</span>
-									</div>
-									<h3 class="p-news-list__item__main__title">
-										タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
-									</h3>
-								</a>
-							</li>
-							<li class="p-news-list__item">
-								<a class="p-news-list__item__link">
-									<time class="p-news-list__item__time">2023年12月10日</time>
-									<h3 class="p-news-list__item__main__title">
-										がんゲノム医療キックオフミーティングの開催
-									</h3>
-								</a>
-							</li>
-							<li class="p-news-list__item">
-								<a href="http://genomicsunit.local/1/" class="p-news-list__item__link">
-									<time class="p-news-list__item__time">2023年1月12日</time>
-									<div class="c-news-tag p-news-list__item__main__tag">
-										<span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
-											研究者の方へ
-										</span>
-									</div>
-									<h3 class="p-news-list__item__main__title">
-										「がん」の遺伝子を調べる臨床研究「次世代統合的病理・遺伝子診断法の開発」の開始
-									</h3>
-								</a>
-							</li>
-							<li class="p-news-list__item">
-								<a class="p-news-list__item__link">
-									<time class="p-news-list__item__time">2023年12月10日</time>
-									<div class="c-news-tag p-news-list__item__main__tag">
-										<span class="c-news-tag__item p-news-list__item__main__tag__item -iryo">
-											医療機関の方へ
-										</span>
-									</div>
-									<h3 class="p-news-list__item__main__title">
-										がんゲノム医療キックオフミーティングの開催
-									</h3>
-								</a>
-							</li>
-						</ul>
+						<?php $sticky = show_sticky();
+						if (have_posts() || !empty($sticky)) : ?>
+							<ul class="p-news-list l-news-list-archive">
+								<?php
+								$cat_id = get_query_var('cat');
+								$sticky = show_sticky();
+								$sticky_arg = array(
+									'post__in' => $sticky,
+									'category' => $cat_id,
+								);
+								if (!empty($sticky) && !is_paged()) {
+									$sticky_posts = get_posts($sticky_arg);
+									foreach ($sticky_posts as $post) {
+										setup_postdata($post);
+										echo '<li class="p-news-list__item">';
+										get_template_part('parts/card_news');
+										echo '</li>';
+									}
+									wp_reset_postdata();
+								}
+								?>
+								<?php while (have_posts()) : the_post(); ?>
+									<li class="p-news-list__item">
+										<?php get_template_part('parts/card_news'); ?>
+									</li>
+								<?php endwhile; ?>
+							</ul>
+						<?php endif; ?>
 						<div class="l-news-pagination">
-							<ul class="page-numbers">
+							<?php if (function_exists("pagination")) {
+								pagination($wp_query->max_num_pages);
+							} ?>
+							<?php
+							/*<ul class="page-numbers">
 								<li class="js-light-out"><a href="" class="first page-numbers"><i class="c-pagination-icon -first"></i></a></li>
 								<li class="js-light-out"><a href="" class="prev page-numbers"><i class="c-pagination-icon -prev"></i></a></li>
 								<li class="js-light-out"><a href="" class="page-numbers">1</a></li>
@@ -88,14 +55,15 @@
 								<li class="js-light-out"><a href="" class="next page-numbers"><i class="c-pagination-icon -next"></i></a></li>
 								<li class="js-light-out"><a href="" class="last page-numbers"><i class="c-pagination-icon -last"></i></a></li>
 							</ul>
+							*/ ?>
 						</div>
 					</div>
 				</section>
 			</div>
 		</div>
-    <!-- contents -->
-  </div>
-  <!-- l-main -->
+		<!-- contents -->
+	</div>
+	<!-- l-main -->
 </div>
 <!-- l-main-grid -->
 <?php get_footer(); ?>

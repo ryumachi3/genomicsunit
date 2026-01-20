@@ -9,7 +9,13 @@
   margin-right: auto;
   max-width: 1246px;
   position: relative;
+  @include mq(pc2){
+    margin-left: 40px;
+    grid-template-columns: 270px auto;
+    max-width: 1166px;
+  }
   @include mq(pc){
+    margin-left: auto;
     grid-template-columns: initial;
     display: block;
   }
@@ -28,6 +34,10 @@
   position: fixed;
   top: 0;
   overflow-y: auto;
+  @include mq(minh){
+    padding-top: pxvhPC(32px);
+    padding-bottom: pxvhPC(32px);
+  }
   @include mq(pc){
   }
 }
@@ -100,6 +110,9 @@
 .l-header__logo{
   width: 262px;
   margin-bottom: 50px;
+  @include mq(minh){
+    margin-bottom: pxvhPC(32px);
+  }
   @include mq(pc){
     display: none;
   }
@@ -125,6 +138,9 @@
     grid-column-end: initial;
     margin-left: auto;
     margin-right: auto; 
+  }
+  @include mq(pc2){
+    width: 866px;
   }
   @include mq(tb){
     width: 100%;
@@ -348,13 +364,14 @@
 
 .l-news-dt__head-title__wrap{
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 }
 
 .l-news-dt__head-title{
   margin-right: 22px;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .l-news-dt__head-title__wrap{
@@ -416,6 +433,7 @@
 
 .l-jihi-description
 {
+  text-align: justify;
   position: relative;
   margin-bottom: 112px;
   width: 556px;
@@ -443,6 +461,7 @@
 }
 
 .l-hoken-sec__note{
+  text-align: justify;
   margin-top: 30px;
   @include mq(sp){
     margin-top: 20px;
@@ -471,6 +490,7 @@
 }
 
 .l-rinsyo-description{
+  text-align: justify;
   line-height: 1.675;
   margin-bottom: 4px;
   @include mq(tb){
@@ -492,7 +512,7 @@
 }
 
 .l-about-main__description{
-  max-width: 543px;
+  max-width: 462px;
   position: relative;
   @include mq(sp){
     max-width: inherit;
@@ -533,6 +553,7 @@
 
 .l-hoken-sec__hiyo{
   margin-top: 44px;
+  margin-bottom: 44px;
 }
 
 .l-hoken-sec{
@@ -553,13 +574,19 @@
 }
 
 .l-doctor-sec{
-  margin-bottom: 76px;
+  margin-bottom: 40px;
 }
 
 .l-staff-sec{
   margin-bottom: 70px;
-  @include mq(sp){
+  &.-sec03{
     margin-bottom: 0;
+  }
+  @include mq(sp){
+    margin-bottom: 56px;
+    &.-sec03{
+      margin-bottom: 0;
+    }  
   }
 }
 
@@ -575,3 +602,4 @@
   margin-left: 8px;
   margin-bottom: 40px;
 }
+
