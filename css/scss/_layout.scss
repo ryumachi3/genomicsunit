@@ -1,7 +1,7 @@
 // ======================================================================
 // Layout
 // ======================================================================
-.l-main-grid{
+.l-main-grid {
   padding-bottom: 156px;
   display: grid;
   grid-template-columns: $header-width-pc auto;
@@ -9,18 +9,27 @@
   margin-right: auto;
   max-width: 1246px;
   position: relative;
-  @include mq(pc){
+
+  @include mq(pc2) {
+    margin-left: 40px;
+    grid-template-columns: 270px auto;
+    max-width: 1166px;
+  }
+
+  @include mq(pc) {
+    margin-left: auto;
     grid-template-columns: initial;
     display: block;
   }
-  @include mq(tb){
+
+  @include mq(tb) {
     padding-bottom: 185px;
   }
-  @include mq(sp){
-  }
+
+  @include mq(sp) {}
 }
 
-.l-header{
+.l-header {
   z-index: 100;
   width: $header-width-pc;
   padding-top: 56px;
@@ -28,27 +37,35 @@
   position: fixed;
   top: 0;
   overflow-y: auto;
-  @include mq(pc){
+
+  @include mq(minh) {
+    padding-top: pxvhPC(32px);
+    padding-bottom: pxvhPC(32px);
   }
+
+  @include mq(pc) {}
 }
 
-.l-footer{
+.l-footer {
   overflow: hidden;
   padding-left: 338px;
   max-width: 1306px;
   margin-left: auto;
   margin-right: auto;
-  @include mq(maxwidth){
+
+  @include mq(maxwidth) {
     padding-left: calc(300px + 1vw);
     max-width: calc(1246px + 4.392vw);
     margin-right: 0;
   }
-  @include mq(pc){
+
+  @include mq(pc) {
     max-width: 1246px;
     margin-right: auto;
     padding-left: 0;
   }
-  @include mq(sp){
+
+  @include mq(sp) {
     max-width: 600px;
     width: 100%;
     padding-left: 20px;
@@ -58,17 +75,18 @@
   }
 }
 
-.l-footer__title{
+.l-footer__title {
   margin-left: -1em;
   margin-bottom: 2.27em;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-left: 0;
   }
-  @include mq(sp2){
-  }
+
+  @include mq(sp2) {}
 }
 
-.l-footer__copyright{
+.l-footer__copyright {
   padding-left: $header-width-pc;
   margin-left: auto;
   margin-right: auto;
@@ -79,17 +97,20 @@
   padding-bottom: 2.5em;
   padding-right: 0;
   max-width: 1306px;
-  @include mq(maxwidth){
-    padding-right: pxvwPC(25px);    
+
+  @include mq(maxwidth) {
+    padding-right: pxvwPC(25px);
   }
-  @include mq(pc){
+
+  @include mq(pc) {
     max-width: $master-width-pc;
     padding-left: 0;
   }
-  @include mq(sp){
+
+  @include mq(sp) {
     text-align: center;
     padding-top: 1.25em;
-    padding-bottom: 1.25em;  
+    padding-bottom: 1.25em;
     padding-left: 40px;
     padding-right: 40px;
     max-width: 560px;
@@ -97,200 +118,232 @@
   }
 }
 
-.l-header__logo{
-  width: 262px;
+.l-header__logo {
+  width: 324px;
   margin-bottom: 50px;
-  @include mq(pc){
+
+  @include mq(minh) {
+    margin-bottom: pxvhPC(32px);
+  }
+
+  @include mq(pc) {
     display: none;
+  }
+
+  @include mq(pc2) {
+    width: 280px;
   }
 }
 
-.l-nav__list{
+.l-nav__list {
   margin-bottom: 50px;
 }
 
-.l-nav__sublist{
+.l-nav__sublist {
   width: 100%;
 }
 
-.l-main{
+.l-main {
   // アニメーションのちらつき防止
   opacity: 0;
   /* グローバルメニューの幅を考慮して右側に配置 */
   grid-column-start: 2;
   grid-column-end: 3;
   width: 946px;
-  @include mq(pc){
+
+  @include mq(pc) {
     grid-column-start: initial;
     grid-column-end: initial;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
   }
-  @include mq(tb){
+
+  @include mq(pc2) {
+    width: 866px;
+  }
+
+  @include mq(tb) {
     width: 100%;
   }
-  @include mq(sp){
+
+  @include mq(sp) {
     max-width: 600px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  @include mq(sp2){
-  }
+
+  @include mq(sp2) {}
 }
 
-.l-footer__inner{
+.l-footer__inner {
   padding-left: 60px;
   padding-right: 60px;
   width: 946px;
-  @include mq(pc){
+
+  @include mq(pc) {
     width: 706px;
     padding-left: 0;
-    padding-right: 0;  
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto;
   }
-  @include mq(sp){
+
+  @include mq(sp) {
     width: 100%;
   }
 }
 
-.l-footer__contents{
+.l-footer__contents {
   margin-bottom: 212px;
   line-height: 1.68;
   display: flex;
   align-items: flex-start;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-bottom: 18px;
     display: block;
   }
 }
 
-.l-footer__contents__main{
+.l-footer__contents__main {
   font-style: normal;
   width: 315px;
   padding-right: 1em;
-  p + p{
+
+  p+p {
     margin-top: 1em;
   }
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-left: 1.2em;
     margin-bottom: 1.65em;
   }
 }
 
-.l-footer__contents__map{
+.l-footer__contents__map {
   position: relative;
-  iframe{
+
+  iframe {
     position: absolute;
     left: 0;
     top: 0;
     width: pxvwPC(600px);
     max-width: 600px;
     height: 296px;
-    @include mq(pc){
+
+    @include mq(pc) {
       width: 55vw;
     }
-    @include mq(sp){
+
+    @include mq(sp) {
       max-width: 560px;
       width: 100%;
       position: relative;
-    }  
+    }
   }
 }
 
 
-.l-kv{
+.l-kv {
   padding-bottom: 83px;
   margin-bottom: 112px;
-  @include mq(sp){
+
+  @include mq(sp) {
     padding-bottom: 0;
-    margin-bottom: 80px;  
+    margin-bottom: 80px;
   }
 }
 
-.l-kv__inner__photo__inner{
-}
+.l-kv__inner__photo__inner {}
 
-.l-container{
+.l-container {
   max-width: 706px;
   margin-left: auto;
   margin-right: auto;
-  &.-footer{
-  }
-  &.-staff{
+
+  &.-footer {}
+
+  &.-staff {
     max-width: 732px;
   }
 }
 
-.l-container2{
+.l-container2 {
   padding-left: 16px;
-  @include mq(sp){
+
+  @include mq(sp) {
     padding-left: 16px;
     padding-right: 16px;
   }
 }
 
-.l-container3{
+.l-container3 {
   padding-left: 16px;
-  @include mq(sp){
+
+  @include mq(sp) {
     padding-left: 0;
   }
 }
 
-.l-top-title{
+.l-top-title {
   text-align: center;
   margin-bottom: 50px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 30px;
   }
 }
 
-.l-top-news{
-  
-}
+.l-top-news {}
 
-.l-btn{ 
+.l-btn {
   text-align: center;
 }
 
-.l-top-news{
+.l-top-news {
   margin-bottom: 166px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-bottom: 100px;
   }
 }
 
-.l-top-news-list{
+.l-top-news-list {
   margin-bottom: 40px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-bottom: 32px;
   }
 }
 
-.l-top-about{
+.l-top-about {
   margin-bottom: 166px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-bottom: 100px;
-  }  
+  }
 }
 
-.l-top-about-list{
+.l-top-about-list {
   margin-bottom: 40px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-bottom: 24px;
   }
 }
 
-.l-top-kensa{
+.l-top-kensa {
   margin-bottom: 68px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-bottom: 0;
-  }  
+  }
 }
 
-.l-header-sp{
+.l-header-sp {
   display: none;
-  @include mq(pc){
+
+  @include mq(pc) {
     display: block;
     width: 100%;
     margin-left: auto;
@@ -298,280 +351,301 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-  @include mq(sp){
+
+  @include mq(sp) {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-.l-header-sp__inner{
+.l-header-sp__inner {
   margin-left: auto;
   margin-right: auto;
 }
 
-.l-header-sp__logo{
-  
-}
+.l-header-sp__logo {}
 
-.l-common-sec{
+.l-common-sec {
   opacity: 0;
   padding-top: 120px;
-  @include mq(tb){
+
+  @include mq(tb) {
     padding-top: 30px;
   }
 }
 
-.l-news-head-title{
+.l-news-head-title {
   margin-bottom: 103px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 60px;
   }
 }
 
-.l-news-list{
+.l-news-list {
   margin-bottom: 40px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 30px;
   }
 }
 
-.l-news-list-archive{
+.l-news-list-archive {
   margin-bottom: 50px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 60px;
   }
 }
 
-.l-news-dt__head{
+.l-news-dt__head {
   margin-bottom: 16px;
 }
 
-.l-news-dt__head-title__wrap{
+.l-news-dt__head-title__wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 }
 
-.l-news-dt__head-title{
+.l-news-dt__head-title {
   margin-right: 22px;
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
-.l-news-dt__head-title__wrap{
+.l-news-dt__head-title__wrap {
   margin-bottom: 2px;
 }
 
-.l-news-dt__main-title{
+.l-news-dt__main-title {
   margin-bottom: 4px;
-  @include mq(sp2){
+
+  @include mq(sp2) {
     margin-bottom: 16px;
   }
 }
 
-.l-news-dt__date{
-}
+.l-news-dt__date {}
 
-.l-news-dt__date__wrap{
+.l-news-dt__date__wrap {
   text-align: right;
 }
 
-.l-news-dt__body{
+.l-news-dt__body {
   margin-bottom: 40px;
 }
 
-.l-news-dt__pager{
+.l-news-dt__pager {
   margin-bottom: 60px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 50px;
   }
 }
 
-.l-news-dt__pager{
+.l-news-dt__pager {
   display: flex;
 }
 
 .l-iryo-head-title,
 .l-hoken-head-title,
-.l-staff-head-title
-{
+.l-staff-head-title {
   margin-bottom: 57px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 60px;
   }
 }
 
 .l-iryo-description,
-.l-hoken-description
-{
+.l-hoken-description {
   position: relative;
   margin-bottom: 112px;
 }
 
-.l-staff-description{
+.l-staff-description {
   margin-bottom: 50px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-bottom: 40px;
   }
 }
 
-.l-jihi-description
-{
+.l-jihi-description {
+  text-align: justify;
   position: relative;
   margin-bottom: 112px;
   width: 556px;
-  @include mq(sp){
+
+  @include mq(sp) {
     width: 100%;
   }
 }
 
-.l-iryo-description
-{
-  @include mq(tb){
+.l-iryo-description {
+  @include mq(tb) {
     margin-bottom: 70px;
   }
 }
 
-.l-hoken-description
-{
-  @include mq(sp){
+.l-hoken-description {
+  @include mq(sp) {
     margin-bottom: 30px;
   }
 }
 
-.l-hoken-sec__intro{
+.l-hoken-sec__intro {
   margin-bottom: 24px;
 }
 
-.l-hoken-sec__note{
+.l-hoken-sec__note {
+  text-align: justify;
   margin-top: 30px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-top: 20px;
-  }  
+  }
 }
 
-.l-iryo-news{
+.l-iryo-news {
   margin-bottom: 110px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 100px;
-  }  
+  }
 }
 
-.l-iryo-rinsyo__title{
+.l-iryo-rinsyo__title {
   margin-bottom: 35px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 20px;
   }
 }
 
-.l-iryo-rinsyo__description{
+.l-iryo-rinsyo__description {
   margin-bottom: 30px;
-  @include mq(tb){
+
+  @include mq(tb) {
     margin-bottom: 15px;
   }
 }
 
-.l-rinsyo-description{
+.l-rinsyo-description {
+  text-align: justify;
   line-height: 1.675;
   margin-bottom: 4px;
-  @include mq(tb){
-  }
+
+  @include mq(tb) {}
 }
 
-.l-about-head-title{
+.l-about-head-title {
   margin-bottom: 122px;
 }
 
-.l-about-main{
+.l-about-main {
   padding-top: 64px;
 }
 
 .l-about-main__title,
-.l-hoken-sec__title
-{
+.l-hoken-sec__title {
   margin-bottom: 28px;
 }
 
-.l-about-main__description{
-  max-width: 543px;
+.l-about-main__description {
+  max-width: 462px;
   position: relative;
-  @include mq(sp){
+
+  @include mq(sp) {
     max-width: inherit;
   }
 }
 
-.l-about-main__description + .l-about-main__title{
+.l-about-main__description+.l-about-main__title {
   margin-top: 96px;
-  @include mq(sp){
+
+  @include mq(sp) {
     margin-top: 60px;
   }
 }
 
-.l-about-main__description__note{
+.l-about-main__description__note {
   margin-top: 1.2em;
 }
 
-.l-about-main__description__img{
+.l-about-main__description__img {}
 
-}
-
-.l-about-main__photo{
+.l-about-main__photo {
   position: relative;
   width: 100%;
   height: 328px;
   margin-top: 100px;
   margin-bottom: 135px;
-  @include mq(sp){
+
+  @include mq(sp) {
     height: auto;
     margin-top: 95px;
-    margin-bottom: 133px;  
+    margin-bottom: 133px;
   }
 }
 
-.l-hoken-sec__description + .l-hoken-sec__description{
+.l-hoken-sec__description+.l-hoken-sec__description {
   margin-top: 30px;
 }
 
-.l-hoken-sec__hiyo{
+.l-hoken-sec__hiyo {
   margin-top: 44px;
+  margin-bottom: 44px;
 }
 
-.l-hoken-sec{
+.l-hoken-sec {
   margin-bottom: 100px;
-  &.-last{
-    @include mq(sp){
+
+  &.-last {
+    @include mq(sp) {
       margin-bottom: 0;
     }
   }
 }
 
-.l-hoken-sec__note + .l-hoken-sec__description{
+.l-hoken-sec__note+.l-hoken-sec__description {
   margin-top: 30px;
 }
 
-.l-doctor-sec__title{
+.l-doctor-sec__title {
   margin-bottom: 36px;
 }
 
-.l-doctor-sec{
-  margin-bottom: 76px;
+.l-doctor-sec {
+  margin-bottom: 40px;
 }
 
-.l-staff-sec{
+.l-staff-sec {
   margin-bottom: 70px;
-  @include mq(sp){
+
+  &.-sec03 {
     margin-bottom: 0;
+  }
+
+  @include mq(sp) {
+    margin-bottom: 56px;
+
+    &.-sec03 {
+      margin-bottom: 0;
+    }
   }
 }
 
-.l-staff-sec__title{
+.l-staff-sec__title {
   margin-bottom: 30px;
 }
 
-.l-doctor-sec__modal__description__title{
+.l-doctor-sec__modal__description__title {
   margin-bottom: 16px;
 }
 
-.l-doctor-sec__modal__description__txt{
+.l-doctor-sec__modal__description__txt {
   margin-left: 8px;
   margin-bottom: 40px;
 }
