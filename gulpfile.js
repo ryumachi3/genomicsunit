@@ -12,8 +12,8 @@ gulp.task('sass', function () {
 
   return gulp.src('./css/scss/**/*.scss')
     .pipe(plumber())
-    .pipe(sass({errLogToConsole: true}))
-    .on('error', catchErr)    
+    .pipe(sass({ errLogToConsole: true }))
+    .on('error', catchErr)
     .pipe(sass(option))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./css/'))
@@ -49,7 +49,7 @@ function catchErr(e) {
 gulp.task('browser-sync', function () {
   browserSync.init({
     // vccwで設定したipアドレス
-    proxy: "http://genomicsunit.local/",
+    proxy: "http://genomics-unit.local/",
     open: true,
     watchOptions: {
       debounceDelay: 1000
