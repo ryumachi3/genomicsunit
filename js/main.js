@@ -343,26 +343,26 @@ new Vue({
     scrollGyosekiYear() {
       // li要素のリストを取得
       const listItems = document.querySelectorAll(".p-gyouseki__btn__list__item");
-      if (!listItems) return;
-      if (window.innerWidth > 768) return;
+      if(!listItems) return;
+      if(window.innerWidth > 768) return;
 
       // アクティブなリンクを含むli要素のインデックスを見つける
       let activeIndex = -1;
       listItems.forEach((item, index) => {
-        if (item.querySelector(".p-gyouseki__btn__link").classList.contains("-active")) {
-          activeIndex = index;
-        }
+          if (item.querySelector(".p-gyouseki__btn__link").classList.contains("-active")) {
+              activeIndex = index;
+          }
       });
 
       // アクティブなリンクを含むli要素が見つかった場合
       if (activeIndex !== -1) {
-        // アクティブなリンクを含むli要素の位置を計算
-        const activeOffsetLeft = listItems[activeIndex].offsetLeft;
+          // アクティブなリンクを含むli要素の位置を計算
+          const activeOffsetLeft = listItems[activeIndex].offsetLeft;
 
-        let offset = 40;
-
-        // 横スクロールをアクティブなリンクを含むli要素の位置に移動する
-        document.querySelector(".p-gyouseki__btn__list").scrollLeft = activeOffsetLeft - offset;
+          let offset = 40;
+            
+          // 横スクロールをアクティブなリンクを含むli要素の位置に移動する
+          document.querySelector(".p-gyouseki__btn__list").scrollLeft = activeOffsetLeft - offset;
       }
 
     },

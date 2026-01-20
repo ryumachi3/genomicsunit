@@ -98,6 +98,25 @@
     background-color: #ea590b;
     border-color: #ea590b;
   }
+
+  &.-pdf {
+    display: inline-flex;
+    margin-top: 2em;
+    margin-right: 1em;
+
+    @include mq(sp) {
+      margin-top: 1em;
+    }
+  }
+
+  &.-hoken {
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+}
+
+.c-btn p {
+  line-height: 1.4;
 }
 
 
@@ -167,9 +186,8 @@
 
 }
 
-ol + .c-title.-gyouseki,
-p + .c-title.-gyouseki
-{
+ol+.c-title.-gyouseki,
+p+.c-title.-gyouseki {
   margin-top: 3.25em;
 }
 
@@ -500,10 +518,12 @@ p + .c-title.-gyouseki
   }
 }
 
-.c-contents.-gyouseki{
+.c-contents.-gyouseki {
   word-break: break-word;
   margin-bottom: 2.8em;
-  p,li {
+
+  p,
+  li {
     margin-bottom: 1.25em;
   }
 }
