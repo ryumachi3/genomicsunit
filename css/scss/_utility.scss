@@ -18,9 +18,9 @@
 }
 
 .u-sp_br{
-  display: inline;
-  @include mq(tb) {
-    display: none;
+  display: none;
+  @include mq(sp) {
+    display: inline;
   }  
 }
 
@@ -46,11 +46,22 @@
 }
 
 .u-under-line{
-  position: relative;
-  vertical-align: baseline;
-  background: linear-gradient(transparent 30%, $point 30%, $point 100%, transparent 100%);
+  text-decoration: underline;
 }
 
 .u-txt-point{
   color: $point;  
+}
+
+.u-txt-iryo{
+  color: $color-iryo;  
+}
+
+.u-external-link{
+  position: relative;
+  padding-right: 1.5em;
+  @include svg-icon-external-link("D05210");
+  background-size: 1em 1em;
+  background-position: right .2em top 40%;
+  background-repeat: no-repeat;
 }
